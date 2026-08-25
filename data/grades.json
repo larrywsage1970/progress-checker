@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T15:34:45.823Z",
+  "updatedAt": "2026-08-25T18:26:28.723Z",
   "students": [
     {
       "name": "Avery",
@@ -13,7 +13,7 @@
         {
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
-          "grade": null,
+          "grade": "100.00 - A",
           "missingAssignments": []
         },
         {
