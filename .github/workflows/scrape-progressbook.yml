@@ -1,0 +1,50 @@
+name: Scrape ProgressBook
+
+on:
+  schedule:
+    # Every 3 hours, Mon-Fri, UTC. Adjust for your timezone if you want a
+    # tighter school-hours-only window.
+    - cron: "0 */3 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+
+      - name: Run scraper
+        env:
+          PROGRESSBOOK_URL: ${{ secrets.PROGRESSBOOK_URL }}
+          PROGRESSBOOK_USERNAME: ${{ secrets.PROGRESSBOOK_USERNAME }}
+          PROGRESSBOOK_PASSWORD: ${{ secrets.PROGRESSBOOK_PASSWORD }}
+        run: npm run scrape:progressbook
+
+      # A screenshot + HTML of the last page the scraper was on — captured
+      # on any failure so a broken run is diagnosable without needing local
+      # repro access to the actual ProgressBook site.
+      - name: Upload debug snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-snapshot
+          path: debug/
+          retention-days: 7
+
+      - name: Commit updated grades.json
+        run: |
+          git config user.name "progressbook-scraper"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/grades.json
+          git diff --cached --quiet || git commit -m "Update grades.json"
+          git push

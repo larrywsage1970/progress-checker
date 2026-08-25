@@ -1,0 +1,11 @@
+{
+  "name": "progress-checker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape:progressbook": "node scripts/scrape-progressbook.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}
