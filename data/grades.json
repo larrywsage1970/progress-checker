@@ -1,4 +1,58 @@
 {
-  "updatedAt": null,
-  "students": []
+  "updatedAt": "2026-08-25T12:30:29.631Z",
+  "students": [
+    {
+      "name": "Avery",
+      "courses": [
+        {
+          "name": "ALGEBRA 1 ENRICHED",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "ALGEBRA 1 WIN",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "AMER SIGN LANGUAGE 1",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "ENGLISH 9 ENRICHED",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "LUNCH.",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "PHYSICAL SCIENCE",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "STUDY HALL",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "WORLD HISTORY",
+          "teacher": null,
+          "grade": null,
+          "missingAssignments": []
+        }
+      ]
+    }
+  ]
 }
