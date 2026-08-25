@@ -132,7 +132,8 @@ async function main() {
 
     await mkdir("data", { recursive: true });
     await writeFile("data/grades.json", JSON.stringify(grades, null, 2));
-    console.log(`Wrote data/grades.json (${grades.courses.length} courses).`);
+    const courseCount = grades.students.reduce((sum, s) => sum + s.courses.length, 0);
+    console.log(`Wrote data/grades.json (${grades.students.length} student(s), ${courseCount} course(s) total).`);
   } catch (err) {
     // Always capture what the page actually showed, even (especially) on
     // failure — otherwise a CI failure gives no way to see what broke.
