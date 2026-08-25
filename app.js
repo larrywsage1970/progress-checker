@@ -22,7 +22,7 @@ function isIOS() {
 // One tab per kid. A tab whose name has no matching entry in
 // data/grades.json (student not linked to the ProgressBook account yet)
 // shows a "not linked yet" placeholder instead of erroring.
-const STUDENT_TABS = ["Avery", "Caleb"];
+const STUDENT_TABS = ["Avery", "Kaleb"];
 
 function ProgressChecker() {
   const [state, setState] = useState({ loading: true, error: false, data: null });
