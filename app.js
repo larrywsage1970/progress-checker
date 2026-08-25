@@ -19,9 +19,15 @@ function isIOS() {
   return /iphone|ipad|ipod/i.test(navigator.userAgent);
 }
 
+// One tab per kid. A tab whose name has no matching entry in
+// data/grades.json (student not linked to the ProgressBook account yet)
+// shows a "not linked yet" placeholder instead of erroring.
+const STUDENT_TABS = ["Avery", "Caleb"];
+
 function ProgressChecker() {
   const [state, setState] = useState({ loading: true, error: false, data: null });
   const [showInstall] = useState(!isStandalone() && isIOS());
+  const [tab, setTab] = useState(STUDENT_TABS[0]);
 
   useEffect(() => {
     fetch("./data/grades.json", { cache: "no-store" })
@@ -30,12 +36,20 @@ function ProgressChecker() {
       .catch(() => setState({ loading: false, error: true, data: null }));
   }, []);
 
+  const student = state.data?.students?.find((s) => s.name.toLowerCase() === tab.toLowerCase());
+
   return html`
     <div style=${styles.root}>
       <div style=${styles.header}>
         <div style=${styles.badge}>PROGRESS CHECKER</div>
         <div style=${styles.h1}>GRADES</div>
         ${state.data?.updatedAt && html`<div style=${styles.updated}>Updated ${new Date(state.data.updatedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}</div>`}
+      </div>
+
+      <div style=${styles.tabs}>
+        ${STUDENT_TABS.map((name) => html`
+          <button key=${name} style=${{...styles.tab, ...(tab===name ? styles.tabActive : {})}} onClick=${() => setTab(name)}>${name.toUpperCase()}</button>
+        `)}
       </div>
 
       <div style=${styles.content}>
@@ -46,7 +60,8 @@ function ProgressChecker() {
         `}
         ${state.loading && html`<div style=${styles.empty}>Loading grades…</div>`}
         ${state.error && html`<div style=${styles.empty}>Couldn't load grades data.<br />Check that the ProgressBook scraper has run.</div>`}
-        ${!state.loading && !state.error && html`<${CourseList} courses=${state.data.courses} />`}
+        ${!state.loading && !state.error && student && html`<${CourseList} courses=${student.courses} />`}
+        ${!state.loading && !state.error && !student && html`<div style=${styles.empty}>${tab} isn't linked to the ProgressBook account yet.<br />Once linked, ${tab}'s grades will show up here automatically.</div>`}
       </div>
     </div>
   `;
@@ -92,6 +107,10 @@ const styles = {
   badge: { fontSize:10, letterSpacing:"0.2em", color:"#7fa8b8", textTransform:"uppercase", marginBottom:4 },
   h1: { fontSize:"2.4rem", fontWeight:800, letterSpacing:"0.06em", color:"#e8dcc8", lineHeight:1 },
   updated: { fontSize:10, color:"#7fa8b8", letterSpacing:"0.1em", marginTop:6 },
+
+  tabs: { display:"flex", background:"#0a0c07", borderBottom:"1px solid #2a2a20" },
+  tab: { flex:1, padding:"12px 4px", background:"transparent", border:"none", borderBottom:"2px solid transparent", color:"#8a8a8a", fontSize:12, letterSpacing:"0.1em", cursor:"pointer", fontWeight:600 },
+  tabActive: { color:"#5ba3c0", borderBottomColor:"#5ba3c0", background:"#0f1109" },
 
   content: { padding:"16px 16px 0" },
 

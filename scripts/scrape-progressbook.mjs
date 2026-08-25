@@ -1,7 +1,8 @@
 // Logs into ProgressBook (NEOnet-hosted ParentAccess) and writes a clean
-// summary of grades + missing assignments to data/grades.json for the PWA's
-// Grades tab to read. Credentials come from env vars only — never hardcode
-// or log them.
+// per-student summary of grades + missing assignments to data/grades.json
+// (shape: { updatedAt, students: [{ name, courses: [...] }] }) for the
+// app's per-student tabs to read. Credentials come from env vars only —
+// never hardcode or log them.
 //
 // Required env vars:
 //   PROGRESSBOOK_URL       the district's ParentAccess home page, e.g.
@@ -64,6 +65,15 @@ async function login(page) {
   ]);
 }
 
+// STUDENT_NAME is hardcoded rather than scraped off the page: only one
+// student (Avery) is linked to this ProgressBook account so far, so
+// there's no student-switcher UI yet to scrape a name from, and no risk
+// of mislabeling data that clearly belongs to Avery. Once a second student
+// is linked, ProgressBook will show a switcher — at that point this needs
+// to loop over each linked student (reading their real display name off
+// that switcher) instead of a single hardcoded name.
+const STUDENT_NAME = "Avery";
+
 // Reads name + grade directly from each course's collapsed summary row
 // (Course | Grade | As Of columns) — no clicking. Expanding a row risks
 // following the course's own name link instead of a dedicated toggle,
@@ -97,7 +107,10 @@ async function extractGrades(page) {
     courses.push({ name, teacher: null, grade, missingAssignments: [] });
   }
 
-  return { updatedAt: new Date().toISOString(), student: null, courses };
+  return {
+    updatedAt: new Date().toISOString(),
+    students: [{ name: STUDENT_NAME, courses }],
+  };
 }
 
 async function dumpDebugSnapshot(page) {

@@ -13,6 +13,8 @@ repo's encrypted GitHub Actions secrets.
 
 ## Features
 - Per-class current grade, updated automatically on a schedule
+- One tab per kid (currently Avery / Caleb) — a tab for a student not yet
+  linked to the ProgressBook account shows a placeholder instead of erroring
 - Fully static — no server, no database
 - Install to your phone's home screen like a native app
 
@@ -76,10 +78,16 @@ unreliable in an earlier attempt (risked following the course's own link
 and navigating off the Grades page), plus there's no real missing-assignment
 data yet this early in the school year to verify that logic against anyway.
 
-**Multiple students:** not yet supported — the scraper reads whichever
-student ProgressBook shows by default after login. If your account has more
-than one student linked, this needs to be extended to switch between them
-(ProgressBook shows a student-switcher for multi-student accounts).
+**Multiple students:** the app has a tab per kid (`STUDENT_TABS` in
+`app.js`), and `data/grades.json` is shaped as `{ updatedAt, students: [{
+name, courses }] }` to support more than one. The scraper itself only
+populates Avery so far — `STUDENT_NAME` is hardcoded in
+`scripts/scrape-progressbook.mjs` since Caleb isn't linked to the
+ProgressBook account yet, so there's no student-switcher UI to scrape a
+second name/dataset from. Once Caleb is linked, that hardcoding needs to be
+replaced with logic that loops over each student ProgressBook shows in its
+switcher — that'll need a screenshot of what that switcher actually looks
+like to build against real markup instead of guessing.
 
 **Security note:** if a ProgressBook password is ever pasted into a chat,
 screen share, or any non-secret location, treat it as compromised and
