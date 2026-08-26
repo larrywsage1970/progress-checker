@@ -68,6 +68,9 @@ function ProgressChecker() {
 }
 
 function CourseList({ courses }) {
+  const [expanded, setExpanded] = useState({});
+  const toggle = (i) => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
+
   if (!courses?.length) {
     return html`<div style=${styles.empty}>No grade data yet.<br />The scraper hasn't synced ProgressBook, or hasn't been set up.</div>`;
   }
@@ -76,23 +79,28 @@ function CourseList({ courses }) {
     <div>
       ${courses.map((course, i) => html`
         <div key=${i} style=${{...styles.courseCard, borderLeftColor: course.missingAssignments?.length ? "#c05a5a" : "#3a5a68"}}>
-          <div style=${styles.courseHead}>
+          <div style=${styles.courseHead} onClick=${() => toggle(i)} role="button" tabIndex="0">
             <div>
               <div style=${styles.courseName}>${course.name}</div>
               ${course.teacherEmail
-                ? html`<a href=${`mailto:${course.teacherEmail}`} style=${styles.courseTeacherLink}>${course.teacher || course.teacherEmail}</a>`
+                ? html`<a href=${`mailto:${course.teacherEmail}`} style=${styles.courseTeacherLink} onClick=${(e) => e.stopPropagation()}>${course.teacher || course.teacherEmail}</a>`
                 : course.teacher && html`<div style=${styles.courseTeacher}>${course.teacher}</div>`}
             </div>
-            ${course.grade && html`<div style=${styles.courseGrade}>${course.grade}</div>`}
+            <div style=${styles.courseHeadRight}>
+              ${course.grade && html`<div style=${styles.courseGrade}>${course.grade}</div>`}
+              <div style=${{...styles.chevron, transform: expanded[i] ? "rotate(180deg)" : "rotate(0deg)"}}>▾</div>
+            </div>
           </div>
-          ${course.missingAssignments?.length > 0 && html`
+          ${expanded[i] && html`
             <div style=${styles.missingList}>
-              ${course.missingAssignments.map((a, j) => html`
-                <div key=${j} style=${styles.missingItem}>
-                  <span>${a.name}</span>
-                  ${a.dueDate && html`<span style=${styles.missingDue}>${a.dueDate}</span>`}
-                </div>
-              `)}
+              ${course.missingAssignments?.length > 0
+                ? course.missingAssignments.map((a, j) => html`
+                    <div key=${j} style=${styles.missingItem}>
+                      <span>${a.name}</span>
+                      ${a.dueDate && html`<span style=${styles.missingDue}>${a.dueDate}</span>`}
+                    </div>
+                  `)
+                : html`<div style=${styles.noDetails}>No missing assignments right now.</div>`}
             </div>
           `}
         </div>
@@ -120,14 +128,17 @@ const styles = {
   empty: { textAlign:"center", padding:"60px 20px", color:"#8a8a8a", fontSize:13, lineHeight:2 },
 
   courseCard: { background:"#161810", border:"1px solid #2a2a20", borderLeft:"4px solid #3a5a68", borderRadius:2, marginBottom:10, padding:"12px 14px" },
-  courseHead: { display:"flex", justifyContent:"space-between", alignItems:"flex-start" },
+  courseHead: { display:"flex", justifyContent:"space-between", alignItems:"flex-start", cursor:"pointer" },
+  courseHeadRight: { display:"flex", alignItems:"center", gap:8 },
   courseName: { fontSize:15, fontWeight:700, color:"#e8dcc8" },
   courseTeacher: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2 },
   courseTeacherLink: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2, display:"inline-block", textDecoration:"underline" },
   courseGrade: { fontSize:"1.4rem", fontWeight:800, color:"#5ba3c0", lineHeight:1 },
+  chevron: { color:"#7fa8b8", fontSize:14, transition:"transform 0.15s ease" },
   missingList: { marginTop:10, paddingTop:10, borderTop:"1px solid #2a2a20" },
   missingItem: { display:"flex", justifyContent:"space-between", fontSize:12, color:"#e0a8a8", padding:"3px 0", gap:10 },
   missingDue: { color:"#a37070", fontSize:11, whiteSpace:"nowrap" },
+  noDetails: { fontSize:12, color:"#7fa8b8" },
 };
 
 render(html`<${ProgressChecker} />`, document.getElementById("root"));
