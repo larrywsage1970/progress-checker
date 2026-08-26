@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T12:34:17.367Z",
+  "updatedAt": "2026-08-26T16:11:28.990Z",
   "students": [
     {
       "name": "Avery",
@@ -25,7 +25,7 @@
         {
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
-          "grade": null,
+          "grade": "100.00 - A",
           "missingAssignments": []
         },
         {
