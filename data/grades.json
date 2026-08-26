@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T20:38:42.563Z",
+  "updatedAt": "2026-08-26T20:45:09.299Z",
   "students": [
     {
       "name": "Avery",
@@ -120,10 +120,6 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "66.67 - D",
           "missingAssignments": [
-            {
-              "name": "Signed Syllabus",
-              "dueDate": "Aug 25"
-            },
             {
               "name": "Signed Syllabus",
               "dueDate": "Aug 25"
