@@ -195,7 +195,12 @@ async function extractAssignments(page, detailUrl) {
   for (let i = 0; i < rowCount; i++) {
     const row = rows.nth(i);
     const isMissing = await row.getByTitle(/missing/i).count() > 0;
-    const cells = (await row.locator("td").allTextContents().catch(() => [])).map((c) => c.trim());
+    // Cells can carry a hidden accessible-text duplicate of the status badge
+    // (stray literal "<br/>" text plus internal newlines/indentation, e.g.
+    // "0/5\n...(0%) · M\n...Missing<br/>") — collapse whitespace and strip
+    // any literal tag text so the score reads as one clean line.
+    const cells = (await row.locator("td").allTextContents().catch(() => []))
+      .map((c) => c.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
     const [date, name, ...rest] = cells;
     if (!name) continue;
     const key = `${date}|${name}`;
