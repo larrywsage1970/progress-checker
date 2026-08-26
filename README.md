@@ -90,14 +90,13 @@ using that ProgressBook feature, so there's nothing real to build against.
 
 **Multiple students:** the app has a tab per kid (`STUDENT_TABS` in
 `app.js`), and `data/grades.json` is shaped as `{ updatedAt, students: [{
-name, courses }] }` to support more than one. The scraper itself only
-populates Avery so far — `STUDENT_NAME` is hardcoded in
-`scripts/scrape-progressbook.mjs`. Kaleb is now linked to the ProgressBook
-account, but switching to his data in the scraper isn't built yet: the
-student switcher (bottom of `/Student/Dashboard`) doesn't change the URL
-when clicked — it's a client-side swap in place — so the scraper will need
-to actually click his name and wait for the page to update, rather than
-just visiting a second URL like it does for the district picker.
+name, courses }] }`. The scraper (`STUDENTS` in
+`scripts/scrape-progressbook.mjs`) now loops over both Avery and Kaleb,
+clicking each one's entry in the Dashboard footer switcher (a client-side
+swap — no URL change, confirmed by testing it directly) before extracting
+that student's data. Not yet verified against a real run at the time of
+writing — if a student's switcher click or extraction fails, that student
+is skipped (logged, not fatal) rather than losing data for the other one.
 
 **Security note:** if a ProgressBook password is ever pasted into a chat,
 screen share, or any non-secret location, treat it as compromised and

@@ -32,6 +32,11 @@
 // flagged items (e.g. "Missing") — a plain ungraded/not-yet-due row (blank
 // mark) carries no such badge, so this is a real status signal from
 // ProgressBook itself, not a guess inferred from the raw score.
+//
+// Multiple students: after login, loops over each student in STUDENTS,
+// clicking their entry in the Dashboard's footer switcher (a client-side
+// swap — no URL change) before running the same Grades/Planner extraction
+// for whichever student is now selected. See selectStudent() and STUDENTS.
 
 import { chromium } from "playwright";
 import { writeFile, mkdir } from "node:fs/promises";
@@ -68,14 +73,31 @@ async function login(page) {
   ]);
 }
 
-// STUDENT_NAME is hardcoded rather than scraped off the page: only one
-// student (Avery) is linked to this ProgressBook account so far, so
-// there's no student-switcher UI yet to scrape a name from, and no risk
-// of mislabeling data that clearly belongs to Avery. Once a second student
-// is linked, ProgressBook will show a switcher — at that point this needs
-// to loop over each linked student (reading their real display name off
-// that switcher) instead of a single hardcoded name.
-const STUDENT_NAME = "Avery";
+// Both kids linked to this ProgressBook account, with their exact switcher
+// label text (confirmed via screenshot of the footer bar on
+// /Student/Dashboard — "AVERY SAGE" / "KALEB SAGE", each clickable).
+// Hardcoded rather than scraped off the page: there are only ever these
+// two, and scraping the switcher itself to discover names adds a layer of
+// guesswork for no benefit over just listing them directly.
+const STUDENTS = [
+  { switcherLabel: "AVERY SAGE", name: "Avery" },
+  { switcherLabel: "KALEB SAGE", name: "Kaleb" },
+];
+
+// Selects a student in the Dashboard's footer switcher. This does NOT
+// change the URL when clicked — confirmed directly by the user testing it
+// in a browser — it's a client-side swap that sets which student
+// subsequent page navigations (Grades, Planner, etc.) show. Always
+// navigates to Dashboard fresh first rather than assuming where the page
+// already is, since course/assignment extraction leaves it somewhere else
+// entirely (an Assignment/Class or Planner page) between students.
+async function selectStudent(page, origin, switcherLabel) {
+  await page.goto(`${origin}/Student/Dashboard`, { waitUntil: "networkidle" });
+  await Promise.all([
+    page.waitForLoadState("networkidle"),
+    page.getByText(switcherLabel, { exact: true }).first().click(),
+  ]);
+}
 
 // Pass 1: read every course's name, grade, and "see all details" link/count
 // off the Grades page's collapsed summary table — no clicking, no
@@ -171,8 +193,9 @@ async function extractMissingAssignments(page, detailUrl) {
   return missing;
 }
 
-async function extractGrades(page) {
-  const origin = new URL(page.url()).origin;
+// Runs the full listCourses -> missing-assignments -> teacher-emails
+// pipeline for whichever student is currently selected.
+async function extractCoursesForCurrentStudent(page, origin) {
   const courses = await listCourses(page, origin);
 
   for (const course of courses) {
@@ -190,10 +213,28 @@ async function extractGrades(page) {
   });
   console.log(`  Teacher emails found for ${courses.filter((c) => c.teacherEmail).length} of ${courses.length} course(s).`);
 
-  return {
-    updatedAt: new Date().toISOString(),
-    students: [{ name: STUDENT_NAME, courses }],
-  };
+  return courses;
+}
+
+async function extractGrades(page) {
+  const origin = new URL(page.url()).origin;
+  const students = [];
+
+  for (const { switcherLabel, name } of STUDENTS) {
+    try {
+      console.log(`Switching to student: ${name}`);
+      await selectStudent(page, origin, switcherLabel);
+      const courses = await extractCoursesForCurrentStudent(page, origin);
+      students.push({ name, courses });
+    } catch (err) {
+      // One student's switcher/extraction breaking shouldn't lose data for
+      // the other — e.g. if this is the run that first discovers the
+      // switcher's real markup doesn't match what selectStudent() expects.
+      console.error(`Failed extracting data for ${name}, skipping:`, err.message);
+    }
+  }
+
+  return { updatedAt: new Date().toISOString(), students };
 }
 
 async function dumpDebugSnapshot(page) {
