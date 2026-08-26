@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T21:52:03.819Z",
+  "updatedAt": "2026-08-26T21:59:14.355Z",
   "students": [
     {
       "name": "Avery",
@@ -26,7 +26,7 @@
             {
               "name": "Percentage Content Check",
               "dueDate": "Aug 26",
-              "score": "10/10\n                    \n                        (100%)",
+              "score": "10/10 (100%)",
               "missing": false
             }
           ]
@@ -47,7 +47,7 @@
             {
               "name": "Syllabus",
               "dueDate": "Aug 27",
-              "score": "For* · 10/10\n                    \n                        (100%)",
+              "score": "For* · 10/10 (100%)",
               "missing": false
             }
           ]
@@ -122,7 +122,7 @@
             {
               "name": "growth mindset and the brain",
               "dueDate": "Aug 25",
-              "score": "F · 1/1\n                    \n                        (100%)",
+              "score": "F · 1/1 (100%)",
               "missing": false
             }
           ]
@@ -150,7 +150,7 @@
             {
               "name": "Signed Syllabus",
               "dueDate": "Aug 25",
-              "score": "Par · 0/5\n                    \n                        (0%) · M\n                                \n                    Missing<br/>",
+              "score": "Par · 0/5 (0%) · M Missing",
               "missing": true
             },
             {
@@ -162,7 +162,7 @@
             {
               "name": "You Are Here - Handout",
               "dueDate": "Aug 19",
-              "score": "FOR · 10/10\n                    \n                        (100%)",
+              "score": "FOR · 10/10 (100%)",
               "missing": false
             }
           ]
@@ -183,19 +183,19 @@
             {
               "name": "HWQ1.3",
               "dueDate": "Aug 26",
-              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "score": "FORM · 100/100 (100%)",
               "missing": false
             },
             {
               "name": "HWQ1.2",
               "dueDate": "Aug 24",
-              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "score": "FORM · 100/100 (100%)",
               "missing": false
             },
             {
               "name": "HWQ1.1",
               "dueDate": "Aug 21",
-              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "score": "FORM · 100/100 (100%)",
               "missing": false
             }
           ]
@@ -221,7 +221,7 @@
             {
               "name": "der Namensschild (Name card)",
               "dueDate": "Aug 25",
-              "score": "12/12\n                    \n                        (100%)",
+              "score": "12/12 (100%)",
               "missing": false
             }
           ]
