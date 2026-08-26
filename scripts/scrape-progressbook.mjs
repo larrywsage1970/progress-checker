@@ -179,6 +179,11 @@ async function extractMissingAssignments(page, detailUrl) {
   const rows = page.locator("tr").filter({ has: page.locator("td") });
   const rowCount = await rows.count();
 
+  // The page has a "View By: Date | Type" toggle — both groupings appear to
+  // exist in the DOM at once (one hidden), which doubled every result in a
+  // real run. Dedupe by name+date rather than try to scope to only the
+  // visible grouping, since which one is visible could depend on state.
+  const seen = new Set();
   const missing = [];
   for (let i = 0; i < rowCount; i++) {
     const row = rows.nth(i);
@@ -186,7 +191,11 @@ async function extractMissingAssignments(page, detailUrl) {
     if (!isMissing) continue;
     const cells = await row.locator("td").allTextContents().catch(() => []);
     const [date, name] = cells;
-    if (name?.trim()) missing.push({ name: name.trim(), dueDate: date?.trim() ?? null });
+    if (!name?.trim()) continue;
+    const key = `${date?.trim()}|${name.trim()}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    missing.push({ name: name.trim(), dueDate: date?.trim() ?? null });
   }
 
   console.log(`  ${missing.length} missing of ${rowCount} row(s) at ${detailUrl}`);
