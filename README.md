@@ -13,6 +13,8 @@ repo's encrypted GitHub Actions secrets.
 
 ## Features
 - Per-class current grade, updated automatically on a schedule
+- Missing assignments flagged per class
+- Tap a teacher's name to email them — opens your phone's default mail app
 - One tab per kid (currently Avery / Kaleb) — a tab for a student not yet
   linked to the ProgressBook account shows a placeholder instead of erroring
 - Fully static — no server, no database
@@ -77,9 +79,12 @@ on the Grades page (skipping courses with N=0, nothing to look at) and, on
 the Assignment/Class detail page, flags any row whose Info-column status
 badge has a title/tooltip matching "missing" — a real ProgressBook status
 signal, not inferred from the raw score (an ungraded-but-not-yet-due row
-also has a blank score but no such badge). Teacher name still isn't
-extracted. Due-soon tracking (assignments due in the next few days) isn't
-built: the Planner page, which would be the natural source for that, is
+also has a blank score but no such badge). Teacher name and email are read
+from the Planner page (matched to each course by name) and shown as a
+tappable `mailto:` link in the Grades tab — Planner has no homework data
+(see below) but does show each class's teacher contact info. Due-soon
+tracking (assignments due in the next few days) isn't built: the Planner
+page, which would be the natural source for that, is
 empty across every class for both kids — teachers at this school aren't
 using that ProgressBook feature, so there's nothing real to build against.
 

@@ -77,13 +77,6 @@ async function login(page) {
 // that switcher) instead of a single hardcoded name.
 const STUDENT_NAME = "Avery";
 
-// Reads name + grade directly from each course's collapsed summary row
-// (Course | Grade | As Of columns) — no clicking. Expanding a row risks
-// following the course's own name link instead of a dedicated toggle,
-// which navigates away from the Grades page entirely; reading only the
-// already-rendered collapsed table sidesteps that risk completely.
-// Teacher and missing-assignment detail (which lives behind a per-course
-// "see all details" page) aren't extracted yet — see the file header note.
 // Pass 1: read every course's name, grade, and "see all details" link/count
 // off the Grades page's collapsed summary table — no clicking, no
 // navigation, so nothing here risks following a link off the page.
@@ -117,12 +110,36 @@ async function listCourses(page, origin) {
     courses.push({
       name,
       teacher: null,
+      teacherEmail: null,
       grade,
       detailUrl: detailHref ? new URL(detailHref, origin).toString() : null,
     });
   }
 
   return courses;
+}
+
+// The Planner page has no homework data (teachers here don't use it — see
+// file header), but it does show each class's teacher name and a mailto:
+// link, which the Grades/Assignment pages don't. Matches purely by course
+// name text already known from listCourses(), rather than guessing at the
+// Planner's section markup, and takes the nearest mailto: link that follows
+// each course-name heading in document order.
+async function attachTeacherEmails(page, origin, courses) {
+  await page.goto(`${origin}/Student/Planner`, { waitUntil: "networkidle" });
+
+  for (const course of courses) {
+    const heading = page.getByText(course.name, { exact: true }).first();
+    if (await heading.count() === 0) continue;
+
+    const mailLink = heading.locator("xpath=following::a[starts-with(@href,'mailto:')][1]");
+    const href = await mailLink.getAttribute("href").catch(() => null);
+    if (!href) continue;
+
+    course.teacherEmail = href.replace(/^mailto:/i, "").trim();
+    const teacherText = await mailLink.locator("xpath=preceding-sibling::*[1]").textContent().catch(() => null);
+    course.teacher = teacherText?.trim() || null;
+  }
 }
 
 // Pass 2: for a course with assignment detail to look at, visit its
@@ -163,6 +180,11 @@ async function extractGrades(page) {
       : [];
     delete course.detailUrl;
   }
+
+  await attachTeacherEmails(page, origin, courses).catch((err) => {
+    console.error("  Failed reading teacher emails from Planner:", err.message);
+  });
+  console.log(`  Teacher emails found for ${courses.filter((c) => c.teacherEmail).length} of ${courses.length} course(s).`);
 
   return {
     updatedAt: new Date().toISOString(),

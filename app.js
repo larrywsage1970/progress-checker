@@ -79,7 +79,9 @@ function CourseList({ courses }) {
           <div style=${styles.courseHead}>
             <div>
               <div style=${styles.courseName}>${course.name}</div>
-              ${course.teacher && html`<div style=${styles.courseTeacher}>${course.teacher}</div>`}
+              ${course.teacherEmail
+                ? html`<a href=${`mailto:${course.teacherEmail}`} style=${styles.courseTeacherLink}>${course.teacher || course.teacherEmail}</a>`
+                : course.teacher && html`<div style=${styles.courseTeacher}>${course.teacher}</div>`}
             </div>
             ${course.grade && html`<div style=${styles.courseGrade}>${course.grade}</div>`}
           </div>
@@ -121,6 +123,7 @@ const styles = {
   courseHead: { display:"flex", justifyContent:"space-between", alignItems:"flex-start" },
   courseName: { fontSize:15, fontWeight:700, color:"#e8dcc8" },
   courseTeacher: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2 },
+  courseTeacherLink: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2, display:"inline-block", textDecoration:"underline" },
   courseGrade: { fontSize:"1.4rem", fontWeight:800, color:"#5ba3c0", lineHeight:1 },
   missingList: { marginTop:10, paddingTop:10, borderTop:"1px solid #2a2a20" },
   missingItem: { display:"flex", justifyContent:"space-between", fontSize:12, color:"#e0a8a8", padding:"3px 0", gap:10 },
