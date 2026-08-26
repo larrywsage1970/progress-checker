@@ -60,14 +60,14 @@ function ProgressChecker() {
         `}
         ${state.loading && html`<div style=${styles.empty}>Loading grades…</div>`}
         ${state.error && html`<div style=${styles.empty}>Couldn't load grades data.<br />Check that the ProgressBook scraper has run.</div>`}
-        ${!state.loading && !state.error && student && html`<${CourseList} courses=${student.courses} />`}
+        ${!state.loading && !state.error && student && html`<${CourseList} courses=${student.courses} studentName=${tab} />`}
         ${!state.loading && !state.error && !student && html`<div style=${styles.empty}>${tab} isn't linked to the ProgressBook account yet.<br />Once linked, ${tab}'s grades will show up here automatically.</div>`}
       </div>
     </div>
   `;
 }
 
-function CourseList({ courses }) {
+function CourseList({ courses, studentName }) {
   const [expanded, setExpanded] = useState({});
   const toggle = (i) => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
 
@@ -83,7 +83,7 @@ function CourseList({ courses }) {
             <div>
               <div style=${styles.courseName}>${course.name}</div>
               ${course.teacherEmail
-                ? html`<a href=${`mailto:${course.teacherEmail}`} style=${styles.courseTeacherLink} onClick=${(e) => e.stopPropagation()}>${course.teacher || course.teacherEmail}</a>`
+                ? html`<a href=${`mailto:${course.teacherEmail}?subject=${encodeURIComponent(`Question about ${studentName} - ${course.name}`)}`} style=${styles.courseTeacherLink} onClick=${(e) => e.stopPropagation()}>${course.teacher || course.teacherEmail}</a>`
                 : course.teacher && html`<div style=${styles.courseTeacher}>${course.teacher}</div>`}
             </div>
             <div style=${styles.courseHeadRight}>
