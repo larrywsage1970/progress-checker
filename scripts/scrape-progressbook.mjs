@@ -134,12 +134,16 @@ async function attachTeacherEmails(page, origin, courses) {
 
     const mailLink = heading.locator("xpath=following::a[starts-with(@href,'mailto:')][1]");
     const href = await mailLink.getAttribute("href").catch(() => null);
-    if (!href) continue;
-
-    course.teacherEmail = href.replace(/^mailto:/i, "").trim();
-    const teacherText = await mailLink.locator("xpath=preceding-sibling::*[1]").textContent().catch(() => null);
-    course.teacher = teacherText?.trim() || null;
+    const email = href?.replace(/^mailto:/i, "").trim();
+    // Some mailto: links on this page aren't a teacher's address at all
+    // (e.g. a generic "email this page" control) — a blank or addressless
+    // href is the tell; skip those rather than writing a dead link.
+    if (email?.includes("@")) course.teacherEmail = email;
   }
+  // Teacher display name isn't extracted — a first attempt at guessing its
+  // position relative to the mailto link (nearest preceding sibling)
+  // matched nothing for any course, so rather than guess again blind, the
+  // app falls back to showing the email address itself as the link text.
 }
 
 // Pass 2: for a course with assignment detail to look at, visit its
