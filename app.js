@@ -67,6 +67,25 @@ function ProgressChecker() {
   `;
 }
 
+// dueDate is "Mon D" with no year (e.g. "Aug 25") — assumes the current
+// year, which is fine within a school year but would sort wrong across a
+// Dec/Jan boundary. Not an issue yet since all synced data is same-year.
+function parseDueDate(d) {
+  if (!d) return null;
+  const t = Date.parse(`${d} ${new Date().getFullYear()}`);
+  return Number.isNaN(t) ? null : t;
+}
+
+function sortByDueDateAsc(assignments) {
+  return [...(assignments || [])].sort((a, b) => {
+    const ta = parseDueDate(a.dueDate);
+    const tb = parseDueDate(b.dueDate);
+    if (ta === null) return tb === null ? 0 : 1;
+    if (tb === null) return -1;
+    return ta - tb;
+  });
+}
+
 function CourseList({ courses, studentName }) {
   const [expanded, setExpanded] = useState({});
   const toggle = (i) => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
@@ -94,7 +113,7 @@ function CourseList({ courses, studentName }) {
           ${expanded[i] && html`
             <div style=${styles.missingList}>
               ${course.assignments?.length > 0
-                ? course.assignments.map((a, j) => html`
+                ? sortByDueDateAsc(course.assignments).map((a, j) => html`
                     <div key=${j} style=${{...styles.assignmentItem, color: a.missing ? "#e0a8a8" : "#e8dcc8"}}>
                       <span>${a.missing ? "⚠ " : ""}${a.name}${a.score ? html` — ${a.score}` : ""}</span>
                       ${a.dueDate && html`<span style=${styles.assignmentDue}>${a.dueDate}</span>`}
