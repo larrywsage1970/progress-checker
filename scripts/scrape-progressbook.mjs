@@ -21,14 +21,17 @@
 // if that changes.
 //
 // Grade extraction reads course name + grade directly from the Grades
-// page's collapsed summary table — verified against the real page.
-// Teacher and missing-assignment detail live behind a per-course "see all
-// details" page and aren't extracted yet: an earlier attempt to click into
-// expanded rows/detail pages proved unreliable (risked following the
-// course's own link and navigating off the Grades page entirely), and
-// there's no real missing-assignment data yet this early in the school
-// year to verify that logic against anyway. Worth revisiting once
-// assignments start showing up.
+// page's collapsed summary table — verified against the real page. The
+// "see all details (N)" link's count tells us whether a course's
+// Assignment/Class detail page has anything worth visiting, so we only
+// navigate into ones with N > 0.
+//
+// Missing-assignment detection: verified against a real Grade Details page
+// (a course with a graded-zero assignment). Each assignment row's Info
+// column carries a small status badge with a title/tooltip attribute for
+// flagged items (e.g. "Missing") — a plain ungraded/not-yet-due row (blank
+// mark) carries no such badge, so this is a real status signal from
+// ProgressBook itself, not a guess inferred from the raw score.
 
 import { chromium } from "playwright";
 import { writeFile, mkdir } from "node:fs/promises";
@@ -81,8 +84,10 @@ const STUDENT_NAME = "Avery";
 // already-rendered collapsed table sidesteps that risk completely.
 // Teacher and missing-assignment detail (which lives behind a per-course
 // "see all details" page) aren't extracted yet — see the file header note.
-async function extractGrades(page) {
-  const origin = new URL(page.url()).origin;
+// Pass 1: read every course's name, grade, and "see all details" link/count
+// off the Grades page's collapsed summary table — no clicking, no
+// navigation, so nothing here risks following a link off the page.
+async function listCourses(page, origin) {
   await page.goto(`${origin}/Student/Grades`, { waitUntil: "networkidle" });
 
   const courseLinks = page.getByRole("link", { name: /- Section:/ });
@@ -104,7 +109,59 @@ async function extractGrades(page) {
     const rawGrade = nameIdx >= 0 ? cells[nameIdx + 1]?.trim() : null;
     const grade = rawGrade && rawGrade.toLowerCase() !== "n/a" ? rawGrade : null;
 
-    courses.push({ name, teacher: null, grade, missingAssignments: [] });
+    const detailLink = row.getByRole("link", { name: /see all details/i });
+    const detailText = await detailLink.textContent().catch(() => "");
+    const detailCount = parseInt(detailText.match(/\((\d+)\)/)?.[1] ?? "0", 10);
+    const detailHref = detailCount > 0 ? await detailLink.getAttribute("href").catch(() => null) : null;
+
+    courses.push({
+      name,
+      teacher: null,
+      grade,
+      detailUrl: detailHref ? new URL(detailHref, origin).toString() : null,
+    });
+  }
+
+  return courses;
+}
+
+// Pass 2: for a course with assignment detail to look at, visit its
+// Assignment/Class page and flag any row whose Info-column status badge
+// indicates it's missing (a real ProgressBook status signal — a tooltip/
+// title attribute on the badge — not inferred from the raw score, since an
+// ungraded-but-not-due row also shows a blank score with no such badge).
+async function extractMissingAssignments(page, detailUrl) {
+  await page.goto(detailUrl, { waitUntil: "networkidle" });
+
+  const rows = page.locator("tr").filter({ has: page.locator("td") });
+  const rowCount = await rows.count();
+
+  const missing = [];
+  for (let i = 0; i < rowCount; i++) {
+    const row = rows.nth(i);
+    const isMissing = await row.getByTitle(/missing/i).count() > 0;
+    if (!isMissing) continue;
+    const cells = await row.locator("td").allTextContents().catch(() => []);
+    const [date, name] = cells;
+    if (name?.trim()) missing.push({ name: name.trim(), dueDate: date?.trim() ?? null });
+  }
+
+  console.log(`  ${missing.length} missing of ${rowCount} row(s) at ${detailUrl}`);
+  return missing;
+}
+
+async function extractGrades(page) {
+  const origin = new URL(page.url()).origin;
+  const courses = await listCourses(page, origin);
+
+  for (const course of courses) {
+    course.missingAssignments = course.detailUrl
+      ? await extractMissingAssignments(page, course.detailUrl).catch((err) => {
+          console.error(`  Failed reading details for ${course.name}:`, err.message);
+          return [];
+        })
+      : [];
+    delete course.detailUrl;
   }
 
   return {

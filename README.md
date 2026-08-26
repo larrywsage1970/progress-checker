@@ -70,24 +70,29 @@ change it), logging into ProgressBook and committing an updated
    **Run workflow**) to confirm login works.
 3. After that it runs automatically on the schedule.
 
-**Status:** login and per-course grade extraction (course name, current
-grade) work end-to-end, verified against the real ProgressBook site.
-Teacher and missing-assignment detail aren't extracted yet — that requires
-clicking into each course's expanded row/detail page, which proved
-unreliable in an earlier attempt (risked following the course's own link
-and navigating off the Grades page), plus there's no real missing-assignment
-data yet this early in the school year to verify that logic against anyway.
+**Status:** login, per-course grade extraction, and missing-assignment
+detection all work end-to-end, verified against the real ProgressBook site.
+Missing-assignment detection reads each course's "see all details (N)" link
+on the Grades page (skipping courses with N=0, nothing to look at) and, on
+the Assignment/Class detail page, flags any row whose Info-column status
+badge has a title/tooltip matching "missing" — a real ProgressBook status
+signal, not inferred from the raw score (an ungraded-but-not-yet-due row
+also has a blank score but no such badge). Teacher name still isn't
+extracted. Due-soon tracking (assignments due in the next few days) isn't
+built: the Planner page, which would be the natural source for that, is
+empty across every class for both kids — teachers at this school aren't
+using that ProgressBook feature, so there's nothing real to build against.
 
 **Multiple students:** the app has a tab per kid (`STUDENT_TABS` in
 `app.js`), and `data/grades.json` is shaped as `{ updatedAt, students: [{
 name, courses }] }` to support more than one. The scraper itself only
 populates Avery so far — `STUDENT_NAME` is hardcoded in
-`scripts/scrape-progressbook.mjs` since Kaleb isn't linked to the
-ProgressBook account yet, so there's no student-switcher UI to scrape a
-second name/dataset from. Once Kaleb is linked, that hardcoding needs to be
-replaced with logic that loops over each student ProgressBook shows in its
-switcher — that'll need a screenshot of what that switcher actually looks
-like to build against real markup instead of guessing.
+`scripts/scrape-progressbook.mjs`. Kaleb is now linked to the ProgressBook
+account, but switching to his data in the scraper isn't built yet: the
+student switcher (bottom of `/Student/Dashboard`) doesn't change the URL
+when clicked — it's a client-side swap in place — so the scraper will need
+to actually click his name and wait for the page to update, rather than
+just visiting a second URL like it does for the district picker.
 
 **Security note:** if a ProgressBook password is ever pasted into a chat,
 screen share, or any non-secret location, treat it as compromised and
