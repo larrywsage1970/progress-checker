@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T20:31:09.173Z",
+  "updatedAt": "2026-08-26T20:38:42.563Z",
   "students": [
     {
       "name": "Avery",
@@ -57,6 +57,111 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        }
+      ]
+    },
+    {
+      "name": "Kaleb",
+      "courses": [
+        {
+          "name": "ALGEBRA 1 S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "AMERICAN HISTORY S1",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "BIOLOGY S1",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "BIOLOGY S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "CHEMISTRY",
+          "teacher": null,
+          "teacherEmail": "st_ePeterre@smfcsd.org",
+          "grade": "100.00 - A",
+          "missingAssignments": []
+        },
+        {
+          "name": "CREDIT RECOVERY",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "CREDIT RECOVERY",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "ENGLISH 10",
+          "teacher": null,
+          "teacherEmail": "st_ewalkinshaw@smfcsd.org",
+          "grade": "66.67 - D",
+          "missingAssignments": [
+            {
+              "name": "Signed Syllabus",
+              "dueDate": "Aug 25"
+            },
+            {
+              "name": "Signed Syllabus",
+              "dueDate": "Aug 25"
+            }
+          ]
+        },
+        {
+          "name": "ENGLISH 9 S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "GEOMETRY",
+          "teacher": null,
+          "teacherEmail": "st_dlarlham@smfcsd.org",
+          "grade": "100.00 - A",
+          "missingAssignments": []
+        },
+        {
+          "name": "GERMAN 1",
+          "teacher": null,
+          "teacherEmail": "st_jstanek@smfcsd.org",
+          "grade": "116.67 - A",
+          "missingAssignments": []
+        },
+        {
+          "name": "LUNCH.",
+          "teacher": null,
+          "teacherEmail": "ST_office@smfcsd.org",
+          "grade": null,
+          "missingAssignments": []
+        },
+        {
+          "name": "PERSONAL WELLNESS",
+          "teacher": null,
+          "teacherEmail": null,
           "grade": null,
           "missingAssignments": []
         }
