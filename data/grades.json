@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T20:45:09.299Z",
+  "updatedAt": "2026-08-26T21:52:03.819Z",
   "students": [
     {
       "name": "Avery",
@@ -9,56 +9,76 @@
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
           "grade": "100.00 - A",
-          "missingAssignments": []
+          "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 16",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "Percentage Content Check",
+              "dueDate": "Aug 26",
+              "score": "10/10\n                    \n                        (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
           "grade": "100.00 - A",
-          "missingAssignments": []
+          "assignments": [
+            {
+              "name": "Syllabus",
+              "dueDate": "Aug 27",
+              "score": "For* · 10/10\n                    \n                        (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "LUNCH.",
           "teacher": null,
           "teacherEmail": "ST_office@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "STUDY HALL",
           "teacher": null,
           "teacherEmail": "st_kruth@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         }
       ]
     },
@@ -70,59 +90,80 @@
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "AMERICAN HISTORY S1",
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "BIOLOGY S1",
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "BIOLOGY S2",
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
           "grade": "100.00 - A",
-          "missingAssignments": []
+          "assignments": [
+            {
+              "name": "growth mindset and the brain",
+              "dueDate": "Aug 25",
+              "score": "F · 1/1\n                    \n                        (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "CREDIT RECOVERY",
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "CREDIT RECOVERY",
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "66.67 - D",
-          "missingAssignments": [
+          "assignments": [
             {
               "name": "Signed Syllabus",
-              "dueDate": "Aug 25"
+              "dueDate": "Aug 25",
+              "score": "Par · 0/5\n                    \n                        (0%) · M\n                                \n                    Missing<br/>",
+              "missing": true
+            },
+            {
+              "name": "Pixar Shorts",
+              "dueDate": "Aug 25",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "You Are Here - Handout",
+              "dueDate": "Aug 19",
+              "score": "FOR · 10/10\n                    \n                        (100%)",
+              "missing": false
             }
           ]
         },
@@ -131,35 +172,73 @@
           "teacher": null,
           "teacherEmail": "st_wdeshields@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
           "grade": "100.00 - A",
-          "missingAssignments": []
+          "assignments": [
+            {
+              "name": "HWQ1.3",
+              "dueDate": "Aug 26",
+              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "missing": false
+            },
+            {
+              "name": "HWQ1.2",
+              "dueDate": "Aug 24",
+              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "missing": false
+            },
+            {
+              "name": "HWQ1.1",
+              "dueDate": "Aug 21",
+              "score": "FORM · 100/100\n                    \n                        (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
           "grade": "116.67 - A",
-          "missingAssignments": []
+          "assignments": [
+            {
+              "name": "Small Bonus Opps Throughout the Quarter",
+              "dueDate": "Oct 16",
+              "score": "2/0",
+              "missing": false
+            },
+            {
+              "name": "Student/Parent/Teacher Agreement (Contract) *",
+              "dueDate": "Aug 27",
+              "score": "/15",
+              "missing": false
+            },
+            {
+              "name": "der Namensschild (Name card)",
+              "dueDate": "Aug 25",
+              "score": "12/12\n                    \n                        (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "LUNCH.",
           "teacher": null,
           "teacherEmail": "ST_office@smfcsd.org",
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         },
         {
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
           "grade": null,
-          "missingAssignments": []
+          "assignments": []
         }
       ]
     }
