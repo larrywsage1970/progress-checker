@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T09:32:38.843Z",
+  "updatedAt": "2026-08-26T12:34:17.367Z",
   "students": [
     {
       "name": "Avery",
@@ -36,12 +36,6 @@
         },
         {
           "name": "PHYSICAL SCIENCE",
-          "teacher": null,
-          "grade": null,
-          "missingAssignments": []
-        },
-        {
-          "name": "STUDY HALL",
           "teacher": null,
           "grade": null,
           "missingAssignments": []
