@@ -21,17 +21,21 @@
 // if that changes.
 //
 // Grade extraction reads course name + grade directly from the Grades
-// page's collapsed summary table — verified against the real page. The
-// "see all details (N)" link's count tells us whether a course's
-// Assignment/Class detail page has anything worth visiting, so we only
-// navigate into ones with N > 0.
+// page's collapsed summary table — verified against the real page. Each
+// course row also has a "see all details" link to its Assignment/Class
+// detail page; we visit that page (when the link exists — some rows like
+// LUNCH/STUDY HALL have no assignments and no such link) to read every
+// assignment that makes up the grade, not just missing ones.
 //
 // Missing-assignment detection: verified against a real Grade Details page
 // (a course with a graded-zero assignment). Each assignment row's Info
 // column carries a small status badge with a title/tooltip attribute for
 // flagged items (e.g. "Missing") — a plain ungraded/not-yet-due row (blank
 // mark) carries no such badge, so this is a real status signal from
-// ProgressBook itself, not a guess inferred from the raw score.
+// ProgressBook itself, not a guess inferred from the raw score. The other
+// cells beyond date/name (category, points, score — exact columns vary)
+// are just joined together as a display string rather than parsed into
+// separate fields, since only date/name positions have been verified.
 //
 // Multiple students: after login, loops over each student in STUDENTS,
 // clicking their entry in the Dashboard's footer switcher (a client-side
@@ -124,10 +128,12 @@ async function listCourses(page, origin) {
     const rawGrade = nameIdx >= 0 ? cells[nameIdx + 1]?.trim() : null;
     const grade = rawGrade && rawGrade.toLowerCase() !== "n/a" ? rawGrade : null;
 
+    // Visit the detail page whenever the link exists at all, not just when
+    // its count is > 0 — we want the full assignment list (for the "make up
+    // the grade" view), not only courses with something flagged missing.
     const detailLink = row.getByRole("link", { name: /see all details/i });
-    const detailText = await detailLink.textContent().catch(() => "");
-    const detailCount = parseInt(detailText.match(/\((\d+)\)/)?.[1] ?? "0", 10);
-    const detailHref = detailCount > 0 ? await detailLink.getAttribute("href").catch(() => null) : null;
+    const hasDetail = await detailLink.count() > 0;
+    const detailHref = hasDetail ? await detailLink.getAttribute("href").catch(() => null) : null;
 
     courses.push({
       name,
@@ -168,12 +174,13 @@ async function attachTeacherEmails(page, origin, courses) {
   // app falls back to showing the email address itself as the link text.
 }
 
-// Pass 2: for a course with assignment detail to look at, visit its
-// Assignment/Class page and flag any row whose Info-column status badge
-// indicates it's missing (a real ProgressBook status signal — a tooltip/
-// title attribute on the badge — not inferred from the raw score, since an
-// ungraded-but-not-due row also shows a blank score with no such badge).
-async function extractMissingAssignments(page, detailUrl) {
+// Pass 2: for a course with an Assignment/Class detail page, read every
+// assignment row — not just missing ones — so the app can show what makes
+// up the grade. Each row's Info-column status badge flags missing items (a
+// real ProgressBook status signal — a tooltip/title attribute on the badge —
+// not inferred from the raw score, since an ungraded-but-not-due row also
+// shows a blank score with no such badge).
+async function extractAssignments(page, detailUrl) {
   await page.goto(detailUrl, { waitUntil: "networkidle" });
 
   const rows = page.locator("tr").filter({ has: page.locator("td") });
@@ -184,22 +191,22 @@ async function extractMissingAssignments(page, detailUrl) {
   // real run. Dedupe by name+date rather than try to scope to only the
   // visible grouping, since which one is visible could depend on state.
   const seen = new Set();
-  const missing = [];
+  const assignments = [];
   for (let i = 0; i < rowCount; i++) {
     const row = rows.nth(i);
     const isMissing = await row.getByTitle(/missing/i).count() > 0;
-    if (!isMissing) continue;
-    const cells = await row.locator("td").allTextContents().catch(() => []);
-    const [date, name] = cells;
-    if (!name?.trim()) continue;
-    const key = `${date?.trim()}|${name.trim()}`;
+    const cells = (await row.locator("td").allTextContents().catch(() => [])).map((c) => c.trim());
+    const [date, name, ...rest] = cells;
+    if (!name) continue;
+    const key = `${date}|${name}`;
     if (seen.has(key)) continue;
     seen.add(key);
-    missing.push({ name: name.trim(), dueDate: date?.trim() ?? null });
+    const score = rest.filter(Boolean).join(" · ") || null;
+    assignments.push({ name, dueDate: date || null, score, missing: isMissing });
   }
 
-  console.log(`  ${missing.length} missing of ${rowCount} row(s) at ${detailUrl}`);
-  return missing;
+  console.log(`  ${assignments.length} assignment row(s) (${assignments.filter((a) => a.missing).length} missing) at ${detailUrl}`);
+  return assignments;
 }
 
 // Runs the full listCourses -> missing-assignments -> teacher-emails
@@ -208,8 +215,8 @@ async function extractCoursesForCurrentStudent(page, origin) {
   const courses = await listCourses(page, origin);
 
   for (const course of courses) {
-    course.missingAssignments = course.detailUrl
-      ? await extractMissingAssignments(page, course.detailUrl).catch((err) => {
+    course.assignments = course.detailUrl
+      ? await extractAssignments(page, course.detailUrl).catch((err) => {
           console.error(`  Failed reading details for ${course.name}:`, err.message);
           return [];
         })

@@ -13,7 +13,10 @@ repo's encrypted GitHub Actions secrets.
 
 ## Features
 - Per-class current grade, updated automatically on a schedule
-- Missing assignments flagged per class
+- Tap a class to expand it and see every assignment that makes up the
+  grade, with missing ones flagged (⚠, red text) — collapsed by default,
+  with the card's left border (red/blue) showing at a glance whether
+  anything's missing
 - Tap a teacher's name to email them — opens your phone's default mail app
 - One tab per kid (currently Avery / Kaleb) — a tab for a student not yet
   linked to the ProgressBook account shows a placeholder instead of erroring
@@ -72,12 +75,14 @@ change it), logging into ProgressBook and committing an updated
    **Run workflow**) to confirm login works.
 3. After that it runs automatically on the schedule.
 
-**Status:** login, per-course grade extraction, and missing-assignment
-detection all work end-to-end, verified against the real ProgressBook site.
-Missing-assignment detection reads each course's "see all details (N)" link
-on the Grades page (skipping courses with N=0, nothing to look at) and, on
-the Assignment/Class detail page, flags any row whose Info-column status
-badge has a title/tooltip matching "missing" — a real ProgressBook status
+**Status:** login, per-course grade extraction, and full assignment-detail
+extraction all work end-to-end, verified against the real ProgressBook site.
+For every course with a "see all details" link on the Grades page, the
+scraper visits its Assignment/Class detail page and reads every assignment
+row (name, due date, and whatever else ProgressBook shows for that row —
+category/points/score, joined into one display string since exact columns
+weren't fully mapped). Each row's Info-column status badge is checked for a
+title/tooltip matching "missing" to flag it — a real ProgressBook status
 signal, not inferred from the raw score (an ungraded-but-not-yet-due row
 also has a blank score but no such badge). Teacher name and email are read
 from the Planner page (matched to each course by name) and shown as a

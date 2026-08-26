@@ -78,7 +78,7 @@ function CourseList({ courses }) {
   return html`
     <div>
       ${courses.map((course, i) => html`
-        <div key=${i} style=${{...styles.courseCard, borderLeftColor: course.missingAssignments?.length ? "#c05a5a" : "#3a5a68"}}>
+        <div key=${i} style=${{...styles.courseCard, borderLeftColor: course.assignments?.some((a) => a.missing) ? "#c05a5a" : "#3a5a68"}}>
           <div style=${styles.courseHead} onClick=${() => toggle(i)} role="button" tabIndex="0">
             <div>
               <div style=${styles.courseName}>${course.name}</div>
@@ -93,14 +93,14 @@ function CourseList({ courses }) {
           </div>
           ${expanded[i] && html`
             <div style=${styles.missingList}>
-              ${course.missingAssignments?.length > 0
-                ? course.missingAssignments.map((a, j) => html`
-                    <div key=${j} style=${styles.missingItem}>
-                      <span>${a.name}</span>
-                      ${a.dueDate && html`<span style=${styles.missingDue}>${a.dueDate}</span>`}
+              ${course.assignments?.length > 0
+                ? course.assignments.map((a, j) => html`
+                    <div key=${j} style=${{...styles.assignmentItem, color: a.missing ? "#e0a8a8" : "#e8dcc8"}}>
+                      <span>${a.missing ? "⚠ " : ""}${a.name}${a.score ? html` — ${a.score}` : ""}</span>
+                      ${a.dueDate && html`<span style=${styles.assignmentDue}>${a.dueDate}</span>`}
                     </div>
                   `)
-                : html`<div style=${styles.noDetails}>No missing assignments right now.</div>`}
+                : html`<div style=${styles.noDetails}>No assignment detail for this class.</div>`}
             </div>
           `}
         </div>
@@ -136,8 +136,8 @@ const styles = {
   courseGrade: { fontSize:"1.4rem", fontWeight:800, color:"#5ba3c0", lineHeight:1 },
   chevron: { color:"#7fa8b8", fontSize:14, transition:"transform 0.15s ease" },
   missingList: { marginTop:10, paddingTop:10, borderTop:"1px solid #2a2a20" },
-  missingItem: { display:"flex", justifyContent:"space-between", fontSize:12, color:"#e0a8a8", padding:"3px 0", gap:10 },
-  missingDue: { color:"#a37070", fontSize:11, whiteSpace:"nowrap" },
+  assignmentItem: { display:"flex", justifyContent:"space-between", fontSize:12, padding:"3px 0", gap:10 },
+  assignmentDue: { color:"#7fa8b8", fontSize:11, whiteSpace:"nowrap" },
   noDetails: { fontSize:12, color:"#7fa8b8" },
 };
 
