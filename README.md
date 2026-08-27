@@ -21,6 +21,9 @@ repo's encrypted GitHub Actions secrets.
   teacher" to open your phone's default mail app with a draft already
   addressed and listing what you checked — edit the To: field to send
   the same draft to your kid instead
+- "↻ Refresh" button (top of the page) triggers a fresh ProgressBook
+  scrape on demand and force-reloads the app itself — fixes both stale
+  grade data and a stuck old version of the app on your phone in one tap
 - One tab per kid (currently Avery / Kaleb) — a tab for a student not yet
   linked to the ProgressBook account shows a placeholder instead of erroring
 - Fully static — no server, no database
@@ -110,3 +113,18 @@ is skipped (logged, not fatal) rather than losing data for the other one.
 screen share, or any non-secret location, treat it as compromised and
 change it — don't reuse a password that's been exposed that way as the one
 stored in GitHub Secrets.
+
+## On-demand refresh button
+The "↻ Refresh" button in the app calls the GitHub API directly from the
+browser to trigger `scrape-progressbook.yml` on demand (`GH_TOKEN` near the
+top of `app.js`), then force-reloads the app itself once fresh data lands
+(or after a timeout).
+
+That token is a **fine-grained GitHub PAT scoped to only "Actions: read and
+write" on this one repo** — no code/contents access, no access to any other
+repo. It's embedded in this public JS file (view-source shows it to anyone
+with the app's URL) — the accepted risk is a stranger triggering extra
+scrape runs on this repo (wastes free Actions minutes, nothing more). To
+create/rotate it: GitHub Settings → Developer settings → Fine-grained
+tokens → generate one scoped to this repo only, Actions: Read and write,
+and drop the value into `GH_TOKEN` in `app.js`.

@@ -24,10 +24,83 @@ function isIOS() {
 // shows a "not linked yet" placeholder instead of erroring.
 const STUDENT_TABS = ["Avery", "Kaleb"];
 
+// Lets the Refresh button kick off a real scrape run from the phone instead
+// of waiting for the 3-hour schedule. This token is a fine-grained GitHub
+// PAT scoped to ONLY "Actions: read and write" on this one repo — nothing
+// else (no code/contents access, no other repos). It's embedded in this
+// public JS file and anyone who finds this app's URL can view-source and
+// see it; the accepted risk is a stranger triggering extra scrape runs on
+// this repo (wastes free Actions minutes, nothing more) — not a real-world
+// concern for an unlinked personal app, but rotate this token via GitHub
+// Settings -> Developer settings -> Fine-grained tokens if that ever seems
+// to be happening.
+const GH_OWNER = "larrywsage1970";
+const GH_REPO = "progress-checker";
+const GH_WORKFLOW = "scrape-progressbook.yml";
+const GH_TOKEN = "GITHUB_PAT_PLACEHOLDER";
+
+async function triggerRescrape() {
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${GH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+// Polls the already-committed data file (not the still-running scrape) for
+// its updatedAt to change, so the eventual reload picks up genuinely fresh
+// data instead of racing the workflow. Gives up after ~75s (scrape runs
+// have taken well under a minute so far) rather than polling forever.
+async function waitForFreshData(previousUpdatedAt) {
+  const deadline = Date.now() + 75000;
+  while (Date.now() < deadline) {
+    await new Promise((r) => setTimeout(r, 5000));
+    try {
+      const res = await fetch("./data/grades.json", { cache: "no-store" });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.updatedAt !== previousUpdatedAt) return true;
+      }
+    } catch {
+      // keep polling
+    }
+  }
+  return false;
+}
+
+// The stale-app-on-phone problem this fixes isn't the data (network-first
+// already handles that) — it's the app shell itself: iOS often resumes a
+// suspended home-screen PWA instead of truly reloading it, so an old
+// service worker/cached shell can keep running indefinitely. Unregistering
+// the worker and clearing Cache Storage forces the next load to fetch
+// everything from the network, no matter how stale what's currently running
+// is.
+async function hardRefresh() {
+  if ("serviceWorker" in navigator) {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    await Promise.all(regs.map((r) => r.unregister()));
+  }
+  if ("caches" in window) {
+    const keys = await caches.keys();
+    await Promise.all(keys.map((k) => caches.delete(k)));
+  }
+  location.reload();
+}
+
 function ProgressChecker() {
   const [state, setState] = useState({ loading: true, error: false, data: null });
   const [showInstall] = useState(!isStandalone() && isIOS());
   const [tab, setTab] = useState(STUDENT_TABS[0]);
+  const [refreshStatus, setRefreshStatus] = useState(null);
 
   useEffect(() => {
     fetch("./data/grades.json", { cache: "no-store" })
@@ -36,14 +109,28 @@ function ProgressChecker() {
       .catch(() => setState({ loading: false, error: true, data: null }));
   }, []);
 
+  const onRefresh = async () => {
+    setRefreshStatus("Requesting fresh data…");
+    const dispatched = await triggerRescrape();
+    setRefreshStatus(dispatched ? "Scraping ProgressBook — can take up to a minute…" : "Couldn't start a new scrape — reloading with the latest available data…");
+    const gotFresh = dispatched && await waitForFreshData(state.data?.updatedAt);
+    setRefreshStatus(gotFresh ? "Got fresh data — reloading…" : "Reloading…");
+    await hardRefresh();
+  };
+
   const student = state.data?.students?.find((s) => s.name.toLowerCase() === tab.toLowerCase());
 
   return html`
     <div style=${styles.root}>
       <div style=${styles.header}>
-        <div style=${styles.badge}>PROGRESS CHECKER</div>
+        <div style=${styles.headerTop}>
+          <div style=${styles.badge}>PROGRESS CHECKER</div>
+          <button style=${styles.refreshButton} onClick=${onRefresh} disabled=${!!refreshStatus}>${refreshStatus ? "…" : "↻ Refresh"}</button>
+        </div>
         <div style=${styles.h1}>GRADES</div>
-        ${state.data?.updatedAt && html`<div style=${styles.updated}>Updated ${new Date(state.data.updatedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}</div>`}
+        ${refreshStatus
+          ? html`<div style=${styles.updated}>${refreshStatus}</div>`
+          : state.data?.updatedAt && html`<div style=${styles.updated}>Updated ${new Date(state.data.updatedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}</div>`}
       </div>
 
       <div style=${styles.tabs}>
@@ -170,9 +257,11 @@ const styles = {
   root: { background:"#0f1109", minHeight:"100vh", color:"#e8dcc8", fontFamily:"system-ui, -apple-system, sans-serif", maxWidth: 480, margin:"0 auto" },
 
   header: { background:"linear-gradient(135deg,#1a2a30 0%,#1a1c18 100%)", borderBottom:"2px solid #3a5a68", padding:"20px 20px 16px" },
+  headerTop: { display:"flex", justifyContent:"space-between", alignItems:"center" },
   badge: { fontSize:10, letterSpacing:"0.2em", color:"#7fa8b8", textTransform:"uppercase", marginBottom:4 },
   h1: { fontSize:"2.4rem", fontWeight:800, letterSpacing:"0.06em", color:"#e8dcc8", lineHeight:1 },
   updated: { fontSize:10, color:"#7fa8b8", letterSpacing:"0.1em", marginTop:6 },
+  refreshButton: { background:"transparent", border:"1px solid #3a5a68", borderRadius:2, color:"#5ba3c0", fontSize:11, fontWeight:700, letterSpacing:"0.04em", padding:"6px 10px", cursor:"pointer" },
 
   tabs: { display:"flex", background:"#0a0c07", borderBottom:"1px solid #2a2a20" },
   tab: { flex:1, padding:"12px 4px", background:"transparent", border:"none", borderBottom:"2px solid transparent", color:"#8a8a8a", fontSize:12, letterSpacing:"0.1em", cursor:"pointer", fontWeight:600 },
