@@ -122,8 +122,10 @@ function CourseCard({ course, studentName, expanded, onToggle }) {
 
   const sendEmail = () => {
     const subject = `Question about ${studentName} - ${course.name}`;
+    const plural = chosen.length > 1;
+    const list = chosen.map((a) => `- ${a.name}${a.dueDate ? ` (due ${a.dueDate})` : ""}`).join("\n");
     const intro = chosen.length
-      ? `Hi,\n\nI have a question about the following for ${studentName} in ${course.name}:\n\n${chosen.map((a) => `- ${a.name}${a.dueDate ? ` (due ${a.dueDate})` : ""}`).join("\n")}\n\n`
+      ? `Hi,\n\nI've noticed that the following assignment${plural ? "s" : ""} for ${studentName} in ${course.name} ${plural ? "are" : "is"} showing as missing or late:\n\n${list}\n\nIs ${studentName} still able to turn ${plural ? "these" : "this"} in, or ${plural ? "have" : "has"} ${plural ? "they" : "it"} already been graded?\n\n`
       : `Hi,\n\nI have a question about ${studentName} in ${course.name}:\n\n`;
     window.location.href = `mailto:${course.teacherEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(intro)}`;
   };
