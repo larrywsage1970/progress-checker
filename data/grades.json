@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T00:22:18.504Z",
+  "updatedAt": "2026-08-27T09:17:13.967Z",
   "students": [
     {
       "name": "Avery",
@@ -53,23 +53,9 @@
           ]
         },
         {
-          "name": "LUNCH.",
-          "teacher": null,
-          "teacherEmail": "ST_office@smfcsd.org",
-          "grade": null,
-          "assignments": []
-        },
-        {
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": null,
-          "assignments": []
-        },
-        {
-          "name": "STUDY HALL",
-          "teacher": null,
-          "teacherEmail": "st_kruth@smfcsd.org",
           "grade": null,
           "assignments": []
         },
@@ -126,20 +112,6 @@
               "missing": false
             }
           ]
-        },
-        {
-          "name": "CREDIT RECOVERY",
-          "teacher": null,
-          "teacherEmail": "st_wdeshields@smfcsd.org",
-          "grade": null,
-          "assignments": []
-        },
-        {
-          "name": "CREDIT RECOVERY",
-          "teacher": null,
-          "teacherEmail": "st_wdeshields@smfcsd.org",
-          "grade": null,
-          "assignments": []
         },
         {
           "name": "ENGLISH 10",
@@ -225,13 +197,6 @@
               "missing": false
             }
           ]
-        },
-        {
-          "name": "LUNCH.",
-          "teacher": null,
-          "teacherEmail": "ST_office@smfcsd.org",
-          "grade": null,
-          "assignments": []
         },
         {
           "name": "PERSONAL WELLNESS",
