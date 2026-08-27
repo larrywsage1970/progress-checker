@@ -103,6 +103,10 @@ async function selectStudent(page, origin, switcherLabel) {
   ]);
 }
 
+// Periods that are never graded (lunch, study hall, credit recovery) — no
+// point showing an always-empty card for these.
+const EXCLUDED_COURSES = /^(lunch\.?|study hall|credit recovery)$/i;
+
 // Pass 1: read every course's name, grade, and "see all details" link/count
 // off the Grades page's collapsed summary table — no clicking, no
 // navigation, so nothing here risks following a link off the page.
@@ -117,6 +121,10 @@ async function listCourses(page, origin) {
     const link = courseLinks.nth(i);
     const fullName = (await link.textContent()).trim();
     const name = fullName.split(" - Section:")[0].trim();
+
+    // These periods never carry a grade (lunch, a study hall, credit
+    // recovery) — skip them rather than show an always-empty card.
+    if (EXCLUDED_COURSES.test(name)) continue;
 
     // Find the cell containing the course name and take the next one as the
     // grade, rather than a hardcoded column index — the row has a leading
