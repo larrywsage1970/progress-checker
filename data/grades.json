@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T09:17:13.967Z",
+  "updatedAt": "2026-08-27T13:23:46.545Z",
   "students": [
     {
       "name": "Avery",
@@ -119,6 +119,12 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "66.67 - D",
           "assignments": [
+            {
+              "name": "\"Super Human\": Rewrite the Ending",
+              "dueDate": "Aug 28",
+              "score": "FOR · /20",
+              "missing": false
+            },
             {
               "name": "Signed Syllabus",
               "dueDate": "Aug 25",
