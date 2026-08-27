@@ -86,6 +86,10 @@ function sortByDueDateAsc(assignments) {
   });
 }
 
+function assignmentKey(a) {
+  return `${a.name}|${a.dueDate ?? ""}`;
+}
+
 function CourseList({ courses, studentName }) {
   const [expanded, setExpanded] = useState({});
   const toggle = (i) => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
@@ -97,34 +101,65 @@ function CourseList({ courses, studentName }) {
   return html`
     <div>
       ${courses.map((course, i) => html`
-        <div key=${i} style=${{...styles.courseCard, borderLeftColor: course.assignments?.some((a) => a.missing) ? "#c05a5a" : "#3a5a68"}}>
-          <div style=${styles.courseHead} onClick=${() => toggle(i)} role="button" tabIndex="0">
-            <div>
-              <div style=${styles.courseName}>${course.name}</div>
-              ${course.teacherEmail
-                ? html`<a href=${`mailto:${course.teacherEmail}?subject=${encodeURIComponent(`Question about ${studentName} - ${course.name}`)}`} style=${styles.courseTeacherLink} onClick=${(e) => e.stopPropagation()}>${course.teacher || course.teacherEmail}</a>`
-                : course.teacher && html`<div style=${styles.courseTeacher}>${course.teacher}</div>`}
-            </div>
-            <div style=${styles.courseHeadRight}>
-              ${course.grade && html`<div style=${styles.courseGrade}>${course.grade}</div>`}
-              <div style=${{...styles.chevron, transform: expanded[i] ? "rotate(180deg)" : "rotate(0deg)"}}>▾</div>
-            </div>
-          </div>
-          ${expanded[i] && html`
-            <div style=${styles.missingList}>
-              ${course.assignments?.length > 0
-                ? sortByDueDateAsc(course.assignments).map((a, j) => html`
-                    <div key=${j} style=${{...styles.assignmentItem, color: a.missing ? "#e0a8a8" : "#e8dcc8"}}>
-                      <span>${a.missing ? "⚠ " : ""}${a.name}${a.score ? html` — ${a.score}` : ""}</span>
-                      ${a.dueDate && html`<span style=${styles.assignmentDue}>${a.dueDate}</span>`}
-                    </div>
-                  `)
-                : html`<div style=${styles.noDetails}>No assignment detail for this class.</div>`}
-            </div>
-          `}
-        </div>
+        <${CourseCard} key=${i} course=${course} studentName=${studentName} expanded=${!!expanded[i]} onToggle=${() => toggle(i)} />
       `)}
       <div style=${{height: 40}} />
+    </div>
+  `;
+}
+
+// Owns its own checkbox selection so picking assignments in one card never
+// touches another's state. Selection drives the "Email teacher" draft:
+// checked assignments get listed in the body, or a generic question if none
+// are checked. The To: field stays whatever mailto opens with — editable in
+// the mail app, e.g. to send the same draft to a kid instead.
+function CourseCard({ course, studentName, expanded, onToggle }) {
+  const [selected, setSelected] = useState({});
+  const toggleSelect = (key) => setSelected((prev) => ({ ...prev, [key]: !prev[key] }));
+
+  const sorted = sortByDueDateAsc(course.assignments);
+  const chosen = sorted.filter((a) => selected[assignmentKey(a)]);
+
+  const sendEmail = () => {
+    const subject = `Question about ${studentName} - ${course.name}`;
+    const intro = chosen.length
+      ? `Hi,\n\nI have a question about the following for ${studentName} in ${course.name}:\n\n${chosen.map((a) => `- ${a.name}${a.dueDate ? ` (due ${a.dueDate})` : ""}`).join("\n")}\n\n`
+      : `Hi,\n\nI have a question about ${studentName} in ${course.name}:\n\n`;
+    window.location.href = `mailto:${course.teacherEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(intro)}`;
+  };
+
+  return html`
+    <div style=${{...styles.courseCard, borderLeftColor: course.assignments?.some((a) => a.missing) ? "#c05a5a" : "#3a5a68"}}>
+      <div style=${styles.courseHead} onClick=${onToggle} role="button" tabIndex="0">
+        <div>
+          <div style=${styles.courseName}>${course.name}</div>
+          ${(course.teacher || course.teacherEmail) && html`<div style=${styles.courseTeacher}>${course.teacher || course.teacherEmail}</div>`}
+        </div>
+        <div style=${styles.courseHeadRight}>
+          ${course.grade && html`<div style=${styles.courseGrade}>${course.grade}</div>`}
+          <div style=${{...styles.chevron, transform: expanded ? "rotate(180deg)" : "rotate(0deg)"}}>▾</div>
+        </div>
+      </div>
+      ${expanded && html`
+        <div style=${styles.missingList}>
+          ${sorted.length > 0
+            ? sorted.map((a) => html`
+                <label key=${assignmentKey(a)} style=${{...styles.assignmentItem, color: a.missing ? "#e0a8a8" : "#e8dcc8"}} onClick=${(e) => e.stopPropagation()}>
+                  <span style=${styles.assignmentMain}>
+                    <input type="checkbox" checked=${!!selected[assignmentKey(a)]} onChange=${() => toggleSelect(assignmentKey(a))} style=${styles.checkbox} />
+                    <span>${a.missing ? "⚠ " : ""}${a.name}${a.score ? html` — ${a.score}` : ""}</span>
+                  </span>
+                  ${a.dueDate && html`<span style=${styles.assignmentDue}>${a.dueDate}</span>`}
+                </label>
+              `)
+            : html`<div style=${styles.noDetails}>No assignment detail for this class.</div>`}
+          ${course.teacherEmail && html`
+            <button style=${styles.emailButton} onClick=${(e) => { e.stopPropagation(); sendEmail(); }}>
+              ${chosen.length ? `Email teacher about ${chosen.length} assignment${chosen.length > 1 ? "s" : ""}` : "Email teacher"}
+            </button>
+          `}
+        </div>
+      `}
     </div>
   `;
 }
@@ -151,13 +186,15 @@ const styles = {
   courseHeadRight: { display:"flex", alignItems:"center", gap:8 },
   courseName: { fontSize:15, fontWeight:700, color:"#e8dcc8" },
   courseTeacher: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2 },
-  courseTeacherLink: { fontSize:11, color:"#7fa8b8", letterSpacing:"0.06em", marginTop:2, display:"inline-block", textDecoration:"underline" },
   courseGrade: { fontSize:"1.4rem", fontWeight:800, color:"#5ba3c0", lineHeight:1 },
   chevron: { color:"#7fa8b8", fontSize:14, transition:"transform 0.15s ease" },
   missingList: { marginTop:10, paddingTop:10, borderTop:"1px solid #2a2a20" },
-  assignmentItem: { display:"flex", justifyContent:"space-between", fontSize:12, padding:"3px 0", gap:10 },
+  assignmentItem: { display:"flex", justifyContent:"space-between", alignItems:"center", fontSize:12, padding:"5px 0", gap:10, cursor:"pointer" },
+  assignmentMain: { display:"flex", alignItems:"center", gap:8 },
+  checkbox: { accentColor:"#5ba3c0", width:16, height:16, flexShrink:0 },
   assignmentDue: { color:"#7fa8b8", fontSize:11, whiteSpace:"nowrap" },
   noDetails: { fontSize:12, color:"#7fa8b8" },
+  emailButton: { marginTop:10, width:"100%", padding:"10px 12px", background:"#1a2a30", border:"1px solid #3a5a68", borderRadius:2, color:"#5ba3c0", fontSize:12, fontWeight:700, letterSpacing:"0.04em", cursor:"pointer" },
 };
 
 render(html`<${ProgressChecker} />`, document.getElementById("root"));

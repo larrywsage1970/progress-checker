@@ -17,7 +17,10 @@ repo's encrypted GitHub Actions secrets.
   grade, with missing ones flagged (⚠, red text) — collapsed by default,
   with the card's left border (red/blue) showing at a glance whether
   anything's missing
-- Tap a teacher's name to email them — opens your phone's default mail app
+- Check specific assignments in an expanded class, then tap "Email
+  teacher" to open your phone's default mail app with a draft already
+  addressed and listing what you checked — edit the To: field to send
+  the same draft to your kid instead
 - One tab per kid (currently Avery / Kaleb) — a tab for a student not yet
   linked to the ProgressBook account shows a placeholder instead of erroring
 - Fully static — no server, no database
