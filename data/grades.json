@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T13:23:46.545Z",
+  "updatedAt": "2026-08-28T00:10:45.689Z",
   "students": [
     {
       "name": "Avery",
@@ -126,7 +126,7 @@
               "missing": false
             },
             {
-              "name": "Signed Syllabus",
+              "name": "Signed Syllabus Please get this signed and returned as soon as possible!",
               "dueDate": "Aug 25",
               "score": "Par · 0/5 (0%) · M Missing",
               "missing": true
@@ -182,19 +182,19 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "116.67 - A",
+          "grade": "59.26 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
-              "score": "2/0",
+              "score": "4/0",
               "missing": false
             },
             {
               "name": "Student/Parent/Teacher Agreement (Contract) *",
               "dueDate": "Aug 27",
-              "score": "/15",
-              "missing": false
+              "score": "0/15 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "der Namensschild (Name card)",
