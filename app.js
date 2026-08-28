@@ -37,7 +37,7 @@ const STUDENT_TABS = ["Avery", "Kaleb"];
 const GH_OWNER = "larrywsage1970";
 const GH_REPO = "progress-checker";
 const GH_WORKFLOW = "scrape-progressbook.yml";
-const GH_TOKEN = "GITHUB_PAT_PLACEHOLDER";
+const GH_TOKEN = "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";
 
 async function triggerRescrape() {
   try {
