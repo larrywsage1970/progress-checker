@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "scrape:progressbook": "node scripts/scrape-progressbook.mjs"
+    "scrape:progressbook": "node scripts/scrape-progressbook.mjs",
+    "scrape:classroom": "node scripts/scrape-classroom.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"

@@ -41,10 +41,23 @@ jobs:
           path: debug/
           retention-days: 7
 
-      - name: Commit updated grades.json
+      # Separate API-based sync (no browser needed) -- see
+      # scripts/scrape-classroom.mjs. Uses `continue-on-error` so a Classroom
+      # hiccup (e.g. an expired refresh token) never blocks the ProgressBook
+      # commit below; missing CLASSROOM_* secrets just make it a no-op.
+      - name: Run Classroom sync
+        continue-on-error: true
+        env:
+          CLASSROOM_CLIENT_ID: ${{ secrets.CLASSROOM_CLIENT_ID }}
+          CLASSROOM_CLIENT_SECRET: ${{ secrets.CLASSROOM_CLIENT_SECRET }}
+          CLASSROOM_REFRESH_TOKEN_AVERY: ${{ secrets.CLASSROOM_REFRESH_TOKEN_AVERY }}
+          CLASSROOM_REFRESH_TOKEN_KALEB: ${{ secrets.CLASSROOM_REFRESH_TOKEN_KALEB }}
+        run: npm run scrape:classroom
+
+      - name: Commit updated data
         run: |
           git config user.name "progressbook-scraper"
           git config user.email "actions@users.noreply.github.com"
-          git add data/grades.json
-          git diff --cached --quiet || git commit -m "Update grades.json"
+          git add data/grades.json data/classroom.json
+          git diff --cached --quiet || git commit -m "Update grades.json / classroom.json"
           git push
