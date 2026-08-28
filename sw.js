@@ -4,11 +4,11 @@
 // indefinitely. CDN modules (esm.sh) rarely change once pinned, so those stay
 // cache-first / opportunistically cached for offline use.
 // Keep in sync with the ?v= query on app.js in index.html.
-const CACHE = "progress-checker-v9";
+const CACHE = "progress-checker-v10";
 const SHELL = [
   "./",
   "./index.html",
-  "./app.js?v=9",
+  "./app.js?v=10",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",

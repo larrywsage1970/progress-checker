@@ -98,7 +98,6 @@ async function hardRefresh() {
 
 function ProgressChecker() {
   const [state, setState] = useState({ loading: true, error: false, data: null });
-  const [classroomData, setClassroomData] = useState(null);
   const [showInstall] = useState(!isStandalone() && isIOS());
   const [tab, setTab] = useState(STUDENT_TABS[0]);
   const [refreshStatus, setRefreshStatus] = useState(null);
@@ -108,14 +107,6 @@ function ProgressChecker() {
       .then((res) => { if (!res.ok) throw new Error("fetch failed"); return res.json(); })
       .then((data) => setState({ loading: false, error: false, data }))
       .catch(() => setState({ loading: false, error: true, data: null }));
-
-    // Classroom sync is optional (may not be set up yet, or may fail
-    // independently of ProgressBook) — a missing/empty file just means the
-    // section below doesn't render, never an error state of its own.
-    fetch("./data/classroom.json", { cache: "no-store" })
-      .then((res) => (res.ok ? res.json() : null))
-      .then(setClassroomData)
-      .catch(() => setClassroomData(null));
   }, []);
 
   const onRefresh = async () => {
@@ -128,7 +119,6 @@ function ProgressChecker() {
   };
 
   const student = state.data?.students?.find((s) => s.name.toLowerCase() === tab.toLowerCase());
-  const classroomStudent = classroomData?.students?.find((s) => s.name.toLowerCase() === tab.toLowerCase());
 
   return html`
     <div style=${styles.root}>
@@ -159,11 +149,6 @@ function ProgressChecker() {
         ${state.error && html`<div style=${styles.empty}>Couldn't load grades data.<br />Check that the ProgressBook scraper has run.</div>`}
         ${!state.loading && !state.error && student && html`<${CourseList} courses=${student.courses} studentName=${tab} />`}
         ${!state.loading && !state.error && !student && html`<div style=${styles.empty}>${tab} isn't linked to the ProgressBook account yet.<br />Once linked, ${tab}'s grades will show up here automatically.</div>`}
-
-        ${classroomStudent?.courses?.length > 0 && html`
-          <div style=${styles.sectionHeading}>GOOGLE CLASSROOM</div>
-          <${CourseList} courses=${classroomStudent.courses} studentName=${tab} />
-        `}
       </div>
     </div>
   `;
@@ -285,7 +270,6 @@ const styles = {
   content: { padding:"16px 16px 0" },
 
   infoBox: { background:"#131510", border:"1px solid #2a2a20", borderRadius:2, padding:"12px 14px", marginBottom:14, fontSize:12, color:"#a3ab98", lineHeight:1.6 },
-  sectionHeading: { fontSize:11, letterSpacing:"0.15em", color:"#7fa8b8", textTransform:"uppercase", fontWeight:700, margin:"22px 0 10px", paddingTop:16, borderTop:"1px solid #2a2a20" },
   empty: { textAlign:"center", padding:"60px 20px", color:"#8a8a8a", fontSize:13, lineHeight:2 },
 
   courseCard: { background:"#161810", border:"1px solid #2a2a20", borderLeft:"4px solid #3a5a68", borderRadius:2, marginBottom:10, padding:"12px 14px" },

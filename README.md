@@ -11,6 +11,9 @@ ever displays what that scraper last wrote — it never logs in on your
 device, and your ProgressBook password is never stored anywhere except the
 repo's encrypted GitHub Actions secrets.
 
+Grades only — see "Google Classroom (not pursued)" below for why homework
+posted only in Google Classroom isn't covered.
+
 ## Features
 - Per-class current grade, updated automatically on a schedule
 - Tap a class to expand it and see every assignment that makes up the
@@ -129,58 +132,17 @@ create/rotate it: GitHub Settings → Developer settings → Fine-grained
 tokens → generate one scoped to this repo only, Actions: Read and write,
 and drop the value into `GH_TOKEN` in `app.js`.
 
-## Google Classroom sync
+## Google Classroom (not pursued)
 Some teachers post assignments in Google Classroom instead of (or in
-addition to) ProgressBook. `scripts/scrape-classroom.mjs` reads each kid's
-Classroom assignments via Google's official Classroom API and writes
-`data/classroom.json` — a **separate** file/section from ProgressBook,
-shown in the app under its own "GOOGLE CLASSROOM" heading rather than
-merged into the ProgressBook course cards, since a Classroom course's name
-won't reliably match its ProgressBook gradebook name.
-
-This uses the real API, not scraping: Google actively blocks scripted
-logins (CAPTCHA, "this browser may not be secure"), so a Playwright login
-like ProgressBook's isn't viable here. Instead it's OAuth — a one-time
-consent flow per kid gets a refresh token that the scheduled workflow uses
-from then on.
-
-**One-time setup:**
-1. **Create a Google Cloud OAuth client** (free, no billing needed):
-   - Go to [console.cloud.google.com](https://console.cloud.google.com/),
-     create a new project (any name, e.g. "progress-checker").
-   - **APIs & Services → Library** → enable **Google Classroom API**.
-   - **APIs & Services → OAuth consent screen** → User Type: **External**.
-     Fill in an app name/support email, skip scopes on that screen. Leave
-     **Publishing status: Testing** — this avoids Google's app-review
-     process entirely (fine for personal use with 2 known users) but means
-     only accounts added as test users below can sign in.
-   - Same consent screen page → **Test users** → add both kids' school
-     Google account emails.
-   - **APIs & Services → Credentials** → **Create Credentials → OAuth
-     client ID** → Application type: **Desktop app** → name it anything.
-     Note the **Client ID** and **Client Secret** it generates.
-2. **Get a refresh token per kid** (run locally on your own computer, never
-   in CI — this needs an interactive browser sign-in):
-   ```
-   node scripts/get-classroom-token.mjs "<client_id>" "<client_secret>"
-   ```
-   It prints a Google sign-in URL — open it and **sign in as that kid**
-   (not your own account), approve the read-only Classroom scopes, and the
-   script prints a refresh token in the terminal. Run it again for the
-   other kid (same client ID/secret, different sign-in).
-3. In the repo's GitHub settings → **Secrets and variables → Actions**, add:
-   - `CLASSROOM_CLIENT_ID`, `CLASSROOM_CLIENT_SECRET` — from step 1
-   - `CLASSROOM_REFRESH_TOKEN_AVERY`, `CLASSROOM_REFRESH_TOKEN_KALEB` —
-     from step 2. A kid with no refresh token secret set is just skipped
-     (logged, not fatal) — the rest of the app keeps working.
-4. Run the workflow once manually (Actions tab → **Scrape ProgressBook** →
-   **Run workflow**) to confirm it picks up Classroom data — check the
-   "Run Classroom sync" step's log.
-
-**Status:** built but untested against real Classroom data at the time of
-writing (no refresh tokens exist yet). `missing` is inferred as "due date
-has passed and not yet turned in" OR the API's own `late` flag on a
-submission — worth double-checking against a real overdue assignment once
-this runs for real. A refresh token can be invalidated by Google (password
-change, revoked access, 6 months fully unused) — if a kid's sync starts
-failing with an auth error, just re-run step 2 for them.
+addition to) ProgressBook. A Classroom API integration was built and then
+removed: the district's Google Workspace admin has third-party app access
+locked down for student accounts (`access_not_configured` on sign-in), so
+getting a refresh token for either kid isn't possible without the school's
+IT department allow-listing the app — not something to pursue without
+their explicit OK, given it's a security control they put on student
+accounts on purpose. Scraping Classroom directly (like ProgressBook) was
+considered and rejected too: Google actively blocks scripted/headless
+logins, and routing around a school's access control with scraped
+credentials is a meaningfully different (and worse) thing to do than
+asking through the sanctioned channel. If the district ever approves
+third-party access for this app, this is worth revisiting.
