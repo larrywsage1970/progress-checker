@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T14:58:22.241Z",
+  "updatedAt": "2026-08-28T23:47:42.806Z",
   "students": [
     {
       "name": "Avery",
@@ -24,9 +24,33 @@
               "missing": false
             },
             {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 27",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 26",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
               "name": "Percentage Content Check",
               "dueDate": "Aug 26",
               "score": "10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 25",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 24",
+              "score": "2/2 (100%)",
               "missing": false
             }
           ]
@@ -124,7 +148,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "85.71 - B",
+          "grade": "90.91 - A",
           "assignments": [
             {
               "name": "Choice Poem One-Pager",
@@ -141,7 +165,7 @@
             {
               "name": "\"Super Human\": Rewrite the Ending",
               "dueDate": "Aug 28",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
