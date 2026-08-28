@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T00:10:45.689Z",
+  "updatedAt": "2026-08-28T14:44:49.060Z",
   "students": [
     {
       "name": "Avery",
@@ -35,8 +35,15 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": null,
-          "assignments": []
+          "grade": "95.00 - A",
+          "assignments": [
+            {
+              "name": "Fingerspelling Quiz 1.1",
+              "dueDate": "Aug 28",
+              "score": "QZ · 19/20 (95%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "ENGLISH 9 ENRICHED",
@@ -117,8 +124,20 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "66.67 - D",
+          "grade": "85.71 - B",
           "assignments": [
+            {
+              "name": "Choice Poem One-Pager",
+              "dueDate": "Sep 4",
+              "score": "Sum · /20",
+              "missing": false
+            },
+            {
+              "name": "\"Super Human\" Quiz",
+              "dueDate": "Aug 31",
+              "score": "Sum · /30",
+              "missing": false
+            },
             {
               "name": "\"Super Human\": Rewrite the Ending",
               "dueDate": "Aug 28",
@@ -134,7 +153,7 @@
             {
               "name": "Pixar Shorts",
               "dueDate": "Aug 25",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
@@ -156,8 +175,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "100.00 - A",
+          "grade": "97.50 - A",
           "assignments": [
+            {
+              "name": "HWQ1.4",
+              "dueDate": "Aug 28",
+              "score": "FORM · 90/100 (90%)",
+              "missing": false
+            },
             {
               "name": "HWQ1.3",
               "dueDate": "Aug 26",
