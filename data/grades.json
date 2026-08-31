@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T23:47:42.806Z",
+  "updatedAt": "2026-08-31T02:30:38.931Z",
   "students": [
     {
       "name": "Avery",
@@ -87,8 +87,27 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": null,
-          "assignments": []
+          "grade": "50.00 - F",
+          "assignments": [
+            {
+              "name": "growth mindset and the brain",
+              "dueDate": "Aug 28",
+              "score": "F · 0/20 (0%) · L M Late Missing",
+              "missing": true
+            },
+            {
+              "name": "would you rather essay",
+              "dueDate": "Aug 26",
+              "score": "F · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "elements of me",
+              "dueDate": "Aug 20",
+              "score": "F · 10/10 (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "WORLD HISTORY",
