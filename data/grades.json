@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T09:06:37.987Z",
+  "updatedAt": "2026-08-31T18:29:52.894Z",
   "students": [
     {
       "name": "Avery",
@@ -21,6 +21,12 @@
               "name": "DAILY GRADE",
               "dueDate": "Oct 16",
               "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 28",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -61,6 +67,12 @@
           "teacherEmail": "st_sparker@smfcsd.org",
           "grade": "95.00 - A",
           "assignments": [
+            {
+              "name": "Weekly Starter 8/31 - 9/4",
+              "dueDate": "Sep 4",
+              "score": "CW · /25",
+              "missing": false
+            },
             {
               "name": "Fingerspelling Quiz 1.1",
               "dueDate": "Aug 28",
@@ -113,8 +125,21 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": null,
-          "assignments": []
+          "grade": "100.00 - A",
+          "assignments": [
+            {
+              "name": "The Protestant Reformation Questions 1.3",
+              "dueDate": "Aug 28",
+              "score": "F · 4/4 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Gallery: Shakespeare - \"For All Time\"",
+              "dueDate": "Aug 27",
+              "score": "H · 3/3 (100%)",
+              "missing": false
+            }
+          ]
         }
       ]
     },
@@ -167,18 +192,18 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "90.91 - A",
+          "grade": "90.67 - A",
           "assignments": [
             {
-              "name": "Choice Poem One-Pager",
-              "dueDate": "Sep 4",
-              "score": "Sum · /20",
+              "name": "Miniver Cheevy Poem Questions",
+              "dueDate": "Sep 3",
+              "score": "FOR · /20",
               "missing": false
             },
             {
               "name": "\"Super Human\" Quiz",
               "dueDate": "Aug 31",
-              "score": "Sum · /30",
+              "score": "Sum · 18/20 (90%)",
               "missing": false
             },
             {
@@ -218,8 +243,20 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "97.50 - A",
+          "grade": "98.00 - A",
           "assignments": [
+            {
+              "name": "HWQ1.6",
+              "dueDate": "Sep 1",
+              "score": "FORM · /100",
+              "missing": false
+            },
+            {
+              "name": "HWQ1.5",
+              "dueDate": "Aug 31",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "HWQ1.4",
               "dueDate": "Aug 28",
