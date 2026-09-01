@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T13:49:58.401Z",
+  "updatedAt": "2026-09-01T18:04:48.289Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,27 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": null,
-          "assignments": []
+          "grade": "100.00 - A",
+          "assignments": [
+            {
+              "name": "???? Alg DeltaMath - Weeks 1-2 - Data Measure",
+              "dueDate": "Aug 28",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "???? Alg DeltaMath - Weeks 1-2 - Tables, Plots,...",
+              "dueDate": "Aug 28",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "???? Alg DeltaMath - Weeks 1-2 - Probability",
+              "dueDate": "Aug 28",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            }
+          ]
         },
         {
           "name": "ALGEBRA 1 WIN",
@@ -260,7 +279,7 @@
             {
               "name": "HWQ1.6",
               "dueDate": "Sep 1",
-              "score": "FORM · /100",
+              "score": "FORM · /100 · E Excluded",
               "missing": false
             },
             {
@@ -299,7 +318,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "59.26 - F",
+          "grade": "77.25 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -308,10 +327,28 @@
               "missing": false
             },
             {
+              "name": "Edpuzzle - Introduce yourself in German (for ab...",
+              "dueDate": "Aug 31",
+              "score": "11.4/12 (95%)",
+              "missing": false
+            },
+            {
               "name": "Student/Parent/Teacher Agreement (Contract) *",
               "dueDate": "Aug 27",
               "score": "0/15 (0%) · M Missing",
               "missing": true
+            },
+            {
+              "name": "Text 2: Why we do not let online translators (o...",
+              "dueDate": "Aug 27",
+              "score": "6/6 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Text 1: Plagiarism in the world language classroom",
+              "dueDate": "Aug 27",
+              "score": "6/6 (100%)",
+              "missing": false
             },
             {
               "name": "der Namensschild (Name card)",
@@ -325,8 +362,15 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": null,
-          "assignments": []
+          "grade": "100.00 - A",
+          "assignments": [
+            {
+              "name": "It's a Puzzle",
+              "dueDate": "Aug 20",
+              "score": "CL · 10/10 (100%)",
+              "missing": false
+            }
+          ]
         }
       ]
     }
