@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T08:09:03.984Z",
+  "updatedAt": "2026-09-01T13:49:58.401Z",
   "students": [
     {
       "name": "Avery",
@@ -21,6 +21,18 @@
               "name": "DAILY GRADE",
               "dueDate": "Oct 16",
               "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "Operations with Fractions Google Form",
+              "dueDate": "Sep 1",
+              "score": "/10",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Aug 31",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
