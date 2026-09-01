@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T18:04:48.289Z",
+  "updatedAt": "2026-09-01T22:55:47.574Z",
   "students": [
     {
       "name": "Avery",
@@ -130,13 +130,19 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "50.00 - F",
+          "grade": "74.00 - C",
           "assignments": [
             {
               "name": "growth mindset and the brain",
               "dueDate": "Aug 28",
               "score": "F · 0/20 (0%) · L M Late Missing",
               "missing": true
+            },
+            {
+              "name": "0.1-0.2 quiz",
+              "dueDate": "Aug 28",
+              "score": "S · 18/20 (90%)",
+              "missing": false
             },
             {
               "name": "would you rather essay",
@@ -318,7 +324,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "77.25 - C",
+          "grade": "85.77 - B",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -330,6 +336,12 @@
               "name": "Edpuzzle - Introduce yourself in German (for ab...",
               "dueDate": "Aug 31",
               "score": "11.4/12 (95%)",
+              "missing": false
+            },
+            {
+              "name": "Blooket: Anweisungen HW (Classroom Commands)",
+              "dueDate": "Aug 30",
+              "score": "21.5/20 (107.5%)",
               "missing": false
             },
             {
@@ -364,6 +376,12 @@
           "teacherEmail": null,
           "grade": "100.00 - A",
           "assignments": [
+            {
+              "name": "Wellness Wheel/Self Assessment",
+              "dueDate": "Aug 25",
+              "score": "CL · 18/18 (100%)",
+              "missing": false
+            },
             {
               "name": "It's a Puzzle",
               "dueDate": "Aug 20",
