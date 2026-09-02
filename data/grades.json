@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T13:07:03.092Z",
+  "updatedAt": "2026-09-02T18:16:08.301Z",
   "students": [
     {
       "name": "Avery",
@@ -34,18 +34,12 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "100.00 - A",
+          "grade": "90.63 - A",
           "assignments": [
-            {
-              "name": "DAILY GRADE",
-              "dueDate": "Oct 16",
-              "score": "/2",
-              "missing": false
-            },
             {
               "name": "Operations with Fractions Google Form",
               "dueDate": "Sep 1",
-              "score": "/10",
+              "score": "7/10 (70%)",
               "missing": false
             },
             {
@@ -324,13 +318,19 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "85.77 - B",
+          "grade": "66.92 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "4/0",
               "missing": false
+            },
+            {
+              "name": "Deutschland Kultur Coloring Handout I have two with no name.",
+              "dueDate": "Sep 1",
+              "score": "0/20 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Edpuzzle - Introduce yourself in German (for ab...",
