@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T13:08:45.486Z",
+  "updatedAt": "2026-09-03T20:27:26.175Z",
   "students": [
     {
       "name": "Avery",
@@ -34,8 +34,20 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.63 - A",
+          "grade": "91.67 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 2",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 1",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "Operations with Fractions Google Form",
               "dueDate": "Sep 1",
@@ -232,7 +244,19 @@
           "grade": "90.67 - A",
           "assignments": [
             {
+              "name": "\"How Do You See You Self(ie)\"",
+              "dueDate": "Sep 4",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
               "name": "Miniver Cheevy Poem Questions",
+              "dueDate": "Sep 3",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"Mirror\" Questions",
               "dueDate": "Sep 3",
               "score": "FOR · /20",
               "missing": false
@@ -280,8 +304,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "98.00 - A",
+          "grade": "90.22 - A",
           "assignments": [
+            {
+              "name": "TEST CH. 1",
+              "dueDate": "Sep 3",
+              "score": "SUMM · 84/100 (84%)",
+              "missing": false
+            },
             {
               "name": "HWQ1.6",
               "dueDate": "Sep 1",
@@ -324,12 +354,24 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "66.92 - D",
+          "grade": "71.60 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "4/0",
+              "missing": false
+            },
+            {
+              "name": "Edpuzzle - Erster Schultag & Schultüte / German...",
+              "dueDate": "Sep 3",
+              "score": "/10",
+              "missing": false
+            },
+            {
+              "name": "die Schultüte (school cone) - deutsche Tradition",
+              "dueDate": "Sep 3",
+              "score": "15/15 (100%)",
               "missing": false
             },
             {
@@ -382,6 +424,12 @@
           "teacherEmail": null,
           "grade": "100.00 - A",
           "assignments": [
+            {
+              "name": "Types of Exercise (cpactivity)",
+              "dueDate": "Aug 27",
+              "score": "CL · 15/15 (100%)",
+              "missing": false
+            },
             {
               "name": "Wellness Wheel/Self Assessment",
               "dueDate": "Aug 25",
