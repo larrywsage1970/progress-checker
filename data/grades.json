@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T13:02:55.748Z",
+  "updatedAt": "2026-09-04T17:55:42.427Z",
   "students": [
     {
       "name": "Avery",
@@ -34,7 +34,7 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.67 - A",
+          "grade": "92.50 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
@@ -102,12 +102,12 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "95.00 - A",
+          "grade": "97.78 - A",
           "assignments": [
             {
               "name": "Weekly Starter 8/31 - 9/4",
               "dueDate": "Sep 4",
-              "score": "CW · /25",
+              "score": "CW · 25/25 (100%)",
               "missing": false
             },
             {
@@ -230,6 +230,18 @@
           "grade": "100.00 - A",
           "assignments": [
             {
+              "name": "2.2 checkpoint",
+              "dueDate": "Sep 8",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
+              "name": "I am a scientist writing assignment",
+              "dueDate": "Aug 26",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
               "name": "growth mindset and the brain",
               "dueDate": "Aug 25",
               "score": "F · 1/1 (100%)",
@@ -241,7 +253,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "90.67 - A",
+          "grade": "91.58 - A",
           "assignments": [
             {
               "name": "\"How Do You See You Self(ie)\"",
@@ -252,19 +264,13 @@
             {
               "name": "Miniver Cheevy Poem Questions",
               "dueDate": "Sep 3",
-              "score": "FOR · /20",
-              "missing": false
-            },
-            {
-              "name": "\"Mirror\" Questions",
-              "dueDate": "Sep 3",
-              "score": "FOR · /20",
+              "score": "FOR · 19/20 (95%)",
               "missing": false
             },
             {
               "name": "\"Super Human\" Quiz",
               "dueDate": "Aug 31",
-              "score": "Sum · 18/20 (90%)",
+              "score": "SUM · 18/20 (90%)",
               "missing": false
             },
             {
@@ -354,12 +360,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "71.60 - C",
+          "grade": "75.12 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "4/0",
+              "missing": false
+            },
+            {
+              "name": "Quiz 1: Classroom commands",
+              "dueDate": "Sep 4",
+              "score": "15/15 (100%)",
               "missing": false
             },
             {
