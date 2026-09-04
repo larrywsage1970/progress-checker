@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T17:55:42.427Z",
+  "updatedAt": "2026-09-04T20:04:44.126Z",
   "students": [
     {
       "name": "Avery",
@@ -8,7 +8,7 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "100.00 - A",
+          "grade": "87.50 - B",
           "assignments": [
             {
               "name": "???? Alg DeltaMath - Weeks 1-2 - Data Measure",
@@ -26,6 +26,12 @@
               "name": "???? Alg DeltaMath - Weeks 1-2 - Probability",
               "dueDate": "Aug 28",
               "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Chapter 11 Test",
+              "dueDate": "Aug 28",
+              "score": "QT · 40/50 (80%)",
               "missing": false
             }
           ]
@@ -136,13 +142,13 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "74.00 - C",
+          "grade": "84.00 - B",
           "assignments": [
             {
               "name": "growth mindset and the brain",
               "dueDate": "Aug 28",
-              "score": "F · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "F · 10/20 (50%) · L Late",
+              "missing": false
             },
             {
               "name": "0.1-0.2 quiz",
