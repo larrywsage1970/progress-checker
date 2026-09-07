@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T22:40:14.259Z",
+  "updatedAt": "2026-09-07T02:01:16.903Z",
   "students": [
     {
       "name": "Avery",
@@ -42,6 +42,42 @@
           "teacherEmail": "st_ecanepa@smfcsd.org",
           "grade": "92.50 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 11",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 10",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 9",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 8",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 4",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 3",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 2",
@@ -239,6 +275,18 @@
               "name": "2.2 checkpoint",
               "dueDate": "Sep 8",
               "score": "F · /1",
+              "missing": false
+            },
+            {
+              "name": "student information survey",
+              "dueDate": "Aug 28",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
+              "name": "1.1-1.2 quiz",
+              "dueDate": "Aug 28",
+              "score": "S · /8",
               "missing": false
             },
             {
