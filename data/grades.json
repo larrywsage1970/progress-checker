@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T18:56:40.305Z",
+  "updatedAt": "2026-09-07T23:11:46.684Z",
   "students": [
     {
       "name": "Avery",
@@ -494,6 +494,12 @@
               "name": "Types of Exercise (cpactivity)",
               "dueDate": "Aug 27",
               "score": "CL · 15/15 (100%)",
+              "missing": false
+            },
+            {
+              "name": "SMART goals",
+              "dueDate": "Aug 26",
+              "score": "CL · 10/10 (100%)",
               "missing": false
             },
             {
