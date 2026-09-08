@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T13:12:23.872Z",
+  "updatedAt": "2026-09-08T18:13:08.380Z",
   "students": [
     {
       "name": "Avery",
@@ -167,6 +167,18 @@
           "grade": "100.00 - A",
           "assignments": [
             {
+              "name": "\"Why Are We Obsessed...\"",
+              "dueDate": "Sep 4",
+              "score": "For* · /15",
+              "missing": false
+            },
+            {
+              "name": "\"Entwined\" Analysis",
+              "dueDate": "Sep 1",
+              "score": "For* · /20",
+              "missing": false
+            },
+            {
               "name": "Syllabus",
               "dueDate": "Aug 27",
               "score": "For* · 10/10 (100%)",
@@ -269,7 +281,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "100.00 - A",
+          "grade": "33.33 - F",
           "assignments": [
             {
               "name": "2.2 checkpoint",
@@ -280,8 +292,8 @@
             {
               "name": "student information survey",
               "dueDate": "Aug 28",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "1.1-1.2 quiz",
@@ -292,8 +304,8 @@
             {
               "name": "I am a scientist writing assignment",
               "dueDate": "Aug 26",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "growth mindset and the brain",
@@ -414,7 +426,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "75.12 - C",
+          "grade": "72.90 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -429,9 +441,9 @@
               "missing": false
             },
             {
-              "name": "Edpuzzle - Erster Schultag & Schultüte / German...",
+              "name": "Edpuzzle - Erster Schultag & Schultüte / German... Please submit Edpuzzles on the Edpuzzle site when you complete them so that a grade gets sent automatically to GC.",
               "dueDate": "Sep 3",
-              "score": "/10",
+              "score": "4.6/10 (46%) · L Late",
               "missing": false
             },
             {
