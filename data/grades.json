@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T18:12:52.477Z",
+  "updatedAt": "2026-09-09T22:51:31.756Z",
   "students": [
     {
       "name": "Avery",
@@ -146,6 +146,12 @@
           "teacherEmail": "st_sparker@smfcsd.org",
           "grade": "97.78 - A",
           "assignments": [
+            {
+              "name": "Numbers Quiz 1 - 100",
+              "dueDate": "Sep 11",
+              "score": "QZ · /40",
+              "missing": false
+            },
             {
               "name": "Weekly Starter 8/31 - 9/4",
               "dueDate": "Sep 4",
