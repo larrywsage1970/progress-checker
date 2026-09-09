@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T13:17:13.338Z",
+  "updatedAt": "2026-09-09T18:12:52.477Z",
   "students": [
     {
       "name": "Avery",
@@ -40,7 +40,7 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "92.50 - A",
+          "grade": "92.86 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
@@ -63,7 +63,7 @@
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 8",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -281,7 +281,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "25.00 - F",
+          "grade": "75.00 - C",
           "assignments": [
             {
               "name": "2.2 checkpoint",
@@ -298,7 +298,7 @@
             {
               "name": "1.1-1.2 quiz",
               "dueDate": "Aug 28",
-              "score": "S · /8",
+              "score": "S · 8/8 (100%)",
               "missing": false
             },
             {
@@ -319,7 +319,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "75.65 - C",
+          "grade": "64.44 - D",
           "assignments": [
             {
               "name": "Comparative Notes May submit until 9/12",
@@ -328,10 +328,10 @@
               "missing": true
             },
             {
-              "name": "\"How Do You See You Self(ie)\"",
+              "name": "\"How Do You See You Self(ie)\" May submit until 9/11",
               "dueDate": "Sep 4",
-              "score": "FOR · /20",
-              "missing": false
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "Miniver Cheevy Poem Questions",
@@ -382,8 +382,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.22 - A",
+          "grade": "90.37 - A",
           "assignments": [
+            {
+              "name": "2.1 INTRODUCTION",
+              "dueDate": "Sep 4",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "TEST CH. 1",
               "dueDate": "Sep 3",
