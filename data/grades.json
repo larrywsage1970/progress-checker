@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T07:42:37.820Z",
+  "updatedAt": "2026-09-09T13:17:13.338Z",
   "students": [
     {
       "name": "Avery",
@@ -281,13 +281,13 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "33.33 - F",
+          "grade": "25.00 - F",
           "assignments": [
             {
               "name": "2.2 checkpoint",
               "dueDate": "Sep 8",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "student information survey",
@@ -319,8 +319,14 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "91.58 - A",
+          "grade": "75.65 - C",
           "assignments": [
+            {
+              "name": "Comparative Notes May submit until 9/12",
+              "dueDate": "Sep 8",
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
+            },
             {
               "name": "\"How Do You See You Self(ie)\"",
               "dueDate": "Sep 4",
