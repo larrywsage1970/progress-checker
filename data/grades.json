@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T13:14:57.946Z",
+  "updatedAt": "2026-09-10T17:58:41.342Z",
   "students": [
     {
       "name": "Avery",
@@ -40,7 +40,7 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "92.86 - A",
+          "grade": "93.18 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
@@ -57,7 +57,7 @@
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 9",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -199,6 +199,12 @@
           "grade": "84.00 - B",
           "assignments": [
             {
+              "name": "student information survey",
+              "dueDate": "Aug 31",
+              "score": "F · /10",
+              "missing": false
+            },
+            {
               "name": "growth mindset and the brain",
               "dueDate": "Aug 28",
               "score": "F · 10/20 (50%) · L Late",
@@ -327,6 +333,12 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "64.44 - D",
           "assignments": [
+            {
+              "name": "Contributions to Statistics \"Analyze the Text\"",
+              "dueDate": "Sep 10",
+              "score": "FOR · /20",
+              "missing": false
+            },
             {
               "name": "Comparative Notes May submit until 9/12",
               "dueDate": "Sep 8",
