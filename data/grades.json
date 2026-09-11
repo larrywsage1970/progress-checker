@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T07:37:51.359Z",
+  "updatedAt": "2026-09-11T13:08:11.120Z",
   "students": [
     {
       "name": "Avery",
@@ -234,8 +234,20 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "89.19 - B",
+          "grade": "88.37 - B",
           "assignments": [
+            {
+              "name": "Interactive Map: Early Voyages of European Expl...",
+              "dueDate": "Sep 8",
+              "score": "F · 3/3 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Gallery: Navigating the World",
+              "dueDate": "Sep 8",
+              "score": "F · 2/3 (66.67%)",
+              "missing": false
+            },
             {
               "name": "Test Unit 1 Renaissance",
               "dueDate": "Sep 3",
@@ -333,6 +345,18 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "64.44 - D",
           "assignments": [
+            {
+              "name": "11a. Pre-Writing",
+              "dueDate": "Sep 11",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "11c. Compare and Contrast Paragraph",
+              "dueDate": "Sep 11",
+              "score": "SUM · /20",
+              "missing": false
+            },
             {
               "name": "Contributions to Statistics \"Analyze the Text\"",
               "dueDate": "Sep 10",
