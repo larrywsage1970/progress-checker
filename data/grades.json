@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T13:08:11.120Z",
+  "updatedAt": "2026-09-11T18:02:14.939Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,26 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "87.50 - B",
+          "grade": "87.52 - B",
           "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 3a - Fractions",
+              "dueDate": "Sep 4",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg DeltaMath - Week 3b - Evaluating Express...",
+              "dueDate": "Sep 4",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 3 - Evaluatin...",
+              "dueDate": "Sep 4",
+              "score": "EP · 1.9/5 (38%)",
+              "missing": false
+            },
             {
               "name": "???? Alg DeltaMath - Weeks 1-2 - Data Measure",
               "dueDate": "Aug 28",
@@ -144,12 +162,12 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "97.78 - A",
+          "grade": "98.82 - A",
           "assignments": [
             {
               "name": "Numbers Quiz 1 - 100",
               "dueDate": "Sep 11",
-              "score": "QZ · /40",
+              "score": "QZ · 40/40 (100%)",
               "missing": false
             },
             {
@@ -234,8 +252,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "88.37 - B",
+          "grade": "89.13 - B",
           "assignments": [
+            {
+              "name": "How Did Colonization in America Happen Video",
+              "dueDate": "Sep 11",
+              "score": "I · 3/3 (100%)",
+              "missing": false
+            },
             {
               "name": "Interactive Map: Early Voyages of European Expl...",
               "dueDate": "Sep 8",
@@ -343,7 +367,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "64.44 - D",
+          "grade": "66.45 - D",
           "assignments": [
             {
               "name": "11a. Pre-Writing",
@@ -360,7 +384,7 @@
             {
               "name": "Contributions to Statistics \"Analyze the Text\"",
               "dueDate": "Sep 10",
-              "score": "FOR · /20",
+              "score": "FOR · 16/20 (80%)",
               "missing": false
             },
             {
@@ -396,8 +420,8 @@
             {
               "name": "Signed Syllabus Please get this signed and returned as soon as possible!",
               "dueDate": "Aug 25",
-              "score": "Par · 0/5 (0%) · M Missing",
-              "missing": true
+              "score": "Par · 0/5 (0%)",
+              "missing": false
             },
             {
               "name": "Pixar Shorts",
@@ -480,12 +504,12 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "72.90 - C",
+          "grade": "74.05 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
-              "score": "4/0",
+              "score": "5.5/0",
               "missing": false
             },
             {
