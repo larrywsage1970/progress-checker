@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T18:02:14.939Z",
+  "updatedAt": "2026-09-11T22:55:07.358Z",
   "students": [
     {
       "name": "Avery",
@@ -188,8 +188,14 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "100.00 - A",
+          "grade": "71.67 - C",
           "assignments": [
+            {
+              "name": "Literary Elements/ Informative Text Quiz",
+              "dueDate": "Sep 11",
+              "score": "Sum* · /18",
+              "missing": false
+            },
             {
               "name": "\"Why Are We Obsessed...\"",
               "dueDate": "Sep 4",
@@ -197,9 +203,9 @@
               "missing": false
             },
             {
-              "name": "\"Entwined\" Analysis",
+              "name": "\"Entwined\" Analysis Turned in incomplete",
               "dueDate": "Sep 1",
-              "score": "For* · /20",
+              "score": "For* · 11.5/20 (57.5%)",
               "missing": false
             },
             {
