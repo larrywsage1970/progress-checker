@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T15:29:19.694Z",
+  "updatedAt": "2026-09-14T21:12:57.639Z",
   "students": [
     {
       "name": "Avery",
@@ -238,13 +238,31 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "84.00 - B",
+          "grade": "78.44 - C",
           "assignments": [
+            {
+              "name": "Can you follow directions lab",
+              "dueDate": "Sep 8",
+              "score": "F · 15/20 (75%)",
+              "missing": false
+            },
+            {
+              "name": "textbook scavenger hunt",
+              "dueDate": "Sep 7",
+              "score": "F · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "0.3-0.4 checkpoint",
+              "dueDate": "Sep 7",
+              "score": "F · 0/10 (0%) · L M Late Missing",
+              "missing": true
+            },
             {
               "name": "student information survey",
               "dueDate": "Aug 31",
-              "score": "F · /10",
-              "missing": false
+              "score": "F · 0/10 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "growth mindset and the brain",
