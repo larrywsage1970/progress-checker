@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T08:21:21.693Z",
+  "updatedAt": "2026-09-14T15:29:19.694Z",
   "students": [
     {
       "name": "Avery",
@@ -356,6 +356,12 @@
           "grade": "75.00 - C",
           "assignments": [
             {
+              "name": "2.3 checkpoint",
+              "dueDate": "Sep 11",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
               "name": "2.2 checkpoint",
               "dueDate": "Sep 8",
               "score": "F · 0/1 (0%) · L M Late Missing",
@@ -412,10 +418,10 @@
               "missing": false
             },
             {
-              "name": "Comparative Notes May submit until 9/12",
+              "name": "Comparative Notes May submit until 9/12. As of 9/14, never submitted",
               "dueDate": "Sep 8",
-              "score": "FOR · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "FOR · 0/20 (0%) · L Late",
+              "missing": false
             },
             {
               "name": "\"How Do You See You Self(ie)\" May submit until 9/11",
