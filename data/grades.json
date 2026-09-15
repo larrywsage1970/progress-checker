@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T14:01:32.080Z",
+  "updatedAt": "2026-09-15T18:36:45.966Z",
   "students": [
     {
       "name": "Avery",
@@ -58,7 +58,7 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "93.75 - A",
+          "grade": "91.38 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
@@ -75,7 +75,7 @@
             {
               "name": "Solving Multi-Step Linear Equations WS",
               "dueDate": "Sep 10",
-              "score": "/10",
+              "score": "8/10 (80%)",
               "missing": false
             },
             {
@@ -294,8 +294,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "89.13 - B",
+          "grade": "90.20 - A",
           "assignments": [
+            {
+              "name": "The Slave Trade Lesson 2.5 Summary",
+              "dueDate": "Sep 16",
+              "score": "F · 5/5 (100%)",
+              "missing": false
+            },
             {
               "name": "How Did Colonization in America Happen Video",
               "dueDate": "Sep 11",
@@ -371,7 +377,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "75.00 - C",
+          "grade": "69.23 - D",
           "assignments": [
             {
               "name": "2.3 checkpoint",
@@ -388,8 +394,8 @@
             {
               "name": "mystery box experiment",
               "dueDate": "Sep 8",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "student information survey",
@@ -564,13 +570,37 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "74.05 - C",
+          "grade": "59.31 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "5.5/0",
               "missing": false
+            },
+            {
+              "name": "German Culture Web Quest",
+              "dueDate": "Sep 15",
+              "score": "0/25 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Edpuzzle - Zahlen Lied für Kinder 1-10 | Kinder...",
+              "dueDate": "Sep 14",
+              "score": "11.4/15 (76%)",
+              "missing": false
+            },
+            {
+              "name": "Edpuzzle - Das Wochentagelied || Kinderlieder z...",
+              "dueDate": "Sep 13",
+              "score": "12/12 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Blooket - die Wochentage If you did it, what name did you use?",
+              "dueDate": "Sep 10",
+              "score": "0/20 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Quiz 1: Classroom commands",
