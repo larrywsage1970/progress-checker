@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T08:13:20.506Z",
+  "updatedAt": "2026-09-15T14:01:32.080Z",
   "students": [
     {
       "name": "Avery",
@@ -206,18 +206,18 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "71.67 - C",
+          "grade": "85.78 - B",
           "assignments": [
             {
               "name": "Literary Elements/ Informative Text Quiz",
               "dueDate": "Sep 11",
-              "score": "Sum* · /18",
+              "score": "Sum* · 8/9 (88.89%)",
               "missing": false
             },
             {
               "name": "\"Why Are We Obsessed...\"",
               "dueDate": "Sep 4",
-              "score": "For* · /15",
+              "score": "For* · 15/15 (100%)",
               "missing": false
             },
             {
@@ -386,6 +386,12 @@
               "missing": true
             },
             {
+              "name": "mystery box experiment",
+              "dueDate": "Sep 8",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
               "name": "student information survey",
               "dueDate": "Aug 28",
               "score": "F · 0/1 (0%) · L M Late Missing",
@@ -442,10 +448,10 @@
               "missing": false
             },
             {
-              "name": "\"How Do You See You Self(ie)\" May submit until 9/11",
+              "name": "\"How Do You See You Self(ie)\" May submit until 9/11. As of 9/15, never submitted",
               "dueDate": "Sep 4",
-              "score": "FOR · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "FOR · 0/20 (0%) · L Late",
+              "missing": false
             },
             {
               "name": "Miniver Cheevy Poem Questions",
@@ -496,8 +502,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.37 - A",
+          "grade": "90.48 - A",
           "assignments": [
+            {
+              "name": "HWQ2.2",
+              "dueDate": "Sep 15",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "2.1 INTRODUCTION",
               "dueDate": "Sep 4",
