@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T13:55:23.730Z",
+  "updatedAt": "2026-09-16T18:34:58.018Z",
   "students": [
     {
       "name": "Avery",
@@ -58,8 +58,20 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.38 - A",
+          "grade": "91.67 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 16",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 14",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 11",
@@ -377,7 +389,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "69.23 - D",
+          "grade": "99.20 - A",
           "assignments": [
             {
               "name": "2.3 checkpoint",
@@ -396,6 +408,12 @@
               "dueDate": "Sep 8",
               "score": "F · 0/1 (0%) · L M Late Missing",
               "missing": true
+            },
+            {
+              "name": "1.3-1.4 quiz",
+              "dueDate": "Sep 4",
+              "score": "S · /8",
+              "missing": false
             },
             {
               "name": "student information survey",
@@ -429,6 +447,18 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "66.45 - D",
           "assignments": [
+            {
+              "name": "Personal Narrative Final Draft",
+              "dueDate": "Sep 25",
+              "score": "SUM · /100",
+              "missing": false
+            },
+            {
+              "name": "Personal Narrative Rough Draft",
+              "dueDate": "Sep 23",
+              "score": "FOR · /40",
+              "missing": false
+            },
             {
               "name": "11a. Pre-Writing",
               "dueDate": "Sep 11",
