@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T18:34:58.018Z",
+  "updatedAt": "2026-09-16T23:26:32.903Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,38 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "87.52 - B",
+          "grade": "87.55 - B",
           "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 4 - Solving Equations",
+              "dueDate": "Sep 11",
+              "score": "DM · 8.8/10 (88%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 4 - Solving M...",
+              "dueDate": "Sep 11",
+              "score": "EP · 2.5/5 (50%)",
+              "missing": false
+            },
+            {
+              "name": "???? Edpuzzle - Alg Edpuzzle - Week 4 - Solving...",
+              "dueDate": "Sep 11",
+              "score": "EP · 5/5 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Fall MAP Testing - Week 4",
+              "dueDate": "Sep 11",
+              "score": "CPH · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg Form - Week 4 - Solving Equations",
+              "dueDate": "Sep 11",
+              "score": "CPH · 7/8 (87.5%)",
+              "missing": false
+            },
             {
               "name": "?? Alg DeltaMath - Week 3a - Fractions",
               "dueDate": "Sep 4",
