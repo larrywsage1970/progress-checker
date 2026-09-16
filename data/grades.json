@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T08:06:44.346Z",
+  "updatedAt": "2026-09-16T13:55:23.730Z",
   "students": [
     {
       "name": "Avery",
@@ -570,7 +570,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "59.31 - F",
+          "grade": "52.81 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -580,6 +580,12 @@
             },
             {
               "name": "German Culture Web Quest",
+              "dueDate": "Sep 15",
+              "score": "0/25 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Edpuzzle - Zahlen lernen mit Flunkeblunk für Ki...",
               "dueDate": "Sep 15",
               "score": "0/25 (0%) · M Missing",
               "missing": true
