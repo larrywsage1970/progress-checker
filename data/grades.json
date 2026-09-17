@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T13:59:07.009Z",
+  "updatedAt": "2026-09-17T18:42:48.419Z",
   "students": [
     {
       "name": "Avery",
@@ -88,12 +88,18 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.67 - A",
+          "grade": "92.19 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
+              "dueDate": "Sep 17",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
               "dueDate": "Sep 16",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -248,12 +254,18 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "85.78 - B",
+          "grade": "87.37 - B",
           "assignments": [
             {
               "name": "Literary Elements/ Informative Text Quiz",
               "dueDate": "Sep 11",
               "score": "Sum* · 8/9 (88.89%)",
+              "missing": false
+            },
+            {
+              "name": "\"Gift-Wrapped Fathers\" Theme Practice",
+              "dueDate": "Sep 10",
+              "score": "For* · 12/12 (100%)",
               "missing": false
             },
             {
