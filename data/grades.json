@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T08:12:55.577Z",
+  "updatedAt": "2026-09-17T13:59:07.009Z",
   "students": [
     {
       "name": "Avery",
@@ -484,9 +484,21 @@
               "missing": false
             },
             {
-              "name": "Personal Narrative Rough Draft",
-              "dueDate": "Sep 23",
-              "score": "FOR · /40",
+              "name": "Unit 2 Test",
+              "dueDate": "Sep 25",
+              "score": "SUM · /40",
+              "missing": false
+            },
+            {
+              "name": "Sensory Questionnaire",
+              "dueDate": "Sep 21",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "Narrative Plot Chart/Outline",
+              "dueDate": "Sep 18",
+              "score": "FOR · /20",
               "missing": false
             },
             {
