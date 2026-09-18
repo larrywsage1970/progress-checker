@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T13:17:05.013Z",
+  "updatedAt": "2026-09-18T17:59:13.693Z",
   "students": [
     {
       "name": "Avery",
@@ -92,8 +92,20 @@
           "assignments": [
             {
               "name": "DAILY GRADE",
+              "dueDate": "Sep 18",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
               "dueDate": "Sep 17",
               "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Ch 1 Review WS",
+              "dueDate": "Sep 17",
+              "score": "/10",
               "missing": false
             },
             {
@@ -348,12 +360,24 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "90.20 - A",
+          "grade": "87.72 - B",
           "assignments": [
+            {
+              "name": "Primary Source Mayflower Compact/Constitution",
+              "dueDate": "Sep 18",
+              "score": "F · 3/3 (100%)",
+              "missing": false
+            },
             {
               "name": "The Slave Trade Lesson 2.5 Summary",
               "dueDate": "Sep 16",
               "score": "F · 5/5 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Chart: Characteristics of French an...",
+              "dueDate": "Sep 14",
+              "score": "F · 1/3 (33.33%)",
               "missing": false
             },
             {
@@ -592,8 +616,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.48 - A",
+          "grade": "90.00 - A",
           "assignments": [
+            {
+              "name": "HWQ2.3",
+              "dueDate": "Sep 18",
+              "score": "FORM · 90/100 (90%)",
+              "missing": false
+            },
             {
               "name": "HWQ2.2",
               "dueDate": "Sep 15",
@@ -654,7 +684,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "52.81 - F",
+          "grade": "60.26 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -687,10 +717,10 @@
               "missing": false
             },
             {
-              "name": "Blooket - die Wochentage If you did it, what name did you use?",
+              "name": "Blooket - die Wochentage Late -5",
               "dueDate": "Sep 10",
-              "score": "0/20 (0%) · M Missing",
-              "missing": true
+              "score": "17/20 (85%) · L Late",
+              "missing": false
             },
             {
               "name": "Quiz 1: Classroom commands",
