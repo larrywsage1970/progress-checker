@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T17:59:13.693Z",
+  "updatedAt": "2026-09-18T20:28:52.780Z",
   "students": [
     {
       "name": "Avery",
@@ -304,7 +304,7 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "78.44 - C",
+          "grade": "76.44 - C",
           "assignments": [
             {
               "name": "Can you follow directions lab",
@@ -455,7 +455,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.20 - A",
+          "grade": "99.25 - A",
           "assignments": [
             {
               "name": "2.3 checkpoint",
@@ -466,8 +466,8 @@
             {
               "name": "2.2 checkpoint",
               "dueDate": "Sep 8",
-              "score": "F · 0/1 (0%) · L M Late Missing",
-              "missing": true
+              "score": "F · 1/1 (100%) · E L Excluded Late",
+              "missing": false
             },
             {
               "name": "mystery box experiment",
