@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T22:56:16.567Z",
+  "updatedAt": "2026-09-21T02:29:54.105Z",
   "students": [
     {
       "name": "Avery",
@@ -228,8 +228,14 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "99.26 - A",
+          "grade": "83.75 - B",
           "assignments": [
+            {
+              "name": "Weekly Starter 9/14-9/18",
+              "dueDate": "Sep 19",
+              "score": "CW · 0/25 (0%)",
+              "missing": false
+            },
             {
               "name": "Weekly Starter 9/7 - 9/11",
               "dueDate": "Sep 12",
