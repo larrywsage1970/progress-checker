@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T02:29:54.105Z",
+  "updatedAt": "2026-09-21T08:24:07.305Z",
   "students": [
     {
       "name": "Avery",
@@ -88,12 +88,12 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "92.19 - A",
+          "grade": "91.45 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 18",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -105,7 +105,7 @@
             {
               "name": "Ch 1 Review WS",
               "dueDate": "Sep 17",
-              "score": "/10",
+              "score": "8.5/10 (85%)",
               "missing": false
             },
             {
