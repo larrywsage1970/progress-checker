@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T08:24:07.305Z",
+  "updatedAt": "2026-09-21T15:31:08.089Z",
   "students": [
     {
       "name": "Avery",
@@ -369,6 +369,12 @@
           "grade": "87.72 - B",
           "assignments": [
             {
+              "name": "Unit 2 Test Explorers",
+              "dueDate": "Sep 21",
+              "score": "T · 25/30 (83.33%)",
+              "missing": false
+            },
+            {
               "name": "Primary Source Mayflower Compact/Constitution",
               "dueDate": "Sep 18",
               "score": "F · 3/3 (100%)",
@@ -690,12 +696,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "60.26 - D",
+          "grade": "61.21 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "5.5/0",
+              "missing": false
+            },
+            {
+              "name": "Blooket: eins bis zwanzig (die Zahlen 1-20) Please finish for additional late credit.",
+              "dueDate": "Sep 20",
+              "score": "14.4/20 (72%)",
               "missing": false
             },
             {
