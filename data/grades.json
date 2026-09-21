@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T15:31:08.089Z",
+  "updatedAt": "2026-09-21T21:27:49.879Z",
   "students": [
     {
       "name": "Avery",
@@ -88,8 +88,14 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.45 - A",
+          "grade": "91.67 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 21",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 18",
@@ -275,6 +281,12 @@
           "grade": "87.37 - B",
           "assignments": [
             {
+              "name": "Quarter 1 Vocabulary Practice 2 Packet",
+              "dueDate": "Sep 16",
+              "score": "For* · /28",
+              "missing": false
+            },
+            {
               "name": "Literary Elements/ Informative Text Quiz",
               "dueDate": "Sep 11",
               "score": "Sum* · 8/9 (88.89%)",
@@ -312,6 +324,12 @@
           "teacherEmail": "st_ePeterre@smfcsd.org",
           "grade": "76.44 - C",
           "assignments": [
+            {
+              "name": "0.3-0.4 quiz",
+              "dueDate": "Sep 9",
+              "score": "S · 21/25 (84%)",
+              "missing": false
+            },
             {
               "name": "Can you follow directions lab",
               "dueDate": "Sep 8",
