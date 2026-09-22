@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T08:06:06.726Z",
+  "updatedAt": "2026-09-22T13:48:20.265Z",
   "students": [
     {
       "name": "Avery",
@@ -278,12 +278,12 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "87.37 - B",
+          "grade": "87.69 - B",
           "assignments": [
             {
               "name": "Quarter 1 Vocabulary Practice 2 Packet",
               "dueDate": "Sep 16",
-              "score": "For* · /28",
+              "score": "For* · 24.5/28 (87.5%)",
               "missing": false
             },
             {
