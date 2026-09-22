@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T13:48:20.265Z",
+  "updatedAt": "2026-09-22T18:26:17.765Z",
   "students": [
     {
       "name": "Avery",
@@ -88,8 +88,14 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.67 - A",
+          "grade": "91.88 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 22",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 21",
@@ -325,6 +331,12 @@
           "grade": "76.44 - C",
           "assignments": [
             {
+              "name": "1.1-1.2 quiz",
+              "dueDate": "Sep 17",
+              "score": "S · /15",
+              "missing": false
+            },
+            {
               "name": "0.3-0.4 quiz",
               "dueDate": "Sep 9",
               "score": "S · 21/25 (84%)",
@@ -485,7 +497,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.25 - A",
+          "grade": "99.40 - A",
           "assignments": [
             {
               "name": "2.3 checkpoint",
@@ -494,9 +506,15 @@
               "missing": false
             },
             {
+              "name": "mystery powder lab",
+              "dueDate": "Sep 10",
+              "score": "S · /8",
+              "missing": false
+            },
+            {
               "name": "2.2 checkpoint",
               "dueDate": "Sep 8",
-              "score": "F · 1/1 (100%) · E L Excluded Late",
+              "score": "F · 1/1 (100%) · L Late",
               "missing": false
             },
             {
