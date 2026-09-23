@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T13:59:43.825Z",
+  "updatedAt": "2026-09-23T18:45:45.472Z",
   "students": [
     {
       "name": "Avery",
@@ -88,8 +88,14 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.88 - A",
+          "grade": "92.07 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 23",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 22",
@@ -242,6 +248,12 @@
           "teacherEmail": "st_sparker@smfcsd.org",
           "grade": "83.75 - B",
           "assignments": [
+            {
+              "name": "Star Spangle Banner",
+              "dueDate": "Oct 5",
+              "score": "APS · /100",
+              "missing": false
+            },
             {
               "name": "Weekly Starter 9/14-9/18",
               "dueDate": "Sep 19",
@@ -667,7 +679,13 @@
           "grade": "90.00 - A",
           "assignments": [
             {
-              "name": "HWQ2.3",
+              "name": "HWQ2.5",
+              "dueDate": "Sep 23",
+              "score": "FORM · /100 · E Excluded",
+              "missing": false
+            },
+            {
+              "name": "HWQ2.4",
               "dueDate": "Sep 18",
               "score": "FORM · 90/100 (90%)",
               "missing": false
@@ -842,8 +860,14 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "100.00 - A",
+          "grade": "97.75 - A",
           "assignments": [
+            {
+              "name": "Nutrition Unit Quiz (F26)",
+              "dueDate": "Sep 23",
+              "score": "CL · 34/36 (94.44%)",
+              "missing": false
+            },
             {
               "name": "Types of Exercise (cpactivity)",
               "dueDate": "Aug 27",
