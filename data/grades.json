@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T18:46:19.790Z",
+  "updatedAt": "2026-09-24T23:42:31.819Z",
   "students": [
     {
       "name": "Avery",
@@ -884,12 +884,30 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "97.75 - A",
+          "grade": "84.15 - B",
           "assignments": [
             {
               "name": "Nutrition Unit Quiz (F26)",
-              "dueDate": "Sep 23",
+              "dueDate": "Sep 24",
               "score": "CL · 34/36 (94.44%)",
+              "missing": false
+            },
+            {
+              "name": "Fad Diets",
+              "dueDate": "Sep 24",
+              "score": "CL · 11/15 (73.33%)",
+              "missing": false
+            },
+            {
+              "name": "Lifespan Fitness Plan",
+              "dueDate": "Sep 24",
+              "score": "CL · 20/25 (80%)",
+              "missing": false
+            },
+            {
+              "name": "My Plate Food Plan",
+              "dueDate": "Sep 10",
+              "score": "CL · 20/35 (57.14%)",
               "missing": false
             },
             {
