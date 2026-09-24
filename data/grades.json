@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T23:22:23.016Z",
+  "updatedAt": "2026-09-24T02:21:57.168Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,20 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "87.55 - B",
+          "grade": "89.26 - B",
           "assignments": [
+            {
+              "name": "?? Chapter 1 Test",
+              "dueDate": "Sep 18",
+              "score": "QT · 46/50 (92%)",
+              "missing": false
+            },
+            {
+              "name": "???? Alg DeltaMath - Week 5 - Solving Abs & Lit...",
+              "dueDate": "Sep 18",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
             {
               "name": "?? Alg DeltaMath - Week 4 - Solving Equations",
               "dueDate": "Sep 11",
