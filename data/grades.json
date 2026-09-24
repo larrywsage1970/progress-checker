@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T13:56:20.620Z",
+  "updatedAt": "2026-09-24T18:46:19.790Z",
   "students": [
     {
       "name": "Avery",
@@ -521,7 +521,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.40 - A",
+          "grade": "66.33 - D",
           "assignments": [
             {
               "name": "3A.2",
@@ -532,14 +532,14 @@
             {
               "name": "2.3 checkpoint",
               "dueDate": "Sep 11",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "mystery powder lab",
               "dueDate": "Sep 10",
-              "score": "S · /8",
-              "missing": false
+              "score": "S · 0/8 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "2.2 checkpoint",
