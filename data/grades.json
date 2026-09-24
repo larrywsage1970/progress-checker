@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T07:59:44.104Z",
+  "updatedAt": "2026-09-24T13:56:20.620Z",
   "students": [
     {
       "name": "Avery",
@@ -524,6 +524,12 @@
           "grade": "99.40 - A",
           "assignments": [
             {
+              "name": "3A.2",
+              "dueDate": "Sep 25",
+              "score": "F · /1",
+              "missing": false
+            },
+            {
               "name": "2.3 checkpoint",
               "dueDate": "Sep 11",
               "score": "F · /1",
@@ -550,7 +556,7 @@
             {
               "name": "1.3-1.4 quiz",
               "dueDate": "Sep 4",
-              "score": "S · /8",
+              "score": "S · 8/8 (100%)",
               "missing": false
             },
             {
@@ -688,8 +694,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.00 - A",
+          "grade": "90.12 - A",
           "assignments": [
+            {
+              "name": "1.1-1.3 Naming Figures Review",
+              "dueDate": "Sep 24",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "HWQ2.5",
               "dueDate": "Sep 23",
