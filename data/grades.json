@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T08:22:38.330Z",
+  "updatedAt": "2026-09-25T14:20:15.691Z",
   "students": [
     {
       "name": "Avery",
@@ -106,6 +106,12 @@
               "name": "DAILY GRADE",
               "dueDate": "Sep 23",
               "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Solving Half Sheet",
+              "dueDate": "Sep 23",
+              "score": "/10",
               "missing": false
             },
             {
