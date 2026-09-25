@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T19:03:43.464Z",
+  "updatedAt": "2026-09-25T23:43:14.518Z",
   "students": [
     {
       "name": "Avery",
@@ -270,7 +270,7 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "83.75 - B",
+          "grade": "85.95 - B",
           "assignments": [
             {
               "name": "Star Spangle Banner",
@@ -287,7 +287,7 @@
             {
               "name": "Number Incorporation Rule of 9/10+ Exceptiona",
               "dueDate": "Sep 25",
-              "score": "QZ · /25",
+              "score": "QZ · 25/25 (100%)",
               "missing": false
             },
             {
