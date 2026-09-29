@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T09:20:23.653Z",
+  "updatedAt": "2026-09-29T17:19:54.882Z",
   "students": [
     {
       "name": "Avery",
@@ -276,7 +276,7 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "91.61 - A",
+          "grade": "92.43 - A",
           "assignments": [
             {
               "name": "Star Spangle Banner",
@@ -293,7 +293,7 @@
             {
               "name": "Rule of 9/10+ Exception Rule Video",
               "dueDate": "Sep 25",
-              "score": "APS · /60",
+              "score": "APS · 58/60 (96.67%)",
               "missing": false
             },
             {
