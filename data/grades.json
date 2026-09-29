@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T00:45:49.125Z",
+  "updatedAt": "2026-09-29T09:20:23.653Z",
   "students": [
     {
       "name": "Avery",
@@ -412,12 +412,12 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "76.44 - C",
+          "grade": "75.44 - C",
           "assignments": [
             {
               "name": "1.1-1.2 quiz",
               "dueDate": "Sep 17",
-              "score": "S · /15",
+              "score": "S · 12/15 (80%)",
               "missing": false
             },
             {
