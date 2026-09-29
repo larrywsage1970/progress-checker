@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T17:19:54.882Z",
+  "updatedAt": "2026-09-29T21:41:39.632Z",
   "students": [
     {
       "name": "Avery",
@@ -344,7 +344,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "91.52 - A",
+          "grade": "92.37 - A",
           "assignments": [
             {
               "name": "Quarter 1 Vocabulary Quiz",
@@ -355,7 +355,7 @@
             {
               "name": "LTTS/ComL Stations",
               "dueDate": "Sep 24",
-              "score": "For* · /20",
+              "score": "For* · 20/20 (100%)",
               "missing": false
             },
             {
@@ -599,6 +599,12 @@
               "name": "3A.2",
               "dueDate": "Sep 25",
               "score": "F · /1",
+              "missing": false
+            },
+            {
+              "name": "2.2-2.3 quiz",
+              "dueDate": "Sep 21",
+              "score": "S · /8",
               "missing": false
             },
             {
