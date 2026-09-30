@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T17:18:01.917Z",
+  "updatedAt": "2026-09-30T21:42:35.549Z",
   "students": [
     {
       "name": "Avery",
@@ -876,13 +876,25 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "61.21 - D",
+          "grade": "52.71 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "5.5/0",
               "missing": false
+            },
+            {
+              "name": "Wayground/Quizizz - die Zahlen 0-1.000.000",
+              "dueDate": "Sep 29",
+              "score": "0/20 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Make a Video: German rhymes and tongue twisters",
+              "dueDate": "Sep 29",
+              "score": "0/20 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Blooket: eins bis zwanzig (die Zahlen 1-20) Please finish for additional late credit.",
