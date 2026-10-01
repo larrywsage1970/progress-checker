@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T12:07:10.719Z",
+  "updatedAt": "2026-10-01T20:00:24.905Z",
   "students": [
     {
       "name": "Avery",
@@ -100,8 +100,26 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.31 - A",
+          "grade": "90.69 - A",
           "assignments": [
+            {
+              "name": "Mixed Solving Half Sheet Q1 Wk7",
+              "dueDate": "Oct 1",
+              "score": "/10",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 30",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Sep 29",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Sep 28",
@@ -593,8 +611,14 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "66.33 - D",
+          "grade": "74.78 - C",
           "assignments": [
+            {
+              "name": "atomic history timeline",
+              "dueDate": "Sep 28",
+              "score": "S · 8/8 (100%)",
+              "missing": false
+            },
             {
               "name": "3A.2",
               "dueDate": "Sep 25",
@@ -604,7 +628,7 @@
             {
               "name": "2.2-2.3 quiz",
               "dueDate": "Sep 21",
-              "score": "S · /8",
+              "score": "S · 6.08/8 (76%)",
               "missing": false
             },
             {
@@ -790,12 +814,12 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.12 - A",
+          "grade": "89.78 - B",
           "assignments": [
             {
               "name": "2 Proof Practice",
               "dueDate": "Sep 29",
-              "score": "FORM · /100",
+              "score": "FORM · 90/100 (90%)",
               "missing": false
             },
             {
@@ -876,12 +900,12 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "52.71 - F",
+          "grade": "53.92 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
-              "score": "5.5/0",
+              "score": "9/0",
               "missing": false
             },
             {
