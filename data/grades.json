@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T09:12:07.642Z",
+  "updatedAt": "2026-10-02T17:06:11.583Z",
   "students": [
     {
       "name": "Avery",
@@ -362,7 +362,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "92.37 - A",
+          "grade": "92.83 - A",
           "assignments": [
             {
               "name": "Quarter 1 Vocabulary Quiz",
@@ -379,7 +379,7 @@
             {
               "name": "Bully/Unsolved Comparison",
               "dueDate": "Sep 21",
-              "score": "For* · /25",
+              "score": "For* · 15/15 (100%)",
               "missing": false
             },
             {
@@ -900,12 +900,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "53.92 - F",
+          "grade": "60.18 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "9/0",
+              "missing": false
+            },
+            {
+              "name": "Quiz 2: German basics",
+              "dueDate": "Oct 1",
+              "score": "50.5/54 (93.52%)",
               "missing": false
             },
             {
