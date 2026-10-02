@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T17:06:11.583Z",
+  "updatedAt": "2026-10-02T21:37:56.172Z",
   "students": [
     {
       "name": "Avery",
@@ -694,6 +694,12 @@
           "grade": "74.05 - C",
           "assignments": [
             {
+              "name": "\"A Sound of Thunder\" Test",
+              "dueDate": "Oct 2",
+              "score": "SUM · /26",
+              "missing": false
+            },
+            {
               "name": "\"Sound of Thunder\" Creative Writing",
               "dueDate": "Oct 1",
               "score": "SUM · /20",
@@ -900,13 +906,19 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "60.18 - D",
+          "grade": "55.32 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "9/0",
               "missing": false
+            },
+            {
+              "name": "Zahlen Packet",
+              "dueDate": "Oct 2",
+              "score": "0/30 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Quiz 2: German basics",
