@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T03:10:46.810Z",
+  "updatedAt": "2026-10-05T13:06:36.267Z",
   "students": [
     {
       "name": "Avery",
@@ -516,12 +516,24 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "86.32 - B",
+          "grade": "84.68 - B",
           "assignments": [
+            {
+              "name": "Enlightenment Thinkers Stations",
+              "dueDate": "Oct 1",
+              "score": "I · 9/10 (90%)",
+              "missing": false
+            },
             {
               "name": "Absolutism in England Reading Worksheet",
               "dueDate": "Sep 28",
               "score": "F · 4/4 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Gallery: The Achievements of Peter ...",
+              "dueDate": "Sep 25",
+              "score": "H · 0/3 (0%)",
               "missing": false
             },
             {
@@ -539,6 +551,12 @@
             {
               "name": "Primary Source Mayflower Compact/Constitution",
               "dueDate": "Sep 18",
+              "score": "F · 3/3 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Chart: Economic Concepts",
+              "dueDate": "Sep 17",
               "score": "F · 3/3 (100%)",
               "missing": false
             },
@@ -709,18 +727,48 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "74.05 - C",
+          "grade": "76.72 - C",
           "assignments": [
+            {
+              "name": "Q1 Reflection",
+              "dueDate": "Oct 16",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "Essay Check-In",
+              "dueDate": "Oct 14",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "Graphic Organizer",
+              "dueDate": "Oct 8",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"Lamb to the Slaughter\" CommonLit",
+              "dueDate": "Oct 6",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "Compare and Contrast Practice",
+              "dueDate": "Oct 5",
+              "score": "FOR · /20",
+              "missing": false
+            },
             {
               "name": "\"A Sound of Thunder\" Test",
               "dueDate": "Oct 2",
-              "score": "SUM · /26",
+              "score": "SUM · 26/26 (100%)",
               "missing": false
             },
             {
               "name": "\"Sound of Thunder\" Creative Writing",
               "dueDate": "Oct 1",
-              "score": "SUM · /20",
+              "score": "SUM · 17/20 (85%)",
               "missing": false
             },
             {
