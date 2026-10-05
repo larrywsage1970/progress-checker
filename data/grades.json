@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T13:06:36.267Z",
+  "updatedAt": "2026-10-05T21:45:04.947Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,20 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "89.26 - B",
+          "grade": "85.75 - B",
           "assignments": [
+            {
+              "name": "?? Fall IXL Diagnostic",
+              "dueDate": "Sep 25",
+              "score": "CPH · 0/10 (0%)",
+              "missing": false
+            },
+            {
+              "name": "???? Alg DeltaMath - Week 6 - Solving Linear In...",
+              "dueDate": "Sep 25",
+              "score": "DM · 18.6/20 (93%)",
+              "missing": false
+            },
             {
               "name": "?? Chapter 1 Test",
               "dueDate": "Sep 18",
@@ -100,8 +112,26 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.63 - A",
+          "grade": "90.95 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 5",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 2",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 1",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "Mixed Solving Half Sheet Q1 Wk7 4.5/5",
               "dueDate": "Oct 1",
@@ -448,8 +478,14 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "75.44 - C",
+          "grade": "76.73 - C",
           "assignments": [
+            {
+              "name": "graph project",
+              "dueDate": "Sep 21",
+              "score": "S · 10/10 (100%)",
+              "missing": false
+            },
             {
               "name": "1.1-1.2 quiz",
               "dueDate": "Sep 17",
@@ -516,12 +552,18 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "84.68 - B",
+          "grade": "85.95 - B",
           "assignments": [
             {
               "name": "Enlightenment Thinkers Stations",
               "dueDate": "Oct 1",
               "score": "I · 9/10 (90%)",
+              "missing": false
+            },
+            {
+              "name": "Democracy Interactive Notebook",
+              "dueDate": "Sep 30",
+              "score": "I · 10/10 (100%)",
               "missing": false
             },
             {
@@ -886,8 +928,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "89.78 - B",
+          "grade": "89.90 - B",
           "assignments": [
+            {
+              "name": "2.1-2.3 Review",
+              "dueDate": "Oct 1",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "2 Proof Practice",
               "dueDate": "Sep 29",
