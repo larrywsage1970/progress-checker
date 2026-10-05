@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T21:37:56.172Z",
+  "updatedAt": "2026-10-05T03:10:46.810Z",
   "students": [
     {
       "name": "Avery",
@@ -100,12 +100,12 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.69 - A",
+          "grade": "90.63 - A",
           "assignments": [
             {
-              "name": "Mixed Solving Half Sheet Q1 Wk7",
+              "name": "Mixed Solving Half Sheet Q1 Wk7 4.5/5",
               "dueDate": "Oct 1",
-              "score": "/10",
+              "score": "9/10 (90%)",
               "missing": false
             },
             {
@@ -294,12 +294,24 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "92.43 - A",
+          "grade": "93.48 - A",
           "assignments": [
             {
+              "name": "Weekly Starter 9/28-10/2",
+              "dueDate": "Oct 3",
+              "score": "CW · 24/25 (96%)",
+              "missing": false
+            },
+            {
               "name": "Star Spangle Banner",
-              "dueDate": "Oct 5",
+              "dueDate": "Oct 2",
               "score": "APS · 100/100 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Parameter Acronym Flyers",
+              "dueDate": "Sep 30",
+              "score": "PJ · 50/50 (100%)",
               "missing": false
             },
             {
@@ -362,8 +374,14 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "92.83 - A",
+          "grade": "88.36 - B",
           "assignments": [
+            {
+              "name": "Unit 3 Assessment",
+              "dueDate": "Sep 29",
+              "score": "Sum* · 23/28 (82.14%)",
+              "missing": false
+            },
             {
               "name": "Quarter 1 Vocabulary Quiz",
               "dueDate": "Sep 25",
