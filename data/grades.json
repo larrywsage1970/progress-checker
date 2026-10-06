@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T12:29:00.460Z",
+  "updatedAt": "2026-10-06T19:55:42.921Z",
   "students": [
     {
       "name": "Avery",
@@ -112,12 +112,18 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.95 - A",
+          "grade": "91.10 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
-              "dueDate": "Oct 5",
+              "dueDate": "Oct 16",
               "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 5",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -769,7 +775,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "76.72 - C",
+          "grade": "79.52 - C",
           "assignments": [
             {
               "name": "Q1 Reflection",
@@ -792,13 +798,13 @@
             {
               "name": "\"Lamb to the Slaughter\" CommonLit",
               "dueDate": "Oct 6",
-              "score": "FOR · /20",
+              "score": "FOR · 13/20 (65%)",
               "missing": false
             },
             {
               "name": "Compare and Contrast Practice",
               "dueDate": "Oct 5",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
@@ -816,13 +822,13 @@
             {
               "name": "\"Sound of Thunder\" Analyze the Text",
               "dueDate": "Sep 30",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
               "name": "\"War Works Hard\" Analyze the Text pg. 472",
               "dueDate": "Sep 28",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
@@ -1020,7 +1026,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "55.32 - F",
+          "grade": "61.77 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -1029,10 +1035,10 @@
               "missing": false
             },
             {
-              "name": "Zahlen Packet",
+              "name": "Zahlen Packet Last page is missing",
               "dueDate": "Oct 2",
-              "score": "0/30 (0%) · M Missing",
-              "missing": true
+              "score": "24/30 (80%)",
+              "missing": false
             },
             {
               "name": "Quiz 2: German basics",
