@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T09:34:30.786Z",
+  "updatedAt": "2026-10-07T18:11:00.028Z",
   "students": [
     {
       "name": "Avery",
@@ -413,6 +413,24 @@
           "grade": "88.36 - B",
           "assignments": [
             {
+              "name": "Monster Chapters 1-4 Quiz",
+              "dueDate": "Oct 7",
+              "score": "Sum* · /18",
+              "missing": false
+            },
+            {
+              "name": "Monster Pgs. 88-126 Reading Questions",
+              "dueDate": "Oct 6",
+              "score": "For* · /20",
+              "missing": false
+            },
+            {
+              "name": "Monster Pre-Reading Writing",
+              "dueDate": "Oct 2",
+              "score": "For* · /15",
+              "missing": false
+            },
+            {
               "name": "Unit 3 Assessment",
               "dueDate": "Sep 29",
               "score": "Sum* · 23/28 (82.14%)",
@@ -781,7 +799,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "79.52 - C",
+          "grade": "79.42 - C",
           "assignments": [
             {
               "name": "Q1 Reflection",
@@ -840,7 +858,7 @@
             {
               "name": "Personal Narrative Final Draft",
               "dueDate": "Sep 25",
-              "score": "SUM · /100",
+              "score": "SUM · 79/100 (79%)",
               "missing": false
             },
             {
@@ -1032,7 +1050,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "61.77 - D",
+          "grade": "65.48 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -1053,10 +1071,10 @@
               "missing": false
             },
             {
-              "name": "Wayground/Quizizz - die Zahlen 0-1.000.000",
+              "name": "Wayground/Quizizz - die Zahlen 0-1.000.000 Late -5",
               "dueDate": "Sep 29",
-              "score": "0/20 (0%) · M Missing",
-              "missing": true
+              "score": "13.8/20 (69%) · L Late",
+              "missing": false
             },
             {
               "name": "Make a Video: German rhymes and tongue twisters",
