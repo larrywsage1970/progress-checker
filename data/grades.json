@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T00:15:50.077Z",
+  "updatedAt": "2026-10-07T09:34:30.786Z",
   "students": [
     {
       "name": "Avery",
@@ -484,8 +484,14 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "76.73 - C",
+          "grade": "67.94 - D",
           "assignments": [
+            {
+              "name": "unit 1 test",
+              "dueDate": "Oct 6",
+              "score": "S · 26/50 (52%)",
+              "missing": false
+            },
             {
               "name": "graph project",
               "dueDate": "Sep 21",
