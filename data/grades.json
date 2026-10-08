@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T09:45:12.526Z",
+  "updatedAt": "2026-10-08T18:13:24.852Z",
   "students": [
     {
       "name": "Avery",
@@ -416,13 +416,19 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "88.73 - B",
+          "grade": "73.88 - C",
           "assignments": [
             {
-              "name": "Monster Chapters 1-4 Quiz",
-              "dueDate": "Oct 7",
-              "score": "Sum* · /18",
+              "name": "Graphic Novel Analysis",
+              "dueDate": "Oct 8",
+              "score": "For* · /25",
               "missing": false
+            },
+            {
+              "name": "Monster Chapters 1-4 Quiz Can make up quiz in Tues. 10/13 after school testing center or Wed. 10/14 delayed start testing center",
+              "dueDate": "Oct 7",
+              "score": "Sum* · 0/18 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Monster Pgs. 88-126 Reading Questions",
@@ -588,8 +594,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "85.95 - B",
+          "grade": "86.09 - B",
           "assignments": [
+            {
+              "name": "TEST Unit 3 Absolutism and Enlightenment",
+              "dueDate": "Oct 8",
+              "score": "T · 26/30 (86.67%)",
+              "missing": false
+            },
             {
               "name": "Enlightenment Thinkers Stations",
               "dueDate": "Oct 1",
@@ -964,8 +976,32 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "89.90 - B",
+          "grade": "91.23 - A",
           "assignments": [
+            {
+              "name": "Quarter Test 1",
+              "dueDate": "Oct 16",
+              "score": "QT · /100",
+              "missing": false
+            },
+            {
+              "name": "CH2 TEST REMEDIATION",
+              "dueDate": "Oct 8",
+              "score": "SUMM · 19/25 (76%)",
+              "missing": false
+            },
+            {
+              "name": "DM 2 REVIEW",
+              "dueDate": "Oct 7",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
+            {
+              "name": "TEST CH. 2",
+              "dueDate": "Oct 6",
+              "score": "SUMM · 91/100 (91%)",
+              "missing": false
+            },
             {
               "name": "2.1-2.3 Review",
               "dueDate": "Oct 1",
