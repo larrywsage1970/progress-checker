@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T18:13:24.852Z",
+  "updatedAt": "2026-10-09T00:52:23.594Z",
   "students": [
     {
       "name": "Avery",
@@ -416,7 +416,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "73.88 - C",
+          "grade": "69.48 - D",
           "assignments": [
             {
               "name": "Graphic Novel Analysis",
@@ -431,10 +431,10 @@
               "missing": true
             },
             {
-              "name": "Monster Pgs. 88-126 Reading Questions",
+              "name": "Monster Pgs. 88-126 Reading Questions Must be turned in by Mon. 10/12 at 2:30 PM",
               "dueDate": "Oct 6",
-              "score": "For* · /20",
-              "missing": false
+              "score": "For* · 0/20 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Monster Pre-Reading Writing",
@@ -737,7 +737,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "74.78 - C",
+          "grade": "74.88 - C",
           "assignments": [
             {
               "name": "atomic history timeline",
@@ -748,7 +748,7 @@
             {
               "name": "3A.2",
               "dueDate": "Sep 25",
-              "score": "F · /1",
+              "score": "F · 1/1 (100%)",
               "missing": false
             },
             {
