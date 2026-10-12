@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T13:57:57.350Z",
+  "updatedAt": "2026-10-12T22:20:36.722Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,38 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "85.75 - B",
+          "grade": "82.91 - B",
           "assignments": [
+            {
+              "name": "???? Alg DeltaMath - Week 7 - Functions",
+              "dueDate": "Oct 2",
+              "score": "DM · 8.8/10 (88%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 7 - Functions...",
+              "dueDate": "Oct 2",
+              "score": "EP · 5/5 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 7 - Function ...",
+              "dueDate": "Oct 2",
+              "score": "EP · 1.9/5 (38%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg Form - Week 7 - Function Notation",
+              "dueDate": "Oct 2",
+              "score": "CPH · 10/20 (50%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg Activity - Week 7 - Domain and Range",
+              "dueDate": "Oct 2",
+              "score": "CPH · 5/5 (100%)",
+              "missing": false
+            },
             {
               "name": "?? Fall IXL Diagnostic",
               "dueDate": "Sep 25",
@@ -422,7 +452,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "69.48 - D",
+          "grade": "74.27 - C",
           "assignments": [
             {
               "name": "Quarter 1 Optional Extra Credit",
@@ -445,8 +475,8 @@
             {
               "name": "Monster Pgs. 88-126 Reading Questions Must be turned in by Mon. 10/12 at 2:30 PM",
               "dueDate": "Oct 6",
-              "score": "For* · 0/20 (0%) · M Missing",
-              "missing": true
+              "score": "For* · 20/20 (100%)",
+              "missing": false
             },
             {
               "name": "Monster Pre-Reading Writing",
@@ -528,6 +558,18 @@
           "teacherEmail": "st_ePeterre@smfcsd.org",
           "grade": "67.94 - D",
           "assignments": [
+            {
+              "name": "notebook check",
+              "dueDate": "Oct 8",
+              "score": "F · /45",
+              "missing": false
+            },
+            {
+              "name": "Entrance Tasks",
+              "dueDate": "Oct 8",
+              "score": "F · /28",
+              "missing": false
+            },
             {
               "name": "unit 1 test",
               "dueDate": "Oct 6",
@@ -749,8 +791,14 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "74.88 - C",
+          "grade": "76.33 - C",
           "assignments": [
+            {
+              "name": "3A.2- 4 quizs",
+              "dueDate": "Oct 1",
+              "score": "S · 6.72/8 (84%)",
+              "missing": false
+            },
             {
               "name": "atomic history timeline",
               "dueDate": "Sep 28",
@@ -829,7 +877,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "79.42 - C",
+          "grade": "76.45 - C",
           "assignments": [
             {
               "name": "Q1 Reflection",
@@ -844,10 +892,16 @@
               "missing": false
             },
             {
-              "name": "Graphic Organizer",
-              "dueDate": "Oct 8",
+              "name": "Outline",
+              "dueDate": "Oct 12",
               "score": "FOR · /20",
               "missing": false
+            },
+            {
+              "name": "Graphic Organizer May submit until 10/12",
+              "dueDate": "Oct 8",
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "\"Lamb to the Slaughter\" CommonLit",
@@ -1104,7 +1158,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "67.24 - D",
+          "grade": "66.01 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -1141,6 +1195,12 @@
               "dueDate": "Sep 29",
               "score": "0/20 (0%) · M Missing",
               "missing": true
+            },
+            {
+              "name": "Textivate sequence 1: Basic German phrases, wea... Please finish for additional late credit.",
+              "dueDate": "Sep 27",
+              "score": "9.7/22 (44.09%)",
+              "missing": false
             },
             {
               "name": "Blooket: eins bis zwanzig (die Zahlen 1-20) Please finish for additional late credit.",
@@ -1244,12 +1304,18 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "83.41 - B",
+          "grade": "84.40 - B",
           "assignments": [
             {
               "name": "Mental Health Disorders WS",
               "dueDate": "Oct 12",
-              "score": "CL · /13",
+              "score": "CL · 13/13 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Sleep Article Choices",
+              "dueDate": "Oct 11",
+              "score": "CL · 16/16 (100%)",
               "missing": false
             },
             {
