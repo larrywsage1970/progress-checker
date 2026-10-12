@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T22:02:54.732Z",
+  "updatedAt": "2026-10-12T03:26:21.838Z",
   "students": [
     {
       "name": "Avery",
@@ -112,12 +112,18 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.25 - A",
+          "grade": "91.39 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
-              "dueDate": "Oct 16",
+              "dueDate": "Oct 12",
               "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 8",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -1232,7 +1238,7 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "82.01 - B",
+          "grade": "83.41 - B",
           "assignments": [
             {
               "name": "Nutrition Unit Quiz (F26)",
