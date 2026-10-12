@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T03:26:21.838Z",
+  "updatedAt": "2026-10-12T13:57:57.350Z",
   "students": [
     {
       "name": "Avery",
@@ -424,6 +424,12 @@
           "teacherEmail": null,
           "grade": "69.48 - D",
           "assignments": [
+            {
+              "name": "Quarter 1 Optional Extra Credit",
+              "dueDate": "Oct 14",
+              "score": "For* · /0",
+              "missing": false
+            },
             {
               "name": "Graphic Novel Analysis",
               "dueDate": "Oct 8",
@@ -1240,6 +1246,12 @@
           "teacherEmail": null,
           "grade": "83.41 - B",
           "assignments": [
+            {
+              "name": "Mental Health Disorders WS",
+              "dueDate": "Oct 12",
+              "score": "CL · /13",
+              "missing": false
+            },
             {
               "name": "Nutrition Unit Quiz (F26)",
               "dueDate": "Sep 18",
