@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T22:20:36.722Z",
+  "updatedAt": "2026-10-13T04:41:02.800Z",
   "students": [
     {
       "name": "Avery",
@@ -556,7 +556,7 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "67.94 - D",
+          "grade": "69.21 - D",
           "assignments": [
             {
               "name": "notebook check",
@@ -567,13 +567,37 @@
             {
               "name": "Entrance Tasks",
               "dueDate": "Oct 8",
-              "score": "F · /28",
+              "score": "F · 28/28 (100%)",
               "missing": false
             },
             {
               "name": "unit 1 test",
               "dueDate": "Oct 6",
               "score": "S · 26/50 (52%)",
+              "missing": false
+            },
+            {
+              "name": "unit 1 study guide",
+              "dueDate": "Oct 2",
+              "score": "F · 0/20 (0%) · L M Late Missing",
+              "missing": true
+            },
+            {
+              "name": "separation lab",
+              "dueDate": "Sep 30",
+              "score": "F · 15/20 (75%)",
+              "missing": false
+            },
+            {
+              "name": "solutions, suspensions, colloids",
+              "dueDate": "Sep 30",
+              "score": "F · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "puffball activity",
+              "dueDate": "Sep 28",
+              "score": "F · /20 · E Excluded",
               "missing": false
             },
             {
