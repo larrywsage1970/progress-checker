@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T13:14:11.293Z",
+  "updatedAt": "2026-10-13T20:28:03.666Z",
   "students": [
     {
       "name": "Avery",
@@ -142,12 +142,12 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.39 - A",
+          "grade": "91.67 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
               "dueDate": "Oct 12",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -901,7 +901,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "76.45 - C",
+          "grade": "77.30 - C",
           "assignments": [
             {
               "name": "Q1 Reflection",
@@ -918,7 +918,7 @@
             {
               "name": "Outline",
               "dueDate": "Oct 12",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
