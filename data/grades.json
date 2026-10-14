@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T19:06:25.345Z",
+  "updatedAt": "2026-10-14T23:34:09.155Z",
   "students": [
     {
       "name": "Avery",
@@ -603,7 +603,7 @@
             {
               "name": "unit 1 bonus assignment",
               "dueDate": "Oct 2",
-              "score": "F · /0",
+              "score": "F · 0/0",
               "missing": false
             },
             {
