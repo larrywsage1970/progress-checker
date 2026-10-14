@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T08:14:47.764Z",
+  "updatedAt": "2026-10-14T14:14:01.482Z",
   "students": [
     {
       "name": "Avery",
@@ -154,6 +154,12 @@
               "name": "DAILY GRADE",
               "dueDate": "Oct 8",
               "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Week 8 Solving Check",
+              "dueDate": "Oct 8",
+              "score": "/10",
               "missing": false
             },
             {
@@ -375,6 +381,12 @@
           "grade": "93.48 - A",
           "assignments": [
             {
+              "name": "Weekly Starter 10/5 - 10/9",
+              "dueDate": "Oct 14",
+              "score": "CW · /20",
+              "missing": false
+            },
+            {
               "name": "Weekly Starter 9/28-10/2",
               "dueDate": "Oct 3",
               "score": "CW · 24/25 (96%)",
@@ -556,12 +568,18 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "69.21 - D",
+          "grade": "75.95 - C",
           "assignments": [
+            {
+              "name": "unit 1 retest study guide",
+              "dueDate": "Oct 13",
+              "score": "F · 20/20 (100%)",
+              "missing": false
+            },
             {
               "name": "notebook check",
               "dueDate": "Oct 8",
-              "score": "F · /45",
+              "score": "F · 45/45 (100%)",
               "missing": false
             },
             {
@@ -579,8 +597,14 @@
             {
               "name": "unit 1 study guide",
               "dueDate": "Oct 2",
-              "score": "F · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "F · 16/20 (80%) · L Late",
+              "missing": false
+            },
+            {
+              "name": "unit 1 bonus assignment",
+              "dueDate": "Oct 2",
+              "score": "F · /0",
+              "missing": false
             },
             {
               "name": "separation lab",
