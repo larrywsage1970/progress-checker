@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T13:49:40.922Z",
+  "updatedAt": "2026-10-15T18:47:48.414Z",
   "students": [
     {
       "name": "Avery",
@@ -142,8 +142,14 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.67 - A",
+          "grade": "91.80 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 14",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Oct 12",
@@ -1218,12 +1224,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "66.01 - D",
+          "grade": "67.35 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
               "score": "9/0",
+              "missing": false
+            },
+            {
+              "name": "\" '54, '74, '90, 2006\" - Song Lyrics Matching",
+              "dueDate": "Oct 15",
+              "score": "19/20 (95%)",
               "missing": false
             },
             {
