@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T13:39:06.128Z",
+  "updatedAt": "2026-10-16T18:33:37.250Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,32 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "82.91 - B",
+          "grade": "82.05 - B",
           "assignments": [
+            {
+              "name": "???? Edpuzzle - Alg Edpuzzle - Week 8 - Calcula...",
+              "dueDate": "Oct 9",
+              "score": "EP · 2.5/5 (50%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 8 - Slope-Int...",
+              "dueDate": "Oct 9",
+              "score": "EP · 5/5 (100%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg DeltaMath - Week 8a - Standard Form",
+              "dueDate": "Oct 9",
+              "score": "DM · 8.4/10 (84%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg DeltaMath - Week 8b - Slope-Intercept Form",
+              "dueDate": "Oct 9",
+              "score": "DM · 6.3/10 (63%)",
+              "missing": false
+            },
             {
               "name": "???? Alg DeltaMath - Week 7 - Functions",
               "dueDate": "Oct 2",
@@ -144,6 +168,12 @@
           "teacherEmail": "st_ecanepa@smfcsd.org",
           "grade": "91.92 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 16",
+              "score": "/2",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Oct 15",
@@ -487,7 +517,7 @@
             {
               "name": "Quarter 1 Optional Extra Credit",
               "dueDate": "Oct 14",
-              "score": "For* · /0",
+              "score": "Sum* · /0",
               "missing": false
             },
             {
@@ -714,8 +744,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "86.96 - B",
+          "grade": "89.44 - B",
           "assignments": [
+            {
+              "name": "Extra Credit Participation",
+              "dueDate": "Oct 16",
+              "score": "EC · 4/0",
+              "missing": false
+            },
             {
               "name": "Review Terms Unit 3",
               "dueDate": "Oct 14",
@@ -955,12 +991,12 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "78.09 - C",
+          "grade": "81.57 - B",
           "assignments": [
             {
               "name": "Q1 Reflection",
               "dueDate": "Oct 16",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
@@ -974,12 +1010,6 @@
               "dueDate": "Oct 12",
               "score": "FOR · 20/20 (100%)",
               "missing": false
-            },
-            {
-              "name": "Graphic Organizer May submit until 10/12",
-              "dueDate": "Oct 8",
-              "score": "FOR · 0/20 (0%) · L M Late Missing",
-              "missing": true
             },
             {
               "name": "\"Lamb to the Slaughter\" CommonLit",
@@ -1120,12 +1150,18 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "90.11 - A",
+          "grade": "90.88 - A",
           "assignments": [
             {
               "name": "Quarter Test 1",
               "dueDate": "Oct 16",
               "score": "QT · 80/100 (80%)",
+              "missing": false
+            },
+            {
+              "name": "Quarter Test 1 Bonus GimKit Participation",
+              "dueDate": "Oct 16",
+              "score": "QT · 5/0",
               "missing": false
             },
             {
@@ -1207,9 +1243,9 @@
               "missing": false
             },
             {
-              "name": "HWQ1.4",
+              "name": "HWQ1.4 [Lowest mark dropped - 10/16/2026]",
               "dueDate": "Aug 28",
-              "score": "FORM · 90/100 (90%)",
+              "score": "FORM · 90/100 (90%) · E Excluded",
               "missing": false
             },
             {
@@ -1236,18 +1272,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "67.35 - D",
+          "grade": "71.50 - C",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Oct 16",
-              "score": "9/0",
+              "score": "10/0",
               "missing": false
             },
             {
-              "name": "\" '54, '74, '90, 2006\" - Song Lyrics Matching",
+              "name": "\" '54, '74, '90, 2006\" - Song Lyrics Matching I added Gimkit bonus to this grade.",
               "dueDate": "Oct 15",
-              "score": "19/20 (95%)",
+              "score": "21.5/20 (107.5%)",
               "missing": false
             },
             {
@@ -1299,10 +1335,10 @@
               "missing": true
             },
             {
-              "name": "Edpuzzle - Zahlen lernen mit Flunkeblunk für Ki...",
+              "name": "Edpuzzle - Zahlen lernen mit Flunkeblunk für Ki... Late -5; Make sure to manually submit late Edpuzzles on GC because I just happened to see this.",
               "dueDate": "Sep 15",
-              "score": "0/25 (0%) · M Missing",
-              "missing": true
+              "score": "14.5/25 (58%) · L Late",
+              "missing": false
             },
             {
               "name": "Edpuzzle - Zahlen Lied für Kinder 1-10 | Kinder...",
