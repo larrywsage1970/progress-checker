@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T23:09:52.539Z",
+  "updatedAt": "2026-10-19T02:31:24.616Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,26 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "82.05 - B",
+          "grade": "81.17 - B",
           "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 9 - Slope-Intercept For...",
+              "dueDate": "Oct 16",
+              "score": "DM · 6.7/10 (67%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 9 - Slope-Int...",
+              "dueDate": "Oct 16",
+              "score": "EP · 3.35/5 (67%)",
+              "missing": false
+            },
+            {
+              "name": "?? Chapters 2 & 3 Test",
+              "dueDate": "Oct 16",
+              "score": "QT · 40/50 (80%)",
+              "missing": false
+            },
             {
               "name": "???? Edpuzzle - Alg Edpuzzle - Week 8 - Calcula...",
               "dueDate": "Oct 9",
