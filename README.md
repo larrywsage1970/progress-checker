@@ -27,6 +27,9 @@ posted only in Google Classroom isn't covered.
 - "↻ Refresh" button (top of the page) triggers a fresh ProgressBook
   scrape on demand and force-reloads the app itself — fixes both stale
   grade data and a stuck old version of the app on your phone in one tap
+- Assignment list defaults to the current grading period only (cutoff set
+  manually in `QUARTER_START_DATE` in `app.js` — bump it each new
+  quarter); a toggle above the course list reveals past-quarter work
 - One tab per kid (currently Avery / Kaleb) — a tab for a student not yet
   linked to the ProgressBook account shows a placeholder instead of erroring
 - Fully static — no server, no database

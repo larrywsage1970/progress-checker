@@ -24,6 +24,13 @@ function isIOS() {
 // shows a "not linked yet" placeholder instead of erroring.
 const STUDENT_TABS = ["Avery", "Kaleb"];
 
+// Bump this at the start of each new grading period. ProgressBook's scraped
+// data doesn't include quarter/marking-period boundaries, so this is a
+// manually-set cutoff: assignments due before it are hidden by default (the
+// "Current quarter only" toggle reveals them) since last quarter's work
+// otherwise clutters the current view.
+const QUARTER_START_DATE = new Date(2026, 9, 13); // Oct 13, 2026
+
 // Lets the Refresh button kick off a real scrape run from the phone instead
 // of waiting for the 3-hour schedule. This token is a fine-grained GitHub
 // PAT scoped to ONLY "Actions: read and write" on this one repo — nothing
@@ -173,12 +180,21 @@ function sortByDueDateAsc(assignments) {
   });
 }
 
+// Undated assignments stay visible regardless of the toggle — we can't tell
+// which quarter they belong to, so hiding them would silently drop real
+// data rather than just decluttering old work.
+function isCurrentQuarterOrUndated(a) {
+  const t = parseDueDate(a.dueDate);
+  return t === null || t >= QUARTER_START_DATE.getTime();
+}
+
 function assignmentKey(a) {
   return `${a.name}|${a.dueDate ?? ""}`;
 }
 
 function CourseList({ courses, studentName }) {
   const [expanded, setExpanded] = useState({});
+  const [showPastQuarters, setShowPastQuarters] = useState(false);
   const toggle = (i) => setExpanded((prev) => ({ ...prev, [i]: !prev[i] }));
 
   if (!courses?.length) {
@@ -187,8 +203,11 @@ function CourseList({ courses, studentName }) {
 
   return html`
     <div>
+      <button style=${styles.quarterToggle} onClick=${() => setShowPastQuarters((p) => !p)}>
+        ${showPastQuarters ? "Showing all quarters — tap for current only" : "Current quarter only — tap to show all"}
+      </button>
       ${courses.map((course, i) => html`
-        <${CourseCard} key=${i} course=${course} studentName=${studentName} expanded=${!!expanded[i]} onToggle=${() => toggle(i)} />
+        <${CourseCard} key=${i} course=${course} studentName=${studentName} expanded=${!!expanded[i]} onToggle=${() => toggle(i)} showPastQuarters=${showPastQuarters} />
       `)}
       <div style=${{height: 40}} />
     </div>
@@ -200,12 +219,13 @@ function CourseList({ courses, studentName }) {
 // checked assignments get listed in the body, or a generic question if none
 // are checked. The To: field stays whatever mailto opens with — editable in
 // the mail app, e.g. to send the same draft to a kid instead.
-function CourseCard({ course, studentName, expanded, onToggle }) {
+function CourseCard({ course, studentName, expanded, onToggle, showPastQuarters }) {
   const [selected, setSelected] = useState({});
   const toggleSelect = (key) => setSelected((prev) => ({ ...prev, [key]: !prev[key] }));
 
   const sorted = sortByDueDateAsc(course.assignments);
-  const chosen = sorted.filter((a) => selected[assignmentKey(a)]);
+  const visible = showPastQuarters ? sorted : sorted.filter(isCurrentQuarterOrUndated);
+  const chosen = visible.filter((a) => selected[assignmentKey(a)]);
 
   const sendEmail = () => {
     const subject = `Question about ${studentName} - ${course.name}`;
@@ -218,7 +238,7 @@ function CourseCard({ course, studentName, expanded, onToggle }) {
   };
 
   return html`
-    <div style=${{...styles.courseCard, borderLeftColor: course.assignments?.some((a) => a.missing) ? "#c05a5a" : "#3a5a68"}}>
+    <div style=${{...styles.courseCard, borderLeftColor: visible.some((a) => a.missing) ? "#c05a5a" : "#3a5a68"}}>
       <div style=${styles.courseHead} onClick=${onToggle} role="button" tabIndex="0">
         <div>
           <div style=${styles.courseName}>${course.name}</div>
@@ -231,8 +251,8 @@ function CourseCard({ course, studentName, expanded, onToggle }) {
       </div>
       ${expanded && html`
         <div style=${styles.missingList}>
-          ${sorted.length > 0
-            ? sorted.map((a) => html`
+          ${visible.length > 0
+            ? visible.map((a) => html`
                 <label key=${assignmentKey(a)} style=${{...styles.assignmentItem, color: a.missing ? "#e0a8a8" : "#e8dcc8"}} onClick=${(e) => e.stopPropagation()}>
                   <span style=${styles.assignmentMain}>
                     <input type="checkbox" checked=${!!selected[assignmentKey(a)]} onChange=${() => toggleSelect(assignmentKey(a))} style=${styles.checkbox} />
@@ -241,7 +261,9 @@ function CourseCard({ course, studentName, expanded, onToggle }) {
                   ${a.dueDate && html`<span style=${styles.assignmentDue}>${a.dueDate}</span>`}
                 </label>
               `)
-            : html`<div style=${styles.noDetails}>No assignment detail for this class.</div>`}
+            : sorted.length > 0
+              ? html`<div style=${styles.noDetails}>No current-quarter assignments — tap "show all" above for earlier ones.</div>`
+              : html`<div style=${styles.noDetails}>No assignment detail for this class.</div>`}
           ${course.teacherEmail && html`
             <button style=${styles.emailButton} onClick=${(e) => { e.stopPropagation(); sendEmail(); }}>
               ${chosen.length ? `Email teacher about ${chosen.length} assignment${chosen.length > 1 ? "s" : ""}` : "Email teacher"}
@@ -271,6 +293,7 @@ const styles = {
 
   infoBox: { background:"#131510", border:"1px solid #2a2a20", borderRadius:2, padding:"12px 14px", marginBottom:14, fontSize:12, color:"#a3ab98", lineHeight:1.6 },
   empty: { textAlign:"center", padding:"60px 20px", color:"#8a8a8a", fontSize:13, lineHeight:2 },
+  quarterToggle: { display:"block", width:"100%", textAlign:"left", background:"transparent", border:"1px solid #2a2a20", borderRadius:2, color:"#7fa8b8", fontSize:11, letterSpacing:"0.04em", padding:"8px 10px", marginBottom:12, cursor:"pointer" },
 
   courseCard: { background:"#161810", border:"1px solid #2a2a20", borderLeft:"4px solid #3a5a68", borderRadius:2, marginBottom:10, padding:"12px 14px" },
   courseHead: { display:"flex", justifyContent:"space-between", alignItems:"flex-start", cursor:"pointer" },
