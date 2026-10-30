@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T17:30:12.955Z",
+  "updatedAt": "2026-10-30T21:50:06.422Z",
   "students": [
     {
       "name": "Avery",
@@ -378,7 +378,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "72.60 - C",
+          "grade": "65.55 - D",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -401,8 +401,8 @@
             {
               "name": "Coloring Packet",
               "dueDate": "Oct 28",
-              "score": "/24",
-              "missing": false
+              "score": "0/24 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Quiz 3: colors, basic personal questions, song",
