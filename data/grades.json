@@ -1,4 +1,474 @@
 {
-  "updatedAt": "2026-10-30T09:20:16.725Z",
-  "students": []
+  "updatedAt": "2026-10-30T17:30:12.955Z",
+  "students": [
+    {
+      "name": "Avery",
+      "courses": [
+        {
+          "name": "ALGEBRA 1 ENRICHED",
+          "teacher": null,
+          "teacherEmail": "st_aokeefe@smfcsd.org",
+          "grade": "70.50 - C",
+          "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 10a - Point-Slope Form",
+              "dueDate": "Oct 23",
+              "score": "DM · 7.9/10 (79%)",
+              "missing": false
+            },
+            {
+              "name": "?? Alg DeltaMath - Week 10b - Parallel & Perpen...",
+              "dueDate": "Oct 23",
+              "score": "DM · 6.2/10 (62%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "ALGEBRA 1 WIN",
+          "teacher": null,
+          "teacherEmail": "st_ecanepa@smfcsd.org",
+          "grade": "90.00 - A",
+          "assignments": [
+            {
+              "name": "Q2 wk 2 Worksheet",
+              "dueDate": "Oct 27",
+              "score": "/10",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 26",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 23",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 22",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 21",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Slope Intercept Google Form",
+              "dueDate": "Oct 21",
+              "score": "8/10 (80%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 20",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 19",
+              "score": "2/2 (100%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "AMER SIGN LANGUAGE 1",
+          "teacher": null,
+          "teacherEmail": "st_sparker@smfcsd.org",
+          "grade": "92.73 - A",
+          "assignments": [
+            {
+              "name": "Emotions Parameter Activity",
+              "dueDate": "Oct 28",
+              "score": "PT · /20",
+              "missing": false
+            },
+            {
+              "name": "Self Starter 10/19 - 10/23",
+              "dueDate": "Oct 23",
+              "score": "CW · 21/25 (84%)",
+              "missing": false
+            },
+            {
+              "name": "Emotions Flipbooks",
+              "dueDate": "Oct 23",
+              "score": "CW · 30/30 (100%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "ENGLISH 9 ENRICHED",
+          "teacher": null,
+          "teacherEmail": null,
+          "grade": "85.59 - B",
+          "assignments": [
+            {
+              "name": "Monster Final Quiz",
+              "dueDate": "Oct 23",
+              "score": "Sum* · 12.5/17 (73.53%)",
+              "missing": false
+            },
+            {
+              "name": "Monster Vocabulary Quiz",
+              "dueDate": "Oct 23",
+              "score": "Sum* · 13/14 (92.86%)",
+              "missing": false
+            },
+            {
+              "name": "Monster Ending Writing",
+              "dueDate": "Oct 22",
+              "score": "For* · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "ICE Method Practice (pgs. 200-239)",
+              "dueDate": "Oct 19",
+              "score": "For* · 19/20 (95%)",
+              "missing": false
+            },
+            {
+              "name": "Vocabulary Practice 2 Packet",
+              "dueDate": "Oct 19",
+              "score": "For* · 25.25/30 (84.17%)",
+              "missing": false
+            },
+            {
+              "name": "Guilty or Not Guilty Writing",
+              "dueDate": "Oct 19",
+              "score": "For* · 30/33 (90.91%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "PHYSICAL SCIENCE",
+          "teacher": null,
+          "teacherEmail": "st_ePeterre@smfcsd.org",
+          "grade": "63.16 - D",
+          "assignments": [
+            {
+              "name": "2.1 quiz",
+              "dueDate": "Oct 21",
+              "score": "S · 12/19 (63.16%)",
+              "missing": false
+            },
+            {
+              "name": "2.1b checkpoint",
+              "dueDate": "Oct 19",
+              "score": "F · /10",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "WORLD HISTORY",
+          "teacher": null,
+          "teacherEmail": "st_brewer@smfcsd.org",
+          "grade": "72.73 - C",
+          "assignments": [
+            {
+              "name": "TEST French Revolution",
+              "dueDate": "Oct 23",
+              "score": "T · 32/40 (80%)",
+              "missing": false
+            },
+            {
+              "name": "Review French Revolution",
+              "dueDate": "Oct 23",
+              "score": "H · 0/5 (0%)",
+              "missing": false
+            },
+            {
+              "name": "French Revolution Journal Packet",
+              "dueDate": "Oct 21",
+              "score": "FA · 19/25 (76%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Timeline: The French Revolution Ent...",
+              "dueDate": "Oct 20",
+              "score": "H · 1/3 (33.33%)",
+              "missing": false
+            },
+            {
+              "name": "3.6 French Revolution Begins Questions",
+              "dueDate": "Oct 19",
+              "score": "F · 4/4 (100%)",
+              "missing": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kaleb",
+      "courses": [
+        {
+          "name": "ALGEBRA 1 S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "assignments": []
+        },
+        {
+          "name": "AMERICAN HISTORY S1",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "assignments": []
+        },
+        {
+          "name": "BIOLOGY S1",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "assignments": []
+        },
+        {
+          "name": "BIOLOGY S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "assignments": []
+        },
+        {
+          "name": "CHEMISTRY",
+          "teacher": null,
+          "teacherEmail": "st_ePeterre@smfcsd.org",
+          "grade": "100.00 - A",
+          "assignments": [
+            {
+              "name": "3B.2 Average atomic mass",
+              "dueDate": "Oct 29",
+              "score": "F · 1/1 (100%)",
+              "missing": false
+            },
+            {
+              "name": "3A.5-7 quiz",
+              "dueDate": "Oct 21",
+              "score": "S · 8/8 (100%)",
+              "missing": false
+            },
+            {
+              "name": "3A.5",
+              "dueDate": "Oct 19",
+              "score": "F · /1",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "ENGLISH 10",
+          "teacher": null,
+          "teacherEmail": "st_ewalkinshaw@smfcsd.org",
+          "grade": "66.50 - D",
+          "assignments": [
+            {
+              "name": "\"Letter from Birmingham Jail\" Questions",
+              "dueDate": "Oct 30",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"The Bombing of Black Wall Street\" Questions",
+              "dueDate": "Oct 29",
+              "score": "FOR · 20/20 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Rhetorical Devices Notes",
+              "dueDate": "Oct 27",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "Grammar Test",
+              "dueDate": "Oct 26",
+              "score": "SUM · 22/30 (73.33%)",
+              "missing": false
+            },
+            {
+              "name": "Clause Practice",
+              "dueDate": "Oct 23",
+              "score": "FOR · 8/10 (80%)",
+              "missing": false
+            },
+            {
+              "name": "Quotation Practice May submit until 10/27. As of 10/28, never submitted and grace period is over",
+              "dueDate": "Oct 22",
+              "score": "FOR · 0/10 (0%) · L Late",
+              "missing": false
+            },
+            {
+              "name": "Colons Practice",
+              "dueDate": "Oct 21",
+              "score": "FOR · 9/10 (90%)",
+              "missing": false
+            },
+            {
+              "name": "Semicolons Practice May submit until 10/26. As of 10/28, never submitted and grace period is over",
+              "dueDate": "Oct 20",
+              "score": "FOR · 0/10 (0%) · L Late",
+              "missing": false
+            },
+            {
+              "name": "Compare and Contrast Essay",
+              "dueDate": "Oct 19",
+              "score": "SUM · 65/100 (65%)",
+              "missing": false
+            },
+            {
+              "name": "FANBOYS Practice",
+              "dueDate": "Oct 19",
+              "score": "FOR · 9/10 (90%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "ENGLISH 9 S2",
+          "teacher": null,
+          "teacherEmail": "st_wdeshields@smfcsd.org",
+          "grade": null,
+          "assignments": []
+        },
+        {
+          "name": "GEOMETRY",
+          "teacher": null,
+          "teacherEmail": "st_dlarlham@smfcsd.org",
+          "grade": "85.67 - B",
+          "assignments": [
+            {
+              "name": "HWQ3.4",
+              "dueDate": "Oct 27",
+              "score": "FORM · 90/100 (90%)",
+              "missing": false
+            },
+            {
+              "name": "HWQ3.3",
+              "dueDate": "Oct 23",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
+            {
+              "name": "HWQ3.2",
+              "dueDate": "Oct 22",
+              "score": "FORM · /100 · E Excluded",
+              "missing": false
+            },
+            {
+              "name": "HWQ3.1",
+              "dueDate": "Oct 20",
+              "score": "FORM · 67/100 (67%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "GERMAN 1",
+          "teacher": null,
+          "teacherEmail": "st_jstanek@smfcsd.org",
+          "grade": "72.60 - C",
+          "assignments": [
+            {
+              "name": "Small Bonus Opps Throughout the Quarter",
+              "dueDate": "Dec 17",
+              "score": "/0",
+              "missing": false
+            },
+            {
+              "name": "Halloween Kaertchen",
+              "dueDate": "Oct 31",
+              "score": "8/8 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Edpuzzle - Genders of German Nouns: Tips, Trick...",
+              "dueDate": "Oct 29",
+              "score": "0/12 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Coloring Packet",
+              "dueDate": "Oct 28",
+              "score": "/24",
+              "missing": false
+            },
+            {
+              "name": "Quiz 3: colors, basic personal questions, song",
+              "dueDate": "Oct 27",
+              "score": "44/49 (89.8%)",
+              "missing": false
+            },
+            {
+              "name": "Klingel-Arbeit 1 Final due date for full credit is Wed, 10/29 at the beginning of class.",
+              "dueDate": "Oct 26",
+              "score": "35/40 (87.5%)",
+              "missing": false
+            },
+            {
+              "name": "Grün, grün, grün - Draw and color the darlings Late -5",
+              "dueDate": "Oct 23",
+              "score": "22/24 (91.67%) · L Late",
+              "missing": false
+            },
+            {
+              "name": "Blooket: Persönliche Fragen, die Farben, und “G... 37 correct answers so far",
+              "dueDate": "Oct 21",
+              "score": "0/30 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Grün, grün, grün - Song Cloze Activity",
+              "dueDate": "Oct 20",
+              "score": "10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Edpuzzle - Farben || Kinderlieder zum Lernen Late -5",
+              "dueDate": "Oct 19",
+              "score": "11.4/20 (57%)",
+              "missing": false
+            },
+            {
+              "name": "Blooket: die Farben",
+              "dueDate": "Oct 19",
+              "score": "31.5/30 (105%)",
+              "missing": false
+            }
+          ]
+        },
+        {
+          "name": "PERSONAL WELLNESS",
+          "teacher": null,
+          "teacherEmail": null,
+          "grade": "100.00 - A",
+          "assignments": [
+            {
+              "name": "CPR First Aid Quiz",
+              "dueDate": "Oct 29",
+              "score": "CL · /50",
+              "missing": false
+            },
+            {
+              "name": "CPR/Compressions/Breathing",
+              "dueDate": "Oct 23",
+              "score": "CL · 10/10 (100%)",
+              "missing": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
