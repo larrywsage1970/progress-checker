@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T21:50:06.422Z",
+  "updatedAt": "2026-11-02T03:34:11.641Z",
   "students": [
     {
       "name": "Avery",
@@ -28,18 +28,30 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.00 - A",
+          "grade": "88.89 - B",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 28",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Oct 27",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "Q2 wk 2 Worksheet",
               "dueDate": "Oct 27",
-              "score": "/10",
+              "score": "8/10 (80%)",
               "missing": false
             },
             {
               "name": "DAILY GRADE",
               "dueDate": "Oct 26",
-              "score": "/2",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -84,12 +96,30 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "92.73 - A",
+          "grade": "95.00 - A",
           "assignments": [
+            {
+              "name": "Deaf History Time lime Project",
+              "dueDate": "Nov 4",
+              "score": "PJ · /50",
+              "missing": false
+            },
+            {
+              "name": "Self Starter 10/26 - 10/30",
+              "dueDate": "Nov 1",
+              "score": "CW · 25/25 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Emotions/Parameter Quiz",
+              "dueDate": "Nov 1",
+              "score": "QZ · 56/60 (93.33%)",
+              "missing": false
+            },
             {
               "name": "Emotions Parameter Activity",
               "dueDate": "Oct 28",
-              "score": "PT · /20",
+              "score": "PT · 20/20 (100%)",
               "missing": false
             },
             {
