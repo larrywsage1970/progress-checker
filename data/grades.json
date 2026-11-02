@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T14:17:30.050Z",
+  "updatedAt": "2026-11-02T22:57:39.160Z",
   "students": [
     {
       "name": "Avery",
@@ -184,8 +184,32 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "63.16 - D",
+          "grade": "77.89 - C",
           "assignments": [
+            {
+              "name": "acid base notebook",
+              "dueDate": "Nov 26",
+              "score": "F · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "line em up lab",
+              "dueDate": "Nov 2",
+              "score": "F · /30",
+              "missing": false
+            },
+            {
+              "name": "unit 2 test",
+              "dueDate": "Oct 27",
+              "score": "S · /27",
+              "missing": false
+            },
+            {
+              "name": "Solubility lab",
+              "dueDate": "Oct 26",
+              "score": "F · 30/30 (100%)",
+              "missing": false
+            },
             {
               "name": "2.1 quiz",
               "dueDate": "Oct 21",
@@ -195,7 +219,7 @@
             {
               "name": "2.1b checkpoint",
               "dueDate": "Oct 19",
-              "score": "F · /10",
+              "score": "F · /10 · E Excluded",
               "missing": false
             }
           ]
@@ -275,7 +299,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "100.00 - A",
+          "grade": "99.33 - A",
           "assignments": [
             {
               "name": "3B.2 Average atomic mass",
@@ -290,10 +314,16 @@
               "missing": false
             },
             {
-              "name": "3A.5",
+              "name": "3A.5 see me",
               "dueDate": "Oct 19",
-              "score": "F · /1",
-              "missing": false
+              "score": "F · 0/1 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "3A.6",
+              "dueDate": "Oct 19",
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
             }
           ]
         },
@@ -488,16 +518,22 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "100.00 - A",
+          "grade": "97.14 - A",
           "assignments": [
             {
               "name": "CPR First Aid Quiz",
               "dueDate": "Oct 29",
-              "score": "CL · /50",
+              "score": "CL · 48/50 (96%)",
               "missing": false
             },
             {
               "name": "CPR/Compressions/Breathing",
+              "dueDate": "Oct 23",
+              "score": "CL · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "CPR/AED",
               "dueDate": "Oct 23",
               "score": "CL · 10/10 (100%)",
               "missing": false
