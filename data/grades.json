@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T03:34:11.641Z",
+  "updatedAt": "2026-11-02T14:17:30.050Z",
   "students": [
     {
       "name": "Avery",
@@ -303,6 +303,12 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "66.50 - D",
           "assignments": [
+            {
+              "name": "\"Why does the Caged Bird Sing?\"",
+              "dueDate": "Nov 5",
+              "score": "FOR · /20",
+              "missing": false
+            },
             {
               "name": "\"Letter from Birmingham Jail\" Questions",
               "dueDate": "Oct 30",
