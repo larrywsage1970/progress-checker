@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T22:57:39.160Z",
+  "updatedAt": "2026-11-03T04:41:35.733Z",
   "students": [
     {
       "name": "Avery",
@@ -184,7 +184,7 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "77.89 - C",
+          "grade": "83.04 - B",
           "assignments": [
             {
               "name": "acid base notebook",
@@ -201,7 +201,7 @@
             {
               "name": "unit 2 test",
               "dueDate": "Oct 27",
-              "score": "S · /27",
+              "score": "S · 21/27 (77.78%)",
               "missing": false
             },
             {
@@ -299,7 +299,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.33 - A",
+          "grade": "99.50 - A",
           "assignments": [
             {
               "name": "3B.2 Average atomic mass",
@@ -324,6 +324,12 @@
               "dueDate": "Oct 19",
               "score": "F · 0/1 (0%) · L M Late Missing",
               "missing": true
+            },
+            {
+              "name": "3A.7",
+              "dueDate": "Oct 19",
+              "score": "F · 1/1 (100%)",
+              "missing": false
             }
           ]
         },
