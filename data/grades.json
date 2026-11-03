@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T13:23:13.797Z",
+  "updatedAt": "2026-11-03T20:43:58.194Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,26 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "70.50 - C",
+          "grade": "74.88 - C",
           "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 11 - Linear Regression",
+              "dueDate": "Oct 30",
+              "score": "DM · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "???? Edpuzzle - Alg Edpuzzle - Week 11 - Linear...",
+              "dueDate": "Oct 30",
+              "score": "EP · 0.85/5 (17%)",
+              "missing": false
+            },
+            {
+              "name": "?? Edpuzzle - Alg Edpuzzle - Week 11 - Correlat...",
+              "dueDate": "Oct 30",
+              "score": "EP · 5/5 (100%)",
+              "missing": false
+            },
             {
               "name": "?? Alg DeltaMath - Week 10a - Point-Slope Form",
               "dueDate": "Oct 23",
@@ -524,8 +542,14 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "97.14 - A",
+          "grade": "90.00 - A",
           "assignments": [
+            {
+              "name": "Emergency Action Plan",
+              "dueDate": "Oct 30",
+              "score": "CL · 4/10 (40%)",
+              "missing": false
+            },
             {
               "name": "CPR First Aid Quiz",
               "dueDate": "Oct 29",
