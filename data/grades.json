@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T10:12:43.266Z",
+  "updatedAt": "2026-11-04T19:09:14.128Z",
   "students": [
     {
       "name": "Avery",
@@ -161,6 +161,12 @@
           "grade": "85.59 - B",
           "assignments": [
             {
+              "name": "Monster One Pager",
+              "dueDate": "Nov 4",
+              "score": "Sum* · /26",
+              "missing": false
+            },
+            {
               "name": "Monster Final Quiz",
               "dueDate": "Oct 23",
               "score": "Sum* · 12.5/17 (73.53%)",
@@ -213,7 +219,7 @@
             {
               "name": "line em up lab",
               "dueDate": "Nov 2",
-              "score": "F · /30",
+              "score": "F · 30/30 (100%)",
               "missing": false
             },
             {
@@ -468,13 +474,25 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "65.55 - D",
+          "grade": "55.07 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
               "score": "/0",
               "missing": false
+            },
+            {
+              "name": "Deutsch mit Socke - Cloze and translation",
+              "dueDate": "Nov 4",
+              "score": "0/25 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Blooket HW - Useful German Phrases",
+              "dueDate": "Nov 1",
+              "score": "0/22 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Halloween Kaertchen",
