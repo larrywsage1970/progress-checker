@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T19:09:14.128Z",
+  "updatedAt": "2026-11-05T01:11:58.386Z",
   "students": [
     {
       "name": "Avery",
@@ -252,8 +252,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "72.73 - C",
+          "grade": "71.95 - C",
           "assignments": [
+            {
+              "name": "Haitian and South American Revolutions Slides",
+              "dueDate": "Oct 28",
+              "score": "F · 3/5 (60%)",
+              "missing": false
+            },
             {
               "name": "TEST French Revolution",
               "dueDate": "Oct 23",
@@ -361,7 +367,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "66.50 - D",
+          "grade": "60.45 - D",
           "assignments": [
             {
               "name": "\"Why does the Caged Bird Sing?\"",
@@ -370,10 +376,10 @@
               "missing": false
             },
             {
-              "name": "\"Letter from Birmingham Jail\" Questions",
+              "name": "\"Letter from Birmingham Jail\" Questions May submit until 11/6",
               "dueDate": "Oct 30",
-              "score": "FOR · /20",
-              "missing": false
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "\"The Bombing of Black Wall Street\" Questions",
