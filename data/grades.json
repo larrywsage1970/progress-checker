@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T10:10:23.076Z",
+  "updatedAt": "2026-11-06T18:42:45.831Z",
   "students": [
     {
       "name": "Avery",
@@ -46,8 +46,26 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.00 - A",
+          "grade": "90.48 - A",
           "assignments": [
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Dec 17",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 5",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Sequence Worksheet",
+              "dueDate": "Nov 5",
+              "score": "/10",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Nov 4",
@@ -172,6 +190,12 @@
           "teacherEmail": null,
           "grade": "63.08 - D",
           "assignments": [
+            {
+              "name": "A Chance in the World Reading Questions",
+              "dueDate": "Nov 5",
+              "score": "For* · /12",
+              "missing": false
+            },
             {
               "name": "Monster One Pager 2 no names on the board. Late work grace period extends to Monday as students walk into the room for class. If projects are not turned in by that point, they will receive a 0.",
               "dueDate": "Nov 4",
@@ -341,8 +365,14 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.50 - A",
+          "grade": "99.60 - A",
           "assignments": [
+            {
+              "name": "mystery element",
+              "dueDate": "Nov 6",
+              "score": "F · 1/1 (100%)",
+              "missing": false
+            },
             {
               "name": "3B.2 Average atomic mass",
               "dueDate": "Oct 29",
@@ -460,8 +490,26 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "85.67 - B",
+          "grade": "45.89 - F",
           "assignments": [
+            {
+              "name": "IXLD4",
+              "dueDate": "Nov 5",
+              "score": "FORM · 0/100 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "IXLD5",
+              "dueDate": "Nov 5",
+              "score": "FORM · 0/80 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "IXLD7",
+              "dueDate": "Nov 5",
+              "score": "FORM · 0/80 (0%) · M Missing",
+              "missing": true
+            },
             {
               "name": "HWQ3.4",
               "dueDate": "Oct 27",
@@ -492,13 +540,19 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "55.07 - F",
+          "grade": "52.91 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
               "score": "/0",
               "missing": false
+            },
+            {
+              "name": "Edpuzzle - Neu in Berlin",
+              "dueDate": "Nov 5",
+              "score": "0/12 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Deutsch mit Socke - Cloze and translation",
