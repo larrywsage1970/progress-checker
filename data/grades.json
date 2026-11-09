@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T00:31:52.831Z",
+  "updatedAt": "2026-11-09T03:47:40.320Z",
   "students": [
     {
       "name": "Avery",
@@ -46,12 +46,18 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "90.48 - A",
+          "grade": "88.89 - B",
           "assignments": [
             {
               "name": "DAILY GRADE",
               "dueDate": "Dec 17",
               "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 6",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -63,7 +69,7 @@
             {
               "name": "Sequence Worksheet",
               "dueDate": "Nov 5",
-              "score": "/10",
+              "score": "8/10 (80%)",
               "missing": false
             },
             {
@@ -144,12 +150,24 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "95.00 - A",
+          "grade": "90.42 - A",
           "assignments": [
+            {
+              "name": "Family Edpuzzle with Parameters",
+              "dueDate": "Nov 6",
+              "score": "CW · 30/30 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Self Starter 11/2 - 11/6",
+              "dueDate": "Nov 6",
+              "score": "CW · /20",
+              "missing": false
+            },
             {
               "name": "Deaf History Time lime Project",
               "dueDate": "Nov 4",
-              "score": "PJ · /50",
+              "score": "PJ · 35/50 (70%)",
               "missing": false
             },
             {
@@ -631,7 +649,7 @@
         {
           "name": "PERSONAL WELLNESS",
           "teacher": null,
-          "teacherEmail": null,
+          "teacherEmail": "st_mbaker@smfcsd.org",
           "grade": "90.00 - A",
           "assignments": [
             {
