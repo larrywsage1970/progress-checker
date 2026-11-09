@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T03:47:40.320Z",
+  "updatedAt": "2026-11-09T14:46:18.512Z",
   "students": [
     {
       "name": "Avery",
@@ -306,8 +306,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "71.95 - C",
+          "grade": "72.41 - C",
           "assignments": [
+            {
+              "name": "Introduction to the Industrial Revolution Packet",
+              "dueDate": "Nov 4",
+              "score": "F · 4/5 (80%)",
+              "missing": false
+            },
             {
               "name": "Haitian and South American Revolutions Slides",
               "dueDate": "Oct 28",
@@ -427,12 +433,36 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "63.75 - D",
+          "grade": "65.77 - D",
           "assignments": [
+            {
+              "name": "Creative Writing Prompt",
+              "dueDate": "Nov 11",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"The American Embassy\"",
+              "dueDate": "Nov 10",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"The Danger of a Single Story\"",
+              "dueDate": "Nov 9",
+              "score": "FOR · /20",
+              "missing": false
+            },
+            {
+              "name": "\"from Four Freedoms\"",
+              "dueDate": "Nov 6",
+              "score": "FOR · /20",
+              "missing": false
+            },
             {
               "name": "\"Why does the Caged Bird Sing?\"",
               "dueDate": "Nov 5",
-              "score": "FOR · /20",
+              "score": "FOR · 18/20 (90%)",
               "missing": false
             },
             {
