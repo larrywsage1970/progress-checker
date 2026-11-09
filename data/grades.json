@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T14:46:18.512Z",
+  "updatedAt": "2026-11-09T23:39:38.694Z",
   "students": [
     {
       "name": "Avery",
@@ -433,7 +433,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "65.77 - D",
+          "grade": "61.07 - D",
           "assignments": [
             {
               "name": "Creative Writing Prompt",
@@ -454,10 +454,10 @@
               "missing": false
             },
             {
-              "name": "\"from Four Freedoms\"",
+              "name": "\"from Four Freedoms\" May submit until 11/12",
               "dueDate": "Nov 6",
-              "score": "FOR · /20",
-              "missing": false
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "\"Why does the Caged Bird Sing?\"",
@@ -680,8 +680,14 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": "st_mbaker@smfcsd.org",
-          "grade": "90.00 - A",
+          "grade": "89.13 - B",
           "assignments": [
+            {
+              "name": "Dating Violence and Relationship Abuse",
+              "dueDate": "Nov 5",
+              "score": "CL · 10/12 (83.33%)",
+              "missing": false
+            },
             {
               "name": "Emergency Action Plan",
               "dueDate": "Oct 30",
