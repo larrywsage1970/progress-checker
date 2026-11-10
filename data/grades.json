@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T13:59:53.895Z",
+  "updatedAt": "2026-11-10T21:07:16.326Z",
   "students": [
     {
       "name": "Avery",
@@ -46,12 +46,12 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "88.89 - B",
+          "grade": "89.29 - B",
           "assignments": [
             {
               "name": "DAILY GRADE",
-              "dueDate": "Dec 17",
-              "score": "/2",
+              "dueDate": "Nov 10",
+              "score": "2/2 (100%)",
               "missing": false
             },
             {
@@ -271,6 +271,12 @@
               "missing": false
             },
             {
+              "name": "unit 2 study guide *",
+              "dueDate": "Nov 10",
+              "score": "F · 20/20 (100%)",
+              "missing": false
+            },
+            {
               "name": "line em up lab",
               "dueDate": "Nov 2",
               "score": "F · 30/30 (100%)",
@@ -389,12 +395,18 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "99.60 - A",
+          "grade": "95.64 - A",
           "assignments": [
             {
               "name": "mystery element",
               "dueDate": "Nov 6",
               "score": "F · 1/1 (100%)",
+              "missing": false
+            },
+            {
+              "name": "3B quiz",
+              "dueDate": "Nov 2",
+              "score": "S · 7.36/8 (92%)",
               "missing": false
             },
             {
