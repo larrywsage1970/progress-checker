@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T05:22:41.835Z",
+  "updatedAt": "2026-11-10T13:59:53.895Z",
   "students": [
     {
       "name": "Avery",
@@ -215,10 +215,10 @@
               "missing": false
             },
             {
-              "name": "Monster One Pager 2 no names on the board. Late work grace period extends to Monday as students walk into the room for class. If projects are not turned in by that point, they will receive a 0.",
+              "name": "Monster One Pager Did not turn in - 2 no names on the board. Late work grace period extends to Monday as students walk into the room for class. If projects are not turned in by that point, they will receive a 0.",
               "dueDate": "Nov 4",
-              "score": "Sum* · 0/26 (0%) · M Missing",
-              "missing": true
+              "score": "Sum* · 0/26 (0%)",
+              "missing": false
             },
             {
               "name": "Monster Final Quiz",
