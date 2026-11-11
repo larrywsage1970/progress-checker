@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T13:15:37.451Z",
+  "updatedAt": "2026-11-11T21:40:42.411Z",
   "students": [
     {
       "name": "Avery",
@@ -265,12 +265,6 @@
           "grade": "83.04 - B",
           "assignments": [
             {
-              "name": "acid base notebook",
-              "dueDate": "Nov 26",
-              "score": "F · 10/10 (100%)",
-              "missing": false
-            },
-            {
               "name": "unit 2 study guide *",
               "dueDate": "Nov 10",
               "score": "F · 20/20 (100%)",
@@ -280,6 +274,12 @@
               "name": "line em up lab",
               "dueDate": "Nov 2",
               "score": "F · 30/30 (100%)",
+              "missing": false
+            },
+            {
+              "name": "acid base notebook",
+              "dueDate": "Oct 29",
+              "score": "F · 10/10 (100%)",
               "missing": false
             },
             {
@@ -312,8 +312,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "72.41 - C",
+          "grade": "68.48 - D",
           "assignments": [
+            {
+              "name": "Ideologies of the Industrial Revolution",
+              "dueDate": "Nov 10",
+              "score": "F · 0/5 (0%) · M Missing",
+              "missing": true
+            },
             {
               "name": "Introduction to the Industrial Revolution Packet",
               "dueDate": "Nov 4",
@@ -395,7 +401,7 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "95.64 - A",
+          "grade": "94.22 - A",
           "assignments": [
             {
               "name": "mystery element",
@@ -410,9 +416,45 @@
               "missing": false
             },
             {
+              "name": "Frankenstein review",
+              "dueDate": "Nov 2",
+              "score": "F · 1/1 (100%)",
+              "missing": false
+            },
+            {
+              "name": "bonus isotope review",
+              "dueDate": "Nov 2",
+              "score": "F · 0/0",
+              "missing": false
+            },
+            {
+              "name": "flame test lab",
+              "dueDate": "Oct 30",
+              "score": "S · 7.36/8 (92%)",
+              "missing": false
+            },
+            {
+              "name": "beanium",
+              "dueDate": "Oct 30",
+              "score": "F · 0/1 (0%) · M Missing",
+              "missing": true
+            },
+            {
               "name": "3B.2 Average atomic mass",
               "dueDate": "Oct 29",
               "score": "F · 1/1 (100%)",
+              "missing": false
+            },
+            {
+              "name": "ion pogil",
+              "dueDate": "Oct 23",
+              "score": "F · 0/1 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "3b.1 enrichment",
+              "dueDate": "Oct 23",
+              "score": "F · 0/0",
               "missing": false
             },
             {
@@ -448,7 +490,7 @@
           "grade": "61.07 - D",
           "assignments": [
             {
-              "name": "Creative Writing Prompt",
+              "name": "Analyze the Text",
               "dueDate": "Nov 11",
               "score": "FOR · /20",
               "missing": false
@@ -600,13 +642,25 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "52.91 - F",
+          "grade": "48.91 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
               "score": "/0",
               "missing": false
+            },
+            {
+              "name": "Edpuzzle - Martinstag in Germany",
+              "dueDate": "Nov 10",
+              "score": "0/10 (0%) · M Missing",
+              "missing": true
+            },
+            {
+              "name": "Edpuzzle - Wer war St. Martin - Vom römischen S...",
+              "dueDate": "Nov 10",
+              "score": "0/15 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Edpuzzle - Neu in Berlin",
