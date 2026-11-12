@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T14:20:11.221Z",
+  "updatedAt": "2026-11-12T21:40:31.469Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,14 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "74.88 - C",
+          "grade": "75.90 - C",
           "assignments": [
+            {
+              "name": "?? Alg DeltaMath - Week 12 - Arithmetic & Geome...",
+              "dueDate": "Nov 6",
+              "score": "DM · 8/10 (80%)",
+              "missing": false
+            },
             {
               "name": "?? Alg DeltaMath - Week 11 - Linear Regression",
               "dueDate": "Oct 30",
@@ -262,12 +268,18 @@
           "name": "PHYSICAL SCIENCE",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "83.04 - B",
+          "grade": "85.43 - B",
           "assignments": [
             {
               "name": "unit 2 study guide *",
               "dueDate": "Nov 10",
               "score": "F · 20/20 (100%)",
+              "missing": false
+            },
+            {
+              "name": "unit 3 quiz",
+              "dueDate": "Nov 10",
+              "score": "S · 20/24 (83.33%)",
               "missing": false
             },
             {
@@ -312,13 +324,19 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "68.48 - D",
+          "grade": "69.39 - D",
           "assignments": [
             {
               "name": "Ideologies of the Industrial Revolution",
               "dueDate": "Nov 10",
               "score": "F · 0/5 (0%) · M Missing",
               "missing": true
+            },
+            {
+              "name": "Invention Museum",
+              "dueDate": "Nov 5",
+              "score": "I · 5/6 (83.33%)",
+              "missing": false
             },
             {
               "name": "Introduction to the Industrial Revolution Packet",
@@ -654,19 +672,19 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "48.91 - F",
+          "grade": "45.77 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
-              "score": "/0",
+              "score": "1.5/0",
               "missing": false
             },
             {
-              "name": "Michael und Melanie: Was für ein Zufall!!!",
+              "name": "Michael und Melanie: Was für ein Zufall!!! Absent",
               "dueDate": "Nov 12",
-              "score": "/26",
-              "missing": false
+              "score": "0/26 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Edpuzzle - Martinstag in Germany",
