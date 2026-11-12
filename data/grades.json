@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T04:59:55.642Z",
+  "updatedAt": "2026-11-12T14:20:11.221Z",
   "students": [
     {
       "name": "Avery",
@@ -487,7 +487,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "61.07 - D",
+          "grade": "59.69 - F",
           "assignments": [
             {
               "name": "Analyze the Text",
@@ -496,15 +496,15 @@
               "missing": false
             },
             {
-              "name": "\"The American Embassy\"",
+              "name": "\"The American Embassy\" May submit until 11/16",
               "dueDate": "Nov 10",
-              "score": "FOR · /20",
-              "missing": false
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "\"The Danger of a Single Story\"",
               "dueDate": "Nov 9",
-              "score": "FOR · /20",
+              "score": "FOR · 20/20 (100%)",
               "missing": false
             },
             {
@@ -592,8 +592,20 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "45.89 - F",
+          "grade": "54.09 - F",
           "assignments": [
+            {
+              "name": "CH3 TEST",
+              "dueDate": "Nov 13",
+              "score": "SUMM · /100",
+              "missing": false
+            },
+            {
+              "name": "Ch3 Review",
+              "dueDate": "Nov 12",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "IXLD4",
               "dueDate": "Nov 5",
@@ -648,6 +660,12 @@
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
               "score": "/0",
+              "missing": false
+            },
+            {
+              "name": "Michael und Melanie: Was für ein Zufall!!!",
+              "dueDate": "Nov 12",
+              "score": "/26",
               "missing": false
             },
             {
