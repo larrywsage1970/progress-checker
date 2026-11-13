@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T13:40:49.440Z",
+  "updatedAt": "2026-11-13T21:06:33.363Z",
   "students": [
     {
       "name": "Avery",
@@ -52,11 +52,41 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "89.29 - B",
+          "grade": "91.67 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
+              "dueDate": "Nov 13",
+              "score": "/2",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 12",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 11",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "WIN Check-In Q2 Wk 4",
+              "dueDate": "Nov 11",
+              "score": "10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
               "dueDate": "Nov 10",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 9",
               "score": "2/2 (100%)",
               "missing": false
             },
@@ -156,8 +186,20 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "90.42 - A",
+          "grade": "84.91 - B",
           "assignments": [
+            {
+              "name": "Self Starter 11/9 - 11/13",
+              "dueDate": "Nov 13",
+              "score": "CW · 25/25 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Self Starter 11/9 - 11/13 (20)",
+              "dueDate": "Nov 13",
+              "score": "CW · /20",
+              "missing": false
+            },
             {
               "name": "Family Edpuzzle with Parameters",
               "dueDate": "Nov 6",
@@ -167,8 +209,8 @@
             {
               "name": "Self Starter 11/2 - 11/6",
               "dueDate": "Nov 6",
-              "score": "CW · /20",
-              "missing": false
+              "score": "CW · 0/20 (0%) · M Missing",
+              "missing": true
             },
             {
               "name": "Deaf History Time lime Project",
@@ -212,7 +254,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "63.08 - D",
+          "grade": "87.29 - B",
           "assignments": [
             {
               "name": "A Chance in the World Reading Questions",
@@ -223,7 +265,7 @@
             {
               "name": "Monster One Pager Did not turn in - 2 no names on the board. Late work grace period extends to Monday as students walk into the room for class. If projects are not turned in by that point, they will receive a 0.",
               "dueDate": "Nov 4",
-              "score": "Sum* · 0/26 (0%)",
+              "score": "Sum* · 23/26 (88.46%)",
               "missing": false
             },
             {
@@ -324,8 +366,14 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "69.39 - D",
+          "grade": "69.61 - D",
           "assignments": [
+            {
+              "name": "4.3 Questions: The 2nd Industrial Rev.",
+              "dueDate": "Nov 13",
+              "score": "F · 3/4 (75%)",
+              "missing": false
+            },
             {
               "name": "Ideologies of the Industrial Revolution",
               "dueDate": "Nov 10",
@@ -505,13 +553,25 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "59.69 - F",
+          "grade": "56.18 - F",
           "assignments": [
             {
-              "name": "Analyze the Text",
-              "dueDate": "Nov 11",
-              "score": "FOR · /20",
+              "name": "Arg. Writing Notes",
+              "dueDate": "Nov 13",
+              "score": "FOR · /5",
               "missing": false
+            },
+            {
+              "name": "Epilogue: American Embassy",
+              "dueDate": "Nov 12",
+              "score": "SUM · /20",
+              "missing": false
+            },
+            {
+              "name": "Analyze the Text May submit until 11/17, make sure to hit submit on Google Classroom",
+              "dueDate": "Nov 11",
+              "score": "FOR · 0/20 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "\"The American Embassy\" May submit until 11/16",
@@ -526,10 +586,10 @@
               "missing": false
             },
             {
-              "name": "\"from Four Freedoms\" May submit until 11/12",
+              "name": "\"from Four Freedoms\" May submit until 11/12. As of 11/13, never submitted",
               "dueDate": "Nov 6",
-              "score": "FOR · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "FOR · 0/20 (0%) · L Late",
+              "missing": false
             },
             {
               "name": "\"Why does the Caged Bird Sing?\"",
@@ -538,10 +598,10 @@
               "missing": false
             },
             {
-              "name": "\"Letter from Birmingham Jail\" Questions May submit until 11/6",
+              "name": "\"Letter from Birmingham Jail\" Questions May submit until 11/6. As of 11/13, never submitted",
               "dueDate": "Oct 30",
-              "score": "FOR · 0/20 (0%) · L M Late Missing",
-              "missing": true
+              "score": "FOR · 0/20 (0%) · L Late",
+              "missing": false
             },
             {
               "name": "\"The Bombing of Black Wall Street\" Questions",
@@ -610,12 +670,12 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "54.09 - F",
+          "grade": "70.71 - C",
           "assignments": [
             {
               "name": "CH3 TEST",
               "dueDate": "Nov 13",
-              "score": "SUMM · /100",
+              "score": "SUMM · 84/100 (84%)",
               "missing": false
             },
             {
