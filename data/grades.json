@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T14:21:20.525Z",
+  "updatedAt": "2026-11-16T23:36:18.192Z",
   "students": [
     {
       "name": "Avery",
@@ -52,7 +52,7 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.67 - A",
+          "grade": "91.89 - A",
           "assignments": [
             {
               "name": "DAILY GRADE",
@@ -842,12 +842,30 @@
           "name": "PERSONAL WELLNESS",
           "teacher": null,
           "teacherEmail": "st_mbaker@smfcsd.org",
-          "grade": "89.13 - B",
+          "grade": "87.29 - B",
           "assignments": [
+            {
+              "name": "Drugs/Alcohol Notes",
+              "dueDate": "Nov 16",
+              "score": "CL · 10/10 (100%)",
+              "missing": false
+            },
             {
               "name": "Dating Violence and Relationship Abuse",
               "dueDate": "Nov 5",
               "score": "CL · 10/12 (83.33%)",
+              "missing": false
+            },
+            {
+              "name": "Family Lifecycle Stages",
+              "dueDate": "Nov 5",
+              "score": "CL · 1/6 (16.67%)",
+              "missing": false
+            },
+            {
+              "name": "Healthy vs Unhealthy Notes",
+              "dueDate": "Nov 3",
+              "score": "CL · 10/10 (100%)",
               "missing": false
             },
             {
