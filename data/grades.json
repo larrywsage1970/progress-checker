@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T15:13:51.696Z",
+  "updatedAt": "2026-11-18T00:15:48.361Z",
   "students": [
     {
       "name": "Avery",
@@ -8,8 +8,20 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "st_aokeefe@smfcsd.org",
-          "grade": "75.90 - C",
+          "grade": "76.79 - C",
           "assignments": [
+            {
+              "name": "???? Alg DeltaMath - Week 13b - Graphing Systems",
+              "dueDate": "Nov 13",
+              "score": "DM · 8.5/10 (85%)",
+              "missing": false
+            },
+            {
+              "name": "???? Alg DeltaMath - Week 13a - Functions",
+              "dueDate": "Nov 13",
+              "score": "DM · 7.3/10 (73%)",
+              "missing": false
+            },
             {
               "name": "?? Alg DeltaMath - Week 12 - Arithmetic & Geome...",
               "dueDate": "Nov 6",
@@ -186,12 +198,12 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "91.93 - A",
+          "grade": "91.64 - A",
           "assignments": [
             {
               "name": "Family Tree Presentations",
               "dueDate": "Nov 19",
-              "score": "APS · /50",
+              "score": "APS · 45/50 (90%)",
               "missing": false
             },
             {
@@ -561,6 +573,30 @@
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
           "grade": "56.18 - F",
           "assignments": [
+            {
+              "name": "Final Draft",
+              "dueDate": "Dec 10",
+              "score": "SUM · /100",
+              "missing": false
+            },
+            {
+              "name": "Rough Draft",
+              "dueDate": "Dec 7",
+              "score": "FOR · /50",
+              "missing": false
+            },
+            {
+              "name": "Outline",
+              "dueDate": "Nov 23",
+              "score": "FOR · /50",
+              "missing": false
+            },
+            {
+              "name": "Research for Agumentative Essay",
+              "dueDate": "Nov 20",
+              "score": "FOR · /30",
+              "missing": false
+            },
             {
               "name": "Arg. Writing Notes",
               "dueDate": "Nov 13",
