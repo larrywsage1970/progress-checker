@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T10:59:16.244Z",
+  "updatedAt": "2026-11-20T01:58:11.981Z",
   "students": [
     {
       "name": "Avery",
@@ -201,6 +201,12 @@
           "grade": "91.64 - A",
           "assignments": [
             {
+              "name": "Family Vocab Quiz",
+              "dueDate": "Nov 20",
+              "score": "QZ · /20",
+              "missing": false
+            },
+            {
               "name": "Family Tree Presentations",
               "dueDate": "Nov 19",
               "score": "APS · 45/50 (90%)",
@@ -266,8 +272,14 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "87.72 - B",
+          "grade": "84.53 - B",
           "assignments": [
+            {
+              "name": "Essay Prompt + Thesis Doc",
+              "dueDate": "Nov 18",
+              "score": "For* · 0/10 (0%) · M Missing",
+              "missing": true
+            },
             {
               "name": "A Chance in the World Questions",
               "dueDate": "Nov 5",
@@ -343,6 +355,12 @@
               "missing": false
             },
             {
+              "name": "Bonus: household pH guide",
+              "dueDate": "Oct 30",
+              "score": "F · 0/0",
+              "missing": false
+            },
+            {
               "name": "acid base notebook",
               "dueDate": "Oct 29",
               "score": "F · 10/10 (100%)",
@@ -378,7 +396,7 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "68.18 - D",
+          "grade": "70.63 - C",
           "assignments": [
             {
               "name": "TEST Unit 4 Industrialization",
@@ -387,16 +405,28 @@
               "missing": false
             },
             {
-              "name": "4.3 Questions: The 2nd Industrial Rev.",
+              "name": "Women's Suffrage",
               "dueDate": "Nov 13",
+              "score": "F · 8/8 (100%)",
+              "missing": false
+            },
+            {
+              "name": "4.3 Questions: The 2nd Industrial Rev.",
+              "dueDate": "Nov 11",
               "score": "F · 3/4 (75%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Chart: Comparing Economic Systems",
+              "dueDate": "Nov 11",
+              "score": "H · 3/3 (100%)",
               "missing": false
             },
             {
               "name": "Ideologies of the Industrial Revolution",
               "dueDate": "Nov 10",
-              "score": "F · 0/5 (0%) · M Missing",
-              "missing": true
+              "score": "F · 0/5 (0%)",
+              "missing": false
             },
             {
               "name": "Invention Museum",
@@ -571,7 +601,7 @@
           "name": "ENGLISH 10",
           "teacher": null,
           "teacherEmail": "st_ewalkinshaw@smfcsd.org",
-          "grade": "56.18 - F",
+          "grade": "56.81 - F",
           "assignments": [
             {
               "name": "Final Draft",
@@ -600,7 +630,7 @@
             {
               "name": "Arg. Writing Notes",
               "dueDate": "Nov 13",
-              "score": "FOR · /5",
+              "score": "FOR · 5/5 (100%)",
               "missing": false
             },
             {
@@ -712,8 +742,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "70.71 - C",
+          "grade": "73.39 - C",
           "assignments": [
+            {
+              "name": "HWQ5.1",
+              "dueDate": "Nov 19",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "CH3 TEST",
               "dueDate": "Nov 13",
