@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T10:45:36.123Z",
+  "updatedAt": "2026-11-20T19:27:47.529Z",
   "students": [
     {
       "name": "Avery",
@@ -64,8 +64,20 @@
           "name": "ALGEBRA 1 WIN",
           "teacher": null,
           "teacherEmail": "st_ecanepa@smfcsd.org",
-          "grade": "91.89 - A",
+          "grade": "93.02 - A",
           "assignments": [
+            {
+              "name": "Solving Systems Google Form",
+              "dueDate": "Nov 20",
+              "score": "10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "DAILY GRADE",
+              "dueDate": "Nov 19",
+              "score": "2/2 (100%)",
+              "missing": false
+            },
             {
               "name": "DAILY GRADE",
               "dueDate": "Nov 13",
@@ -198,12 +210,12 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "91.64 - A",
+          "grade": "92.11 - A",
           "assignments": [
             {
               "name": "Family Vocab Quiz",
               "dueDate": "Nov 20",
-              "score": "QZ · /20",
+              "score": "QZ · 20/20 (100%)",
               "missing": false
             },
             {
@@ -274,6 +286,18 @@
           "teacherEmail": null,
           "grade": "84.53 - B",
           "assignments": [
+            {
+              "name": "Q2 Vocab: Spelling",
+              "dueDate": "Nov 20",
+              "score": "Sum* · /10",
+              "missing": false
+            },
+            {
+              "name": "Q2: Vocab Quiz",
+              "dueDate": "Nov 20",
+              "score": "Sum* · /10",
+              "missing": false
+            },
             {
               "name": "Essay Prompt + Thesis Doc",
               "dueDate": "Nov 18",
@@ -515,8 +539,14 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "94.22 - A",
+          "grade": "80.89 - B",
           "assignments": [
+            {
+              "name": "4.1 mini",
+              "dueDate": "Nov 11",
+              "score": "S · 0/4 (0%) · M Missing",
+              "missing": true
+            },
             {
               "name": "mystery element",
               "dueDate": "Nov 6",
@@ -555,6 +585,12 @@
             },
             {
               "name": "3B.2 Average atomic mass",
+              "dueDate": "Oct 29",
+              "score": "F · 1/1 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Isotope entrance ticket",
               "dueDate": "Oct 29",
               "score": "F · 1/1 (100%)",
               "missing": false
