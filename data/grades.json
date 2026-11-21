@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T19:27:47.529Z",
+  "updatedAt": "2026-11-21T01:54:34.526Z",
   "students": [
     {
       "name": "Avery",
@@ -284,18 +284,24 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "84.53 - B",
+          "grade": "86.60 - B",
           "assignments": [
             {
               "name": "Q2 Vocab: Spelling",
               "dueDate": "Nov 20",
-              "score": "Sum* · /10",
+              "score": "Sum* · 9/10 (90%)",
               "missing": false
             },
             {
               "name": "Q2: Vocab Quiz",
               "dueDate": "Nov 20",
-              "score": "Sum* · /10",
+              "score": "Sum* · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Essay Outline: Thurs./Fri. Progress Check",
+              "dueDate": "Nov 20",
+              "score": "For* · 10/10 (100%)",
               "missing": false
             },
             {
@@ -541,6 +547,12 @@
           "teacherEmail": "st_ePeterre@smfcsd.org",
           "grade": "80.89 - B",
           "assignments": [
+            {
+              "name": "periodic trend graphing project",
+              "dueDate": "Nov 13",
+              "score": "S · /8",
+              "missing": false
+            },
             {
               "name": "4.1 mini",
               "dueDate": "Nov 11",
