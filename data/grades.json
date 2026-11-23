@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T01:54:34.526Z",
+  "updatedAt": "2026-11-23T04:53:01.637Z",
   "students": [
     {
       "name": "Avery",
@@ -367,15 +367,33 @@
           "grade": "85.43 - B",
           "assignments": [
             {
-              "name": "unit 2 study guide *",
-              "dueDate": "Nov 10",
-              "score": "F · 20/20 (100%)",
+              "name": "4.1b checkpoint",
+              "dueDate": "Nov 18",
+              "score": "F · 10/10 (100%)",
               "missing": false
             },
             {
               "name": "unit 3 quiz",
               "dueDate": "Nov 10",
               "score": "S · 20/24 (83.33%)",
+              "missing": false
+            },
+            {
+              "name": "unit 3 study guide",
+              "dueDate": "Nov 10",
+              "score": "F · /20 · E Excluded",
+              "missing": false
+            },
+            {
+              "name": "phase change lab",
+              "dueDate": "Nov 5",
+              "score": "F · 30/30 (100%)",
+              "missing": false
+            },
+            {
+              "name": "3.1b checkpoint",
+              "dueDate": "Nov 4",
+              "score": "F · 10/10 (100%)",
               "missing": false
             },
             {
@@ -394,6 +412,12 @@
               "name": "acid base notebook",
               "dueDate": "Oct 29",
               "score": "F · 10/10 (100%)",
+              "missing": false
+            },
+            {
+              "name": "unit 2 study guide *",
+              "dueDate": "Oct 28",
+              "score": "F · 20/20 (100%)",
               "missing": false
             },
             {
@@ -545,13 +569,19 @@
           "name": "CHEMISTRY",
           "teacher": null,
           "teacherEmail": "st_ePeterre@smfcsd.org",
-          "grade": "80.89 - B",
+          "grade": "62.98 - D",
           "assignments": [
+            {
+              "name": "4.1-1.2 review",
+              "dueDate": "Nov 25",
+              "score": "F · 0/1 (0%) · L M Late Missing",
+              "missing": true
+            },
             {
               "name": "periodic trend graphing project",
               "dueDate": "Nov 13",
-              "score": "S · /8",
-              "missing": false
+              "score": "S · 0/8 (0%) · L M Late Missing",
+              "missing": true
             },
             {
               "name": "4.1 mini",
