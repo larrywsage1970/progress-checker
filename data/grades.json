@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T04:53:01.637Z",
+  "updatedAt": "2026-11-23T16:54:47.848Z",
   "students": [
     {
       "name": "Avery",
@@ -8,7 +8,7 @@
           "name": "ALGEBRA 1 ENRICHED",
           "teacher": null,
           "teacherEmail": "ST_AOKEEFE@SMFCSD.ORG",
-          "grade": "76.79 - C",
+          "grade": "74.79 - C",
           "assignments": [
             {
               "name": "???? Alg DeltaMath - Week 13b - Graphing Systems",
@@ -20,6 +20,12 @@
               "name": "???? Alg DeltaMath - Week 13a - Functions",
               "dueDate": "Nov 13",
               "score": "DM · 7.3/10 (73%)",
+              "missing": false
+            },
+            {
+              "name": "?? Chapter 4 Test",
+              "dueDate": "Nov 13",
+              "score": "QT · 36/50 (72%)",
               "missing": false
             },
             {
@@ -210,8 +216,14 @@
           "name": "AMER SIGN LANGUAGE 1",
           "teacher": null,
           "teacherEmail": "st_sparker@smfcsd.org",
-          "grade": "92.11 - A",
+          "grade": "90.40 - A",
           "assignments": [
+            {
+              "name": "11/16 - 11/20 (20)",
+              "dueDate": "Nov 23",
+              "score": "CW · 12/20 (60%)",
+              "missing": false
+            },
             {
               "name": "Family Vocab Quiz",
               "dueDate": "Nov 20",
@@ -820,8 +832,14 @@
           "name": "GEOMETRY",
           "teacher": null,
           "teacherEmail": "st_dlarlham@smfcsd.org",
-          "grade": "73.39 - C",
+          "grade": "75.45 - C",
           "assignments": [
+            {
+              "name": "HWQ5.2",
+              "dueDate": "Nov 23",
+              "score": "FORM · 100/100 (100%)",
+              "missing": false
+            },
             {
               "name": "HWQ5.1",
               "dueDate": "Nov 19",
