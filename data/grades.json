@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T16:54:47.848Z",
+  "updatedAt": "2026-11-24T03:41:52.348Z",
   "students": [
     {
       "name": "Avery",
@@ -298,6 +298,12 @@
           "teacherEmail": null,
           "grade": "86.60 - B",
           "assignments": [
+            {
+              "name": "Essay Outline",
+              "dueDate": "Nov 24",
+              "score": "For* · /25",
+              "missing": false
+            },
             {
               "name": "Q2 Vocab: Spelling",
               "dueDate": "Nov 20",
@@ -906,12 +912,18 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "46.75 - F",
+          "grade": "48.07 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
               "dueDate": "Dec 17",
               "score": "1.5/0",
+              "missing": false
+            },
+            {
+              "name": "ein Dankesbrief - Thank-you card",
+              "dueDate": "Nov 23",
+              "score": "10/10 (100%)",
               "missing": false
             },
             {
