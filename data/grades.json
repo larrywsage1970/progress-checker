@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T03:41:52.348Z",
+  "updatedAt": "2026-11-24T16:45:40.994Z",
   "students": [
     {
       "name": "Avery",
@@ -468,8 +468,20 @@
           "name": "WORLD HISTORY",
           "teacher": null,
           "teacherEmail": "st_brewer@smfcsd.org",
-          "grade": "70.63 - C",
+          "grade": "70.00 - C",
           "assignments": [
+            {
+              "name": "6.3 Europe and the Muslim World",
+              "dueDate": "Nov 24",
+              "score": "F · 4/4 (100%)",
+              "missing": false
+            },
+            {
+              "name": "Interactive Gallery: Technology Advances Imperi...",
+              "dueDate": "Nov 23",
+              "score": "H · 0/3 (0%) · M Missing",
+              "missing": true
+            },
             {
               "name": "TEST Unit 4 Industrialization",
               "dueDate": "Nov 17",
@@ -841,6 +853,24 @@
           "grade": "75.45 - C",
           "assignments": [
             {
+              "name": "IXLF1",
+              "dueDate": "Nov 30",
+              "score": "FORM · /80",
+              "missing": false
+            },
+            {
+              "name": "IXLF2",
+              "dueDate": "Nov 30",
+              "score": "FORM · /80",
+              "missing": false
+            },
+            {
+              "name": "IXLF3",
+              "dueDate": "Nov 30",
+              "score": "FORM · /80",
+              "missing": false
+            },
+            {
               "name": "HWQ5.2",
               "dueDate": "Nov 23",
               "score": "FORM · 100/100 (100%)",
@@ -912,7 +942,7 @@
           "name": "GERMAN 1",
           "teacher": null,
           "teacherEmail": "st_jstanek@smfcsd.org",
-          "grade": "48.07 - F",
+          "grade": "55.00 - F",
           "assignments": [
             {
               "name": "Small Bonus Opps Throughout the Quarter",
@@ -1011,10 +1041,10 @@
               "missing": false
             },
             {
-              "name": "Blooket: Persönliche Fragen, die Farben, und “G... 37 correct answers so far",
+              "name": "Blooket: Persönliche Fragen, die Farben, und “G... Late -5",
               "dueDate": "Oct 21",
-              "score": "0/30 (0%) · M Missing",
-              "missing": true
+              "score": "28/30 (93.33%) · L Late",
+              "missing": false
             },
             {
               "name": "Grün, grün, grün - Song Cloze Activity",
