@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T11:55:03.680Z",
+  "updatedAt": "2026-11-25T20:53:25.287Z",
   "students": [
     {
       "name": "Avery",
@@ -327,6 +327,24 @@
               "dueDate": "Nov 18",
               "score": "For* · 0/10 (0%) · M Missing",
               "missing": true
+            },
+            {
+              "name": "Compare Accounts- Night/Maus",
+              "dueDate": "Nov 13",
+              "score": "For* · /25",
+              "missing": false
+            },
+            {
+              "name": "Maus Reading Doc",
+              "dueDate": "Nov 12",
+              "score": "For* · /15",
+              "missing": false
+            },
+            {
+              "name": "\"Is Survival Selfish?\" Worksheet",
+              "dueDate": "Nov 9",
+              "score": "For* · /15",
+              "missing": false
             },
             {
               "name": "A Chance in the World Questions",
