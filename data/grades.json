@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T20:53:25.287Z",
+  "updatedAt": "2026-11-26T03:19:11.805Z",
   "students": [
     {
       "name": "Avery",
@@ -296,7 +296,7 @@
           "name": "ENGLISH 9 ENRICHED",
           "teacher": null,
           "teacherEmail": null,
-          "grade": "86.60 - B",
+          "grade": "82.88 - B",
           "assignments": [
             {
               "name": "Essay Outline",
@@ -331,19 +331,19 @@
             {
               "name": "Compare Accounts- Night/Maus",
               "dueDate": "Nov 13",
-              "score": "For* · /25",
+              "score": "For* · 0/25 (0%)",
               "missing": false
             },
             {
               "name": "Maus Reading Doc",
               "dueDate": "Nov 12",
-              "score": "For* · /15",
+              "score": "For* · 15/15 (100%)",
               "missing": false
             },
             {
               "name": "\"Is Survival Selfish?\" Worksheet",
               "dueDate": "Nov 9",
-              "score": "For* · /15",
+              "score": "For* · 15/15 (100%)",
               "missing": false
             },
             {
